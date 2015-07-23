@@ -2,18 +2,20 @@
 # general information #
 #######################
 
-# file:       Makefile
-# created:    2015-07-23
-# author(s):  Marcel Schilling <marcel.schilling@mdc-berlin.de>
-# license:    GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:    automize generation of festival runnig orders based on ratings
+# file:         Makefile
+# created:      2015-07-23
+# last update:  2015-07-23
+# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:      automize generation of festival runnig orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-23: initial version (running order generation)
+# 2015-07-23: replaced placeholder TSV file name by WOA 2015 input file
+#             initial version (running order generation)
 
 
 ####################
@@ -27,7 +29,7 @@ MAKEFILE:=$(realpath $(lastword $(MAKEFILE_LIST)))
 MAKEFILE_DIRECTORY:=$(dir $(MAKEFILE))
 
 # (absolute) path of the TSV file with linup & rating information for the festival
-FESTIVAL_TSV:=$(MAKEFILE_DIRECTORY)festival.tsv
+FESTIVAL_TSV:=$(MAKEFILE_DIRECTORY)woa.tsv
 
 # (absolute) path of R-Markdown file used to generate the running order
 SCHEDULER_RMD:=$(MAKEFILE_DIRECTORY)festival_scheduler.rmd
