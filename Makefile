@@ -2,18 +2,21 @@
 # general information #
 #######################
 
-# file:       Makefile
-# created:    2015-07-23
-# author(s):  Marcel Schilling <marcel.schilling@mdc-berlin.de>
-# license:    GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:    automize generation of festival runnig orders based on ratings
+# file:         Makefile
+# created:      2015-07-23
+# last update:  2015-07-23
+# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:      automize generation of festival runnig orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-23: initial version (running order generation)
+# 2015-07-23: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
+#             Markdown-to-HTML conversion
+#             initial version (running order generation)
 
 
 ####################
@@ -34,6 +37,9 @@ SCHEDULER_RMD:=$(MAKEFILE_DIRECTORY)festival_scheduler.rmd
 
 # (absolute) path of Markdown file containing the running order
 FESTIVAL_MD:=$(FESTIVAL_TSV:.tsv=.md)
+
+# (absolute) path of CSS-style-sheet file used for the HTML version of the running order
+MARKDOWN_STYLESHEET:=$(MAKEFILE_DIRECTORY)marta.css
 
 # (absolute) path of HTML file containing the running order
 FESTIVAL_HTML:=$(FESTIVAL_MD:.md=.html)
@@ -94,5 +100,5 @@ $(FESTIVAL_MD) : $(SCHEDULER_RMD) $(FESTIVAL_TSV) | $(dir $(FESTIVAL_MD))
 	$(RUN_R_COMMAND) '$(SCHEDULER_PARAMS);require(knitr);knit("$<",output="$@")'
 
 # convert Markdown to HTML
-%.html : %.md
-	$(RUN_R_COMMAND) 'require(markdown);markdownToHTML("$<","$@")'
+%.html : %.md $(MARKDOWN_STYLESHEET)
+	$(RUN_R_COMMAND) 'require(markdown);markdownToHTML("$<","$@",stylesheet="$(word 2,$^)")'
