@@ -3,19 +3,21 @@
 # general information #
 #######################
 
-# file:       festival_scheduler.rmd
-# created:    2015-07-23
-# author(s):  Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
-#             Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
-# license:    GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:    generate running orders based on ratings
+# file:         festival_scheduler.rmd
+# created:      2015-07-23
+# last update:  2015-07-23
+# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
+#               Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
+# license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:      generate running orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-23: initial version (reproduce spreadsheet table)
+# 2015-07-23: removed superfluous loading of unused plyr library
+#             initial version (reproduce spreadsheet table)
 
 
 #################
@@ -113,15 +115,6 @@ live_count2score<-function(live_count,rating_score)
                                  ,0
                                  )
                           )
-```
-
-```{r libraries,include=F,eval=T,cache=F}
-#############
-# libraries #
-#############
-
-# use efficient apply functions
-require(plyr)
 ```
 
 ```{r read_table}
