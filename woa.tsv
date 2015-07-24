@@ -1,126 +1,155 @@
 band	rating.Marcel	rating.Sandra	rating.Matti	rating.Marta	live_count.Marcel	live_count.Sandra	live_count.Matti	live_count.Marta	stage	start	end
-Alkbottle	?	+	-	?	0	0	0	0	NA		
-Amorphis	+	?	+++	+++	1	0	1	0	NA		
-Anaal Nathrakh	-	---	---	?	0	0	0	0	NA		
-Ancient Bards	++	+	++	?	0	0	0	0	NA		
-Angra	++	++	+	+	0	0	0	0	NA		
-Annihilator	+	+	+	?	0	0	0	0	NA		
-Araña	?	?	?	-	0	0	0	0	NA		
-Architects of Chaoz	+	?	?	?	0	0	0	0	NA		
-Armored Saint	+	+	?	?	0	0	0	0	NA		
-asrock	+	+	?	?	0	0	0	0	NA		
-At the Gates	+	?	+	++	0	0	0	0	NA		
-Avatar	++	?	+++	?	0	0	0	0	NA		
-Baltic Sea Child	+	++	+	?	0	0	0	0	NA		
-Bembers	--	-	---	?	0	0	0	0	NA		
-Beyond the Black	++	++	++	?	0	0	0	0	NA		
-Biohazard	?	?	+	?	0	0	0	0	NA		
-Blaakyum	++	-	+	NA	0	0	0	0	NA		
-Blaas of Glory	+	-	+	?	0	0	0	0	NA		
-Black Label Society	++	++	++	++	0	0	0	0	NA		
-Black Spiders	+	+	+	?	0	0	0	0	NA		
-Blechblos'n	?	-	?	?	0	0	0	0	Beergarden Stage		
-Blood Red Throne	-	--	?	?	0	0	0	0	NA		
-Bloodbath	?	--	?	+++	0	0	0	0	NA		
-Breakdown of Sanity	?	?	?	?	0	0	0	0	NA		
+Alkbottle	?	+	-	?	0	0	0	0	Beergarden Stage	30-07-2015_14:00	30-07-2015_15:00
+Amorphis	+	?	+++	+++	1	0	1	0	Black Stage	01-08-2015_14:30	01-08-2015_15:45
+Anaal Nathrakh	-	---	---	?	0	0	0	0	Wet Stage	31-07-2015_17:50	31-07-2015_18:35
+Ancient Bards	++	+	++	?	0	0	0	0	Headbangers Stage	31-07-2015_11:55	31-07-2015_12:25
+Angra	++	++	+	+	0	0	0	0	Party Stage	31-07-2015_11:00	31-07-2015_11:45
+Annihilator	+	+	+	?	0	0	0	0	Party Stage	31-07-2015_18:00	31-07-2015_19:15
+Araña	?	?	?	-	0	0	0	0	Headbangers Stage	30-07-2015_18:40	30-07-2015_19:00
+Architects of Chaoz	+	?	?	?	0	0	0	0	Wet Stage	31-07-2015_00:10	31-07-2015_00:55
+Armored Saint	+	+	?	?	0	0	0	0	Headbangers Stage	31-07-2015_20:35	31-07-2015_21:20
+asrock	+	+	?	?	0	0	0	0	Beergarden Stage	31-07-2015_14:30	31-07-2015_15:30
+At the Gates	+	?	+	++	0	0	0	0	Black Stage	31-07-2015_15:30	31-07-2015_16:30
+Avatar	++	?	+++	?	0	0	0	0	Headbangers Stage	01-08-2015_13:35	01-08-2015_14:20
+Baltic Sea Child	+	++	+	?	0	0	0	0	Wackinger Stage	30-07-2015_18:30	30-07-2015_19:15
+Bembers	--	-	---	?	0	0	0	0	Beergarden Stage	29-07-2015_18:30	29-07-2015_19:00
+Bembers	--	-	---	?	0	0	0	0	Beergarden Stage	30-07-2015_15:30	30-07-2015_16:00
+Bembers	--	-	---	?	0	0	0	0	Beergarden Stage	31-07-2015_16:30	31-07-2015_17:00
+Bembers	--	-	---	?	0	0	0	0	Beergarden Stage	01-08-2015_16:30	01-08-2015_17:00
+Beyond the Black	++	++	++	?	0	0	0	0	Wet Stage	01-08-2015_16:10	01-08-2015_16:55
+Biohazard	?	?	+	?	0	0	0	0	Party Stage	01-08-2015_17:30	01-08-2015_18:45
+Blaakyum	++	-	+	NA	0	0	0	0	Wet Stage	29-07-2015_12:40	29-07-2015_13:00
+Blaas of Glory	+	-	+	?	0	0	0	0	Swimming Pool/Camping/Main Street	29-07-2015_01:00	29-07-2015_02:00
+Blaas of Glory	+	-	+	?	0	0	0	0	Swimming Pool/Camping/Main Street	30-07-2015_01:00	30-07-2015_02:00
+Blaas of Glory	+	-	+	?	0	0	0	0	Swimming Pool/Camping/Main Street	31-07-2015_01:00	31-07-2015_02:00
+Blaas of Glory	+	-	+	?	0	0	0	0	Swimming Pool/Camping/Main Street	01-08-2015_01:00	01-08-2015_02:00
+Black Label Society	++	++	++	++	0	0	0	0	Black Stage	31-07-2015_21:00	31-07-2015_22:15
+Black Spiders	+	+	+	?	0	0	0	0	Wet Stage	01-08-2015_12:40	01-08-2015_13:25
+Blechblos'n	?	-	?	?	0	0	0	0	Beergarden Stage	29-07-2015_22:00	29-07-2015_23:00
+Blechblos'n	?	-	?	?	0	0	0	0	Beergarden Stage	30-07-2015_22:00	30-07-2015_23:00
+Blechblos'n	?	-	?	?	0	0	0	0	Beergarden Stage	31-07-2015_22:00	31-07-2015_23:00
+Blechblos'n	?	-	?	?	0	0	0	0	Beergarden Stage	01-08-2015_22:00	01-08-2015_23:00
+Blood Red Throne	-	--	?	?	0	0	0	0	Headbangers Stage	02-08-2015_00:25	02-08-2015_01:10
+Bloodbath	?	--	?	+++	0	0	0	0	True Metal Stage 	01-08-2015_19:00	01-08-2015_20:15
+Breakdown of Sanity	?	?	?	?	0	0	0	0	Headbangers Stage	01-08-2015_12:00	01-08-2015_12:30
 Butcher Babies	+	-	+	?	0	0	0	0	NA		
-Burgerkill	+	--	--	NA	0	0	0	0	NA		
-Cannibal Corpse	-	--	--	+	0	0	0	0	NA		
-Celtica	+	-	+	NA	0	0	0	0	NA		
-Comes Vagantes	+	?	?	NA	0	0	0	0	NA		
-Combichrist	?	--	+	?	0	0	0	0	NA		
-Cradle of Filth	?	--	?	+	0	0	0	0	NA		
-Crossplane	+	+	+	+	0	0	0	0	NA		
-Cryptopsy	-	---	--	?	0	0	0	0	NA		
-Cultus Ferox	++	?	++	NA	0	0	0	0	NA		
-Danko Jones	+	++	+	+	2	2	1	0	NA		
-Dark Tranquillity	++	?	++	++	1	0	0	0	NA		
-Dash The Effort	++	++	++	NA	0	0	0	0	NA		
-Deadiron	+	?	+	?	0	0	0	0	NA		
-Death Angel	+	+	?	?	0	0	0	0	NA		
-Dream Spirit	+	+	+	NA	0	0	0	0	NA		
-Dream Theater	++	?	++	++	0	0	0	0	NA		
-Drescher	+	?	++	NA	0	0	0	0	NA		
-Ensiferum	++	+	+++	+	3	1	0	0	NA		
-Epica	++	-	++	++	1	0	0	1	NA		
-Eric Fish	++	++	+++	++	10	4	1	1	Wackinger Stage		
-Europe	++	++	++	++	0	0	0	0	NA		
-Exumer	?	?	-	?	0	0	0	0	NA		
-Falconer	++	+	++	?	0	0	0	0	NA		
-Fat King Konrad	-	--	--	?	0	0	0	0	Beergarden Stage		
-Feuerschwanz	++	+++	++	?	5	2	2	0	Wackinger Stage		
-Godsized	+	+	+	+	0	0	0	0	NA		
-Grailknights	++	++	+	?	0	0	0	0	NA		
-Harpyie	++	++	++	NA	1	0	1	0	NA		
-Haudegen	++	+	+	?	0	0	0	0	Metal Church		
-Ill Niño	++	++	++	?	0	0	0	0	NA		
-Impius Mundi	+	+	+	NA	0	0	0	0	NA		
-Impureza	?	---	?	NA	0	0	0	0	NA		
-In Extremo	++	+++	+++	+	10	5	2	0	NA		
-In Flames	++	++	+++	++	2	1	1	0	NA		
+Burgerkill	+	--	--	NA	0	0	0	0	Headbangers Stage	01-08-2015_02:15	01-08-2015_03:00
+Cannibal Corpse	-	--	--	+	0	0	0	0	Party Stage	01-08-2015_20:30	01-08-2015_22:00
+Celtica	+	-	+	NA	0	0	0	0	Wackinger Stage	01-08-2015_21:00	01-08-2015_21:45
+Comes Vagantes	+	?	?	NA	0	0	0	0	Wackinger Stage	29-07-2015_12:30	29-07-2015_13:15
+Comes Vagantes	+	?	?	NA	0	0	0	0	Wackinger Stage	31-07-2015_13:30	31-07-2015_14:15
+Comes Vagantes	+	?	?	NA	0	0	0	0	Beergarden Stage	01-08-2015_20:30	01-08-2015_21:15
+Combichrist	?	--	+	?	0	0	0	0	Wet Stage	30-07-2015_20:50	30-07-2015_21:35
+Cradle of Filth	?	--	?	+	0	0	0	0	Black Stage	02-08-2015_00:15	02-08-2015_01:30
+Crossplane	+	+	+	+	0	0	0	0	Headbangers Stage	31-07-2015_13:30	31-07-2015_14:00
+Cryptopsy	-	---	--	?	0	0	0	0	Wet Stage	01-08-2015_18:00	01-08-2015_18:45
+Cultus Ferox	++	?	++	NA	0	0	0	0	Beergarden Stage	29-07-2015_17:00	29-07-2015_18:00
+Cultus Ferox	++	?	++	NA	0	0	0	0	Wackinger Stage	31-07-2015_22:30	31-07-2015_23:30
+Cultus Ferox	++	?	++	NA	0	0	0	0	Wackinger Stage	01-08-2015_12:00	01-08-2015_12:45
+Danko Jones	+	++	+	+	2	2	1	0	True Metal Stage 	01-08-2015_16:00	01-08-2015_17:15
+Dark Tranquillity	++	?	++	++	1	0	0	0	Headbangers Stage	30-07-2015_19:40	30-07-2015_20:45
+Dash The Effort	++	++	++	NA	0	0	0	0	Wet Stage	30-07-2015_15:45	30-07-2015_16:05
+Deadiron	+	?	+	?	0	0	0	0	Wet Stage	29-07-2015_16:40	29-07-2015_17:10
+Death Angel	+	+	?	?	0	0	0	0	Wet Stage	31-07-2015_19:40	31-07-2015_20:25
+Dream Spirit	+	+	+	NA	0	0	0	0	Wet Stage	30-07-2015_14:20	30-07-2015_14:40
+Dream Theater	++	?	++	++	0	0	0	0	True Metal Stage	31-07-2015_19:30	31-07-2015_20:45
+Drescher	+	?	++	NA	0	0	0	0	Beergarden Stage	31-07-2015_22:00	31-07-2015_23:00
+Ensiferum	++	+	+++	+	3	1	0	0	True Metal Stage	31-07-2015_11:55	31-07-2015_12:55
+Epica	++	-	++	++	1	0	0	1	Black Stage	31-07-2015_11:00	31-07-2015_11:45
+Eric Fish	++	++	+++	++	10	4	1	1	Wackinger Stage	30-07-2015_21:30	30-07-2015_22:30
+Europe	++	++	++	++	0	0	0	0	Headbangers Stage	29-07-2015_23:35	30-07-2015_00:50
+Exumer	?	?	-	?	0	0	0	0	Wet Stage	01-08-2015_21:40	01-08-2015_22:25
+Falconer	++	+	++	?	0	0	0	0	Party Stage	31-07-2015_13:05	31-07-2015_14:05
+Fat King Konrad	-	--	--	?	0	0	0	0	Swimming Pool/Camping/Main Street	29-07-2015_01:00	29-07-2015_02:00
+Fat King Konrad	-	--	--	?	0	0	0	0	Swimming Pool/Camping/Main Street	30-07-2015_01:00	30-07-2015_02:00
+Fat King Konrad	-	--	--	?	0	0	0	0	Swimming Pool/Camping/Main Street	31-07-2015_01:00	31-07-2015_02:00
+Fat King Konrad	-	--	--	?	0	0	0	0	Swimming Pool/Camping/Main Street	01-08-2015_01:00	01-08-2015_02:00
+Feuerschwanz	++	+++	++	?	5	2	2	0	Wackinger Stage	29-07-2015_21:30	29-07-2015_22:30
+Godsized	+	+	+	+	0	0	0	0	Wet Stage	01-08-2015_14:30	01-08-2015_15:15
+Grailknights	++	++	+	?	0	0	0	0	Headbangers Stage	29-07-2015_19:10	29-07-2015_19:55
+Harpyie	++	++	++	NA	1	0	1	0	Wackinger Stage	31-07-2015_21:00	31-07-2015_21:45
+Haudegen	++	+	+	?	0	0	0	0	Metal Church	29-07-2015_19:00	29-07-2015_20:30
+Ill Niño	++	++	++	?	0	0	0	0	Headbangers Stage	01-08-2015_00:10	01-08-2015_00:55
+Impius Mundi	+	+	+	NA	0	0	0	0	Wackinger Stage	01-08-2015_13:30	01-08-2015_14:15
+Impureza	?	---	?	NA	0	0	0	0	Wet Stage	30-07-2015_11:50	30-07-2015_21:10
+In Extremo	++	+++	+++	+	10	5	2	0	Black Stage	30-07-2015_17:45	30-07-2015_19:05
+In Flames	++	++	+++	++	2	1	1	0	True Metal Stage	31-07-2015_22:30	31-07-2015_23:45
 In The Company Of Men	+	-	+	NA	0	0	0	0	NA		
-John Diva & The Rockets of Love	++	++	+++	++	1	1	0	1	NA		
-Judas Priest	++	+	++	++	1	1	0	0	NA		
-Kataklysm	+	-	+	+	0	0	0	0	NA		
-Khold	+	--	?	?	0	0	0	0	NA		
-Knasterbart	+	+	+	?	0	0	0	0	Wackinger Stage		
-Kommando	-	---	--	?	0	0	0	0	NA		
-Kverlertak	+	?	+	+++	0	0	0	0	NA		
-Kärbholz	+	+	+	?	0	0	0	0	NA		
-Lord Of The Lost	++	++	++	?	1	0	0	0	NA		
-Mantar	?	-	?	?	0	0	0	0	NA		
+John Diva & The Rockets of Love	++	++	+++	++	1	1	0	1	Wet Stage	29-07-2015_18:00	29-07-2015_19:00
+Judas Priest	++	+	++	++	1	1	0	0	True Metal Stage	01-08-2015_22:15	02-08-2015_00:00
+Kataklysm	+	-	+	+	0	0	0	0	Party Stage	01-08-2015_12:00	01-08-2015_13:00
+Khold	+	--	?	?	0	0	0	0	Black Stage	01-08-2015_12:00	01-08-2015_13:00
+Knasterbart	+	+	+	?	0	0	0	0	Wackinger Stage	29-07-2015_20:00	29-07-2015_20:45
+Kommando	-	---	--	?	0	0	0	0	Headbangers Stage	01-08-2015_15:25	01-08-2015_16:00
+Kverlertak	+	?	+	+++	0	0	0	0	True Metal Stage	31-07-2015_14:15	31-07-2015_15:15
+Kärbholz	+	+	+	?	0	0	0	0	Headbangers Stage	31-07-2015_16:55	31-07-2015_17:40
+Lord Of The Lost	++	++	++	?	1	0	0	0	Wackinger Stage	01-08-2015_22:30	01-08-2015_23:30
+Mantar	?	-	?	?	0	0	0	0	Headbangers Stage	30-07-2015_23:20	31-07-2015_00:05
 Mushroomhead	+	?	+	?	0	0	0	0	NA		
-My Dying Bride	+	?	+	++	0	0	0	0	NA		
-New Model Army	?	?	?	?	0	0	0	0	NA		
-Noctiferia	?	--	+	?	0	0	0	0	NA		
-Mambo Kurt	++	+	++	+++	5	3	4	1	Beergarden Stage		
-Materia	+	?	+	NA	0	0	0	0	NA		
-Megabosch	?	--	?	NA	0	0	0	0	Wasteland Stage		
-Metaprism	+	++	++	?	0	0	0	0	NA		
-Monstagon	+	+	?	NA	0	0	0	0	Wasteland Stage		
-Morgoth	-	--	-	?	0	0	0	0	NA		
-Mr. Hurley & Die Pulveraffen	+	+++	+	+	1	2	1	1	Wackinger Stage		
-Nuclear Assault	+	?	?	?	0	0	0	0	NA		
-Obituary	?	--	?	+	0	0	0	0	NA		
-Oomph!	++	++	++	++	1	1	1	0	NA		
-Opeth	++	?	+	+++	5	1	1	2	NA		
-Pampatut	?	?	?	?	0	0	0	0	Wackinger Stage		
-Powerwolf	++	++	++	+	1	0	1	0	NA		
-Queensrÿche	++	+	+	?	0	0	0	0	NA		
-Renaissense	+	?	+	NA	0	0	0	0	NA		
-Rob Zombie	++	+	++	+++	1	0	0	1	NA		
-Rock Meets Classic	++	++	++	++	0	0	0	0	NA		
-Running Wild	++	++	++	+	0	0	1	0	NA		
-Sabaton	++	++	++	+	1	0	1	0	NA		
-Samael	+	?	+	?	0	0	0	0	NA		
-Santiano	+	+	+	-	3	2	1	0	NA		
-Savatage	++	+	+++	+	0	0	0	0	NA		
-Scratch the Floor	++	++	+	NA	0	0	0	0	NA		
-Sepultura	+	-	++	++	0	0	1	0	NA		
-Shining	?	-	?	+	0	0	0	0	NA		
-Silius	?	--	?	NA	0	0	0	0	NA		
-Skiltron	++	+	?	?	0	0	0	0	NA		
-Skindred	?	+	+	?	0	0	0	0	NA		
-Steve'n'Seagulls	+	+	+	+	0	0	0	0	Beergarden Stage		
-Stoneman	+	-	++	+	1	0	0	0	NA		
-Stratovarius	++	++	++	++	1	1	0	0	NA		
-Subway To Sally	++	+++	++	?	16	5	4	0	NA		
-Suicide Silence	+	--	?	NA	0	0	0	0	NA		
-Tears for Beers	+	?	?	?	0	0	0	0	NA		
-The Answer	+	+	?	?	0	0	NA	0	NA		
-The BossHoss	+	++	++	+	2	1	NA	0	NA		
-The Gentle Storm	++	?	+	NA	0	0	0	0	NA		
-The Quireboys	+	++	+	?	0	0	NA	0	NA		
-Thyrfing	+	+	+	+	0	0	0	0	NA		
-Trans-Siberian Orchestra	++	+	+++	+	0	0	0	0	NA		
-Truckfighters	+	+	+	+++	1	0	0	2	NA		
-Troldskugge	-	---	?	NA	0	0	0	0	NA		
-U.D.O.	++	+	?	+	1	1	1	0	NA		
-Uli Jon Roth	+	?	?	?	0	0	0	0	NA		
-Vroudenspil	+	+	?	NA	0	0	0	0	NA		
-Walking Dead On Broadway	-	---	-	NA	0	0	0	0	NA		
-Waltari	++	+	++	?	0	0	0	0	NA		
-Within Temptation	++	++	++	++	0	0	1	0	NA		
-W:O:A Firefighters	+	+	?	+	4	2	1	0	Beergarden Stage		
-Ye Banished Privateers	+	+	?	NA	0	0	0	0	NA		
-Zodiac	++	+	+	++	0	0	0	0	NA		
+My Dying Bride	+	?	+	++	0	0	0	0	Wet Stage	01-08-2015_01:05	01-08-2015_02:05
+New Model Army	?	?	?	?	0	0	0	0	Headbangers Stage	29-07-2015_21:00	29-07-2015_22:00
+Noctiferia	?	--	+	?	0	0	0	0	Wet Stage	30-07-2015_19:05	30-07-2015_19:35
+Mambo Kurt	++	+	++	+++	5	3	4	1	Wet Stage	29-07-2015_20:05	29-07-2015_20:50
+Mambo Kurt	++	+	++	+++	5	3	4	1	Beergarden Stage	29-07-2015_15:30	29-07-2015_16:00
+Mambo Kurt	++	+	++	+++	5	3	4	1	Beergarden Stage	01-08-2015_19:00	01-08-2015_19:45
+Materia	+	?	+	NA	0	0	0	0	Headbangers Stage	29-07-2015_16:10	29-07-2015_16:30
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	29-07-2015_15:00	29-07-2015_15:30
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	29-07-2015_23:00	30-07-2015_00:00
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	30-07-2015_15:00	30-07-2015_15:30
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	30-07-2015_22:30	30-07-2015_23:30
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	31-07-2015_20:30	31-07-2015_21:00
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	31-07-2015_23:30	01-08-2015_00:30
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	01-08-2015_20:30	01-08-2015_21:00
+Megabosch	?	--	?	NA	0	0	0	0	Wackinger Village	01-08-2015_23:30	02-08-2015_00:30
+Metaprism	+	++	++	?	0	0	0	0	Wet Stage	30-07-2015_18:15	30-07-2015_18:35
+Monstagon	+	+	?	NA	0	0	0	0	Wackinger Village	31-07-2015_16:00	31-07-2015_16:30
+Morgoth	-	--	-	?	0	0	0	0	Wet Stage	01-08-2015_19:50	01-08-2015_20:35
+Mr. Hurley & Die Pulveraffen	+	+++	+	+	1	2	1	1	Wackinger Stage	29-07-2015_14:00	29-07-2015_14:45
+Mr. Hurley & Die Pulveraffen	+	+++	+	+	1	2	1	1	Wackinger Stage	30-07-2015_15:30	30-07-2015_16:15
+Mr. Hurley & Die Pulveraffen	+	+++	+	+	1	2	1	1	Wackinger Stage	31-07-2015_19:30	31-07-2015_20:15
+Nuclear Assault	+	?	?	?	0	0	0	0	Wet Stage	31-07-2015_23:20	01-08-2015_00:05
+Obituary	?	--	?	+	0	0	0	0	Wet Stage	01-08-2015_23:30	02-08-2015_00:15
+Oomph!	++	++	++	++	1	1	1	0	Party Stage	31-07-2015_21:00	31-07-2015_22:15
+Opeth	++	?	+	+++	5	1	1	2	Black Stage	31-07-2015_18:00	31-07-2015_19:15
+Pampatut	?	?	?	?	0	0	0	0	Wackinger Stage	01-08-2015_15:00	01-08-2015_15:45
+Powerwolf	++	++	++	+	1	0	1	0	True Metal Stage	01-08-2015_13:15	01-08-2015_14:15
+Queensrÿche	++	+	+	?	0	0	0	0	True Metal Stage	31-07-2015_16:45	31-07-2015_17:45
+Renaissense	+	?	+	NA	0	0	0	0	Wet Stage	29-07-2015_15:45	29-07-2015_16:05
+Rob Zombie	++	+	++	+++	1	0	0	1	True Metal Stage	30-07-2015_19:20	30-07-2015_20:50
+Rock Meets Classic	++	++	++	++	0	0	0	0	Black Stage	01-08-2015_17:30	01-08-2015_18:45
+Running Wild	++	++	++	+	0	0	1	0	Black Stage	01-08-2015_00:00	01-08-2015_01:30
+Sabaton	++	++	++	+	1	0	1	0	Black Stage	01-08-2015_20:30	01-08-2015_22:00
+Samael	+	?	+	?	0	0	0	0	Wet Stage	31-07-2015_21:30	31-07-2015_22:15
+Santiano	+	+	+	-	3	2	1	0	Party Stage	02-08-2015_00:15	02-08-2015_01:30
+Savatage	++	+	+++	+	0	0	0	0	Black Stage	30-07-2015_21:45	31-07-2015_00:00
+Scratch the Floor	++	++	+	NA	0	0	0	0	Headbangers Stage	29-07-2015_11:25	29-07-2015_11:45
+Sepultura	+	-	++	++	0	0	1	0	Black Stage	31-07-2015_13:05	31-07-2015_14:05
+Shining	?	-	?	+	0	0	0	0	Wet Stage	02-08-2015_01:20	02-08-2015_02:05
+Silius	?	--	?	NA	0	0	0	0	Headbangers Stage	30-07-2015_11:25	30-07-2015_11:45
+Skiltron	++	+	?	?	0	0	0	0	Wackinger Stage	01-08-2015_16:30	01-08-2015_17:15
+Skindred	?	+	+	?	0	0	0	0	Party Stage	01-08-2015_14:30	01-08-2015_15:45
+Steve'n'Seagulls	+	+	+	+	0	0	0	0	Beergarden Stage	01-08-2015_17:30	01-08-2015_18:30
+Stoneman	+	-	++	+	1	0	0	0	Wet Stage	31-07-2015_16:00	31-07-2015_16:45
+Stratovarius	++	++	++	++	1	1	0	0	Party Stage	31-07-2015_15:30	31-07-2015_16:30
+Subway To Sally	++	+++	++	?	16	5	4	0	True Metal Stage	02-08-2015_01:45	02-08-2015_02:45
+Suicide Silence	+	--	?	NA	0	0	0	0	Headbangers Stage	01-08-2015_22:35	01-08-2015_23:20
+Tears for Beers	+	?	?	?	0	0	0	0	Wackinger Stage	30-07-2015_20:00	30-07-2015_20:45
+The Answer	+	+	?	?	0	0	NA	0	Wet Stage	30-07-2015_22:30	30-07-2015_23:15
+The BossHoss	+	++	++	+	2	1	NA	0	True Metal Stage	01-08-2015_01:45	01-08-2015_03:00
+The Gentle Storm	++	?	+	NA	0	0	0	0	Wackinger Stage	29-07-2015_18:30	29-07-2015_19:15
+The Quireboys	+	++	+	?	0	0	NA	0	Headbangers Stage	30-07-2015_21:40	30-07-2015_22:25
+Thyrfing	+	+	+	+	0	0	0	0	Headbangers Stage	31-07-2015_18:45	31-07-2015_19:30
+Trans-Siberian Orchestra	++	+	+++	+	0	0	0	0	True Metal Stage	30-07-2015_21:45	31-07-2015_00:00
+Truckfighters	+	+	+	+++	1	0	0	2	Headbangers Stage	31-07-2015_15:05	31-07-2015_15:50
+Troldskugge	-	---	?	NA	0	0	0	0	Headbangers Stage	30-07-2015_16:10	30-07-2015_16:30
+U.D.O.	++	+	?	+	1	1	1	0	True Metal Stage	30-07-2015_16:00	30-07-2015_17:30
+Uli Jon Roth	+	?	?	?	0	0	0	0	Wet Stage	29-07-2015_22:10	29-07-2015_23:25
+Vroudenspil	+	+	?	NA	0	0	0	0	Wackinger Stage	29-07-2015_11:00	29-07-2015_11:45
+Walking Dead On Broadway	-	---	-	NA	0	0	0	0	Headbangers Stage	01-08-2015_17:05	01-08-2015_17:40
+Waltari	++	+	++	?	0	0	0	0	Headbangers Stage	02-08-2015_02:15	02-08-2015_03:00
+Within Temptation	++	++	++	++	0	0	1	0	Party Stage	01-08-2015_00:00	01-08-2015_01:30
+W:O:A Firefighters	+	+	?	+	4	2	1	0	Beergarden Stage	29-07-2015_20:00	29-07-2015_21:00
+W:O:A Firefighters	+	+	?	+	4	2	1	0	Beergarden Stage	30-07-2015_18:15	30-07-2015_19:15
+W:O:A Firefighters	+	+	?	+	4	2	1	0	Beergarden Stage	01-08-2015_14:00	01-08-2015_14:45
+Ye Banished Privateers	+	+	?	NA	0	0	0	0	Wackinger Stage	29-07-2015_15:30	29-07-2015_16:15
+Zodiac	++	+	+	++	0	0	0	0	Wet Stage	31-07-2015_11:00	31-07-2015_11:45
