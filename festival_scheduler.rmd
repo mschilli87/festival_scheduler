@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: added date/time parsing
+# 2015-07-26: converted score for output to percent
+#             added date/time parsing
 #             added rounding of numbers in table
 #             removed second definition of live.counts.cols (copy/paste error)
 # 2015-07-23: removed superfluous loading of unused plyr library
@@ -194,7 +195,9 @@ For now, the festival scheduler simply reproduces the spreadsheet table:
 
 ```{r print_table,result="asis"}
 # convert date/times to strings & remove columns that used to be hidden in the spreadsheet
-tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols,"score","stage")]
+tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols)]
+                     ,score=paste0(round(tab$score,digits.table)*100,"%")
+                     ,stage=tab$stage
                      ,start=strftime(tab$start)
                      ,end=strftime(tab$end)
                      )
@@ -203,7 +206,7 @@ tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols,"score","stage")
 tab.print[is.na(tab.print)]<-"tbc"
 
 # print table sorted by score
-kable(tab.print[order(tab.print$score
+kable(tab.print[order(tab$score
                      ,decreasing=T
                      )
                ,
