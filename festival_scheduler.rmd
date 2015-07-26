@@ -5,7 +5,7 @@
 
 # file:         festival_scheduler.rmd
 # created:      2015-07-23
-# last update:  2015-07-23
+# last update:  2015-07-26
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
 #               Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
@@ -16,6 +16,9 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2015-07-26: added date/time parsing
+#             added rounding of numbers in table
+#             removed second definition of live.counts.cols (copy/paste error)
 # 2015-07-23: removed superfluous loading of unused plyr library
 #             initial version (reproduce spreadsheet table)
 
@@ -94,6 +97,20 @@ if(!exists("rating2score")) rating2score<-c('---'=-3
                                            ,'+++'= 5
                                            )
 
+
+# define default rounding precision for numbers in output table (if not defined in the knit'ing R
+# session)
+if(!exists("digits.table")) digits.table<-2
+
+# define default strptime format for date/time strings in input table (if not defined in the
+# knit'ing R session)
+if(!exists("format.datetime")) format.datetime<-"%F %R"
+
+# define default time zone (if not defined in the knit'ing R session)
+if(!exists("timezone")) timezone<-"GMT"
+
+
+
 #############
 # functions #
 #############
@@ -123,7 +140,12 @@ live_count2score<-function(live_count,rating_score)
 ##################
 
 # read table TSV
-tab<-read.table(table_tsv,sep="\t",header=T,quote="\"",na.string="NA")
+tab<-read.table(table_tsv,sep="\t",header=T,quote="\"",na.strings=c("","NA"))
+```
+
+```{r parse_datetime}
+tab$start<-strptime(tab$start,format.datetime)
+tab$end<-strptime(tab$end,format.datetime)
 ```
 
 ```{r remove_nas}
@@ -134,10 +156,6 @@ tab[,rating.cols][is.na(tab[,rating.cols])]<-"?"
 # replace missing live counts with 0
 live_count.cols<-sub("rating.","live_count.",rating.cols,fixed=T)
 tab[,live_count.cols][is.na(tab[,live_count.cols])]<-0
-
-# replace remaining missing values with "tbc"
-live_count.cols<-sub("rating.","live_count.",rating.cols,fixed=T)
-tab[is.na(tab)]<-"tbc"
 ```
 
 ```{r add_scores}
@@ -175,12 +193,22 @@ tab$score<-with(tab,(normalization.sum-min(normalization.sum))/(max(normalizatio
 For now, the festival scheduler simply reproduces the spreadsheet table:
 
 ```{r print_table,result="asis"}
-# print table exlucing columns that used to be hidden in the spreadsheet
-kable(tab[order(tab$score
-               ,decreasing=T
-               )
-         ,c("band",rating.cols,live_count.cols,"score","stage","start","end")
-         ]
+# convert date/times to strings & remove columns that used to be hidden in the spreadsheet
+tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols,"score","stage")]
+                     ,start=strftime(tab$start)
+                     ,end=strftime(tab$end)
+                     )
+
+# replace missing values with "tbc"
+tab.print[is.na(tab.print)]<-"tbc"
+
+# print table sorted by score
+kable(tab.print[order(tab.print$score
+                     ,decreasing=T
+                     )
+               ,
+               ]
+     ,digits=digits.table
      ,row.names=F
      )
 ```
