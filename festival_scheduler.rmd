@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: removed second definition of live.counts.cols (copy/paste error)
+# 2015-07-26: added rounding of numbers in table
+#             removed second definition of live.counts.cols (copy/paste error)
 # 2015-07-23: removed superfluous loading of unused plyr library
 #             initial version (reproduce spreadsheet table)
 
@@ -94,6 +95,11 @@ if(!exists("rating2score")) rating2score<-c('---'=-3
                                            , '++'= 3
                                            ,'+++'= 5
                                            )
+
+# define default rounding precision for numbers in output table (if not defined in the knit'ing R
+# session)
+if(!exists("digits.table")) digits.table<-2
+
 
 #############
 # functions #
@@ -181,6 +187,7 @@ kable(tab[order(tab$score
                )
          ,c("band",rating.cols,live_count.cols,"score","stage","start","end")
          ]
+     ,digits=digits.table
      ,row.names=F
      )
 ```
