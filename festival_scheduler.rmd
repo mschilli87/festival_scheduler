@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: converted score for output to percent
+# 2015-07-26: added date/time formatting for output table
+#             converted score for output to percent
 #             added date/time parsing
 #             added rounding of numbers in table
 #             removed second definition of live.counts.cols (copy/paste error)
@@ -105,7 +106,11 @@ if(!exists("digits.table")) digits.table<-2
 
 # define default strptime format for date/time strings in input table (if not defined in the
 # knit'ing R session)
-if(!exists("format.datetime")) format.datetime<-"%F %R"
+if(!exists("format.datetime.input")) format.datetime.input<-"%F %R"
+
+# define default strftime format for date/time strings in output table (if not defined in the
+# knit'ing R session)
+if(!exists("format.datetime.output")) format.datetime.output<-"%F %R"
 
 # define default time zone (if not defined in the knit'ing R session)
 if(!exists("timezone")) timezone<-"GMT"
@@ -145,8 +150,8 @@ tab<-read.table(table_tsv,sep="\t",header=T,quote="\"",na.strings=c("","NA"))
 ```
 
 ```{r parse_datetime}
-tab$start<-strptime(tab$start,format.datetime)
-tab$end<-strptime(tab$end,format.datetime)
+tab$start<-strptime(tab$start,format.datetime.input,timezone)
+tab$end<-strptime(tab$end,format.datetime.input,timezone)
 ```
 
 ```{r remove_nas}
@@ -198,8 +203,8 @@ For now, the festival scheduler simply reproduces the spreadsheet table:
 tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols)]
                      ,score=paste0(round(tab$score,digits.table)*100,"%")
                      ,stage=tab$stage
-                     ,start=strftime(tab$start)
-                     ,end=strftime(tab$end)
+                     ,start=strftime(tab$start,format.datetime.output)
+                     ,end=strftime(tab$end,format.datetime.output)
                      )
 
 # replace missing values with "tbc"
