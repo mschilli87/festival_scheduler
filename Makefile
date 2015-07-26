@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: adjusted strptime format parameter name for compatibility with upstream changes
+# 2015-07-26: added strftime format parameter to print weekdays instead of dates
+#             adjusted strptime format parameter name for compatibility with upstream changes
 #             added date/time parameters (strptime format & time zone)
 # 2015-07-24: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
 #             Markdown-to-HTML conversion
@@ -31,6 +32,9 @@ DATE_TIME_FORMAT_INPUT:=%d-%m-%Y_%R
 
 # time zone
 TIMEZONE:=CET
+
+# strftime format for data/time strings used in output Markdown/HTML files
+DATE_TIME_FORMAT_OUTPUT:=%a %R
 
 
 ####################
@@ -100,6 +104,7 @@ define SCHEDULER_PARAMS
   table_tsv<-"$(FESTIVAL_TSV)"
   format.datetime.input<-"$(DATE_TIME_FORMAT_INPUT)"
   timezone<-"$(TIMEZONE)"
+  format.datetime.output<-"$(DATE_TIME_FORMAT_OUTPUT)"
 endef
 
 # define helper variable to use multi-line variable as multi-line string
