@@ -4,7 +4,7 @@
 
 # file:         Makefile
 # created:      2015-07-23
-# last update:  2015-07-24
+# last update:  2015-07-26
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      automize generation of festival runnig orders based on ratings
@@ -14,10 +14,22 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2015-07-26: added date/time parameters (strptime format & time zone)
 # 2015-07-24: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
 #             Markdown-to-HTML conversion
 # 2015-07-23: replaced placeholder TSV file name by WOA 2015 input file
 #             initial version (running order generation)
+
+
+##############
+# parameters #
+##############
+
+# strptime format for data/time strings used in input TSV file
+DATE_TIME_FORMAT:=%d-%m-%Y_%R
+
+# time zone
+TIMEZONE:=CET
 
 
 ####################
@@ -85,6 +97,8 @@ SPACE+=
 # define multi-line running order parameters (must not include single-quotes or TABs)
 define SCHEDULER_PARAMS
   table_tsv<-"$(FESTIVAL_TSV)"
+  format.datetime<-"$(DATE_TIME_FORMAT)"
+  timezone<-"$(TIMEZONE)"
 endef
 
 # define helper variable to use multi-line variable as multi-line string
