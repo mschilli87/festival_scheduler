@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: added date/time parameters (strptime format & time zone)
+# 2015-07-26: adjusted strptime format parameter name for compatibility with upstream changes
+#             added date/time parameters (strptime format & time zone)
 # 2015-07-24: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
 #             Markdown-to-HTML conversion
 # 2015-07-23: replaced placeholder TSV file name by WOA 2015 input file
@@ -26,7 +27,7 @@
 ##############
 
 # strptime format for data/time strings used in input TSV file
-DATE_TIME_FORMAT:=%d-%m-%Y_%R
+DATE_TIME_FORMAT_INPUT:=%d-%m-%Y_%R
 
 # time zone
 TIMEZONE:=CET
@@ -97,7 +98,7 @@ SPACE+=
 # define multi-line running order parameters (must not include single-quotes or TABs)
 define SCHEDULER_PARAMS
   table_tsv<-"$(FESTIVAL_TSV)"
-  format.datetime<-"$(DATE_TIME_FORMAT)"
+  format.datetime.input<-"$(DATE_TIME_FORMAT_INPUT)"
   timezone<-"$(TIMEZONE)"
 endef
 
