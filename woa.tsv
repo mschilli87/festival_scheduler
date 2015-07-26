@@ -5,7 +5,7 @@
 # file:         woa.tsv
 # created:      2015-07-23
 # last update:  2015-07-26
-# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>, (MS)
+# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
 #               Sandra Appelt <sandra.appelt@charite.de> (SA)
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      input file for WOA 2015 scheduling
@@ -15,7 +15,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-26: (MS) added header comments
+# 2015-07-26: (MS) added author(s) comment (wrongly placed comma)
+#             (MS) added header comments
 # 2015-07-24: (SA) added second time slot for The Quireboys
 #             (SA) added time slots and places for bands (resolving github issue #1)
 # 2015-07-23: (MS) initial version (initial version with non-computed columns of the spreadsheet
