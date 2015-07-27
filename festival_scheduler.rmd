@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-27: added splitting of table structure into non-redundant sets for processing
+# 2015-07-27: fixed typo in comment
+#             added splitting of table structure into non-redundant sets for processing
 # 2015-07-26: added date/time formatting for output table
 #             converted score for output to percent
 #             added date/time parsing
@@ -242,7 +243,7 @@ scores<-(normalization.sums-min(normalization.sums))/(max(normalization.sums)-mi
 For now, the festival scheduler simply reproduces the spreadsheet table:
 
 ```{r print_table,result="asis"}
-# assemble output table convertinf date/times to strings & scores to percent
+# assemble output table converting date/times to strings & scores to percent
 tab<-with(gigs
          ,data.frame(band
                     ,setNames(ratings[band,],paste0("rating.",members))
