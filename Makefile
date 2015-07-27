@@ -4,16 +4,17 @@
 
 # file:         Makefile
 # created:      2015-07-23
-# last update:  2015-07-23
+# last update:  2015-07-27
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:      automize generation of festival runnig orders based on ratings
+# purpose:      automize generation of festival running orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
+# 2015-07-27: fixed typo in purpose comment
 # 2015-07-23: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
 #             Markdown-to-HTML conversion
 #             initial version (running order generation)
