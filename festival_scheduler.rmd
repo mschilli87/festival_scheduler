@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-27: fixed typo in comment
+# 2015-07-27: added group running order
+#             fixed typo in comment
 #             added splitting of table structure into non-redundant sets for processing
 # 2015-07-26: added date/time formatting for output table
 #             converted score for output to percent
@@ -268,3 +269,84 @@ kable(tab[order(scores[gigs$band]
      ,row.names=F
      )
 ```
+
+```{r schedule}
+# discard gigs with missing information
+gigs<-gigs[!unlist(alply(gigs[,c("band","start","end")],1,anyNA)),]
+
+# identify all time intervals with different gig combinations
+times<-sort(with(gigs,c(start,end)))
+intervals<-unique(ldply(1:sum(times<tail(times,1))
+                       ,function(begin)
+                          data.frame(interval.begin=times[begin]
+                                    ,interval.end=times[times>times[begin]][1]
+                                    )
+                       )
+                 )
+# identify corresponding gigs
+intervals<-alply(intervals
+                ,1
+                ,with
+                ,list(interval.begin=interval.begin
+                     ,interval.end=interval.end
+                     ,interval.gigs=which(gigs$start<=interval.begin&gigs$end>=interval.end)
+                     )
+                )
+
+# discard intervals without gigs
+intervals<-intervals[llply(intervals,with,length(interval.gigs))!=0]
+
+# order interval gigs by scores
+intervals<-llply(intervals
+                ,with
+                ,list(interval.begin=interval.begin
+                     ,interval.end=interval.end
+                     ,interval.gigs=interval.gigs[order(scores[gigs$band[interval.gigs]],decreasing=T)]
+                     )
+                )
+```
+
+## Running order
+
+For now, only the group running oder is generated:
+
+```{r print_running_order,result="asis",}
+# select top scored band per interval
+running_order<-ldply(intervals
+                    ,with
+                    ,data.frame(start=interval.begin
+                               ,end=interval.end
+                               ,interval.gig=interval.gigs[1]
+                               ,band=gigs$band[interval.gigs][1]
+                               ,stage=gigs$stage[interval.gigs][1]
+                               )
+                    ,.id=NULL
+                    )
+
+# merge intervals with same gig
+running_order<-ddply(running_order
+                    ,.(interval.gig)
+                    ,with
+                    ,data.frame(start=min(start)
+                               ,end=max(end)
+                               ,band=band[1]
+                               ,stage=stage[1]
+                               )
+                    )
+
+
+# print running order converting date/times to string & adding scores
+kable(with(running_order
+          ,data.frame(start=strftime(start,format.datetime.output)
+                     ,end=strftime(end,format.datetime.output)
+                     ,band
+                     ,stage
+                     ,score=paste0(round(scores[band],digits.table)*100,"%")
+                     )
+           )
+     )
+```
+
+Note that the above running oder may still contain overlaps.
+This can be happen if a short gig falls completely into a longer gig with lower score, that is the best scored gig in both intervals, before and after the shorter gig.
+This is not intended and will be resolved in future versions.
