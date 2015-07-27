@@ -5,7 +5,7 @@
 
 # file:         festival_scheduler.rmd
 # created:      2015-07-23
-# last update:  2015-07-26
+# last update:  2015-07-27
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
 #               Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
@@ -16,6 +16,7 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2015-07-27: added splitting of table structure into non-redundant sets for processing
 # 2015-07-26: added date/time formatting for output table
 #             converted score for output to percent
 #             added date/time parsing
@@ -114,7 +115,16 @@ if(!exists("format.datetime.output")) format.datetime.output<-"%F %R"
 
 # define default time zone (if not defined in the knit'ing R session)
 if(!exists("timezone")) timezone<-"GMT"
+```
 
+
+```{r libraries,include=F,eval=T,cache=F}
+#############
+# libraries #
+#############
+
+# use efficient apply functions
+require(plyr)
 
 
 #############
@@ -159,33 +169,66 @@ tab$end<-strptime(tab$end,format.datetime.input,timezone)
 rating.cols<-grep("rating.",colnames(tab),fixed=T,value=T)
 tab[,rating.cols][is.na(tab[,rating.cols])]<-"?"
 
+# get group members
+members<-sub("rating.","",rating.cols)
+
 # replace missing live counts with 0
-live_count.cols<-sub("rating.","live_count.",rating.cols,fixed=T)
+live_count.cols<-paste0("live_count.",members)
 tab[,live_count.cols][is.na(tab[,live_count.cols])]<-0
 ```
 
-```{r add_scores}
+```{r untable}
+# get bands
+bands<-sort(unique(tab$band))
+
+# identify first entry per band
+bands.rows<-laply(bands,function(band) which(tab$band==band)[1])
+
+# get ratings
+ratings<-setNames(data.frame(tab[bands.rows,rating.cols],row.names=bands),members)
+
+# get live counts
+live_counts<-setNames(data.frame(tab[bands.rows,live_count.cols],row.names=bands),members)
+
+# get gigs
+gigs<-tab[order(tab$start),c("band","stage","start","end")]
+```
+
+```{r get_scores}
 ###############
 # score bands #
 ###############
 
-# add ratings scores
-rating_score.cols<-sub("rating.","rating_score.",rating.cols,fixed=T)
-tab[,rating_score.cols]<-rating2score[as.matrix(tab[,rating.cols])]
-
-# add live scores
-live_score.cols<-sub("_count.","_score.",live_count.cols,fixed=T)
-tab[,live_score.cols]<-live_count2score(as.matrix(tab[,live_count.cols])
-                                       ,as.matrix(tab[,rating_score.cols])
+# get ratings scores
+rating_scores<-data.frame(do.call(cbind
+                                 ,llply(ratings
+                                       ,'['
+                                       ,x=rating2score
                                        )
+                                 )
+                         ,row.names=bands
+                         )
 
-# add total scores
-total_score.cols<-sub("live_","total_",live_score.cols,fixed=T)
-tab[,total_score.cols]<-as.matrix(tab[,rating_score.cols])+as.matrix(tab[,live_score.cols])
+# get live scores
+live_scores<-setNames(data.frame(do.call(cbind
+                                        ,llply(members
+                                              ,function(member)
+                                                  live_count2score(live_counts[,member]
+                                                                  ,rating_scores[,member]
+                                                                  )
+                                              )
+                                        )
+                                ,row.names=bands
+                                )
+                     ,members
+                     )
+
+# get total scores
+total_scores<-rating_scores+live_scores
 
 # normalize scores
-tab$normalization.sum<-rowSums(tab[,total_score.cols])
-tab$score<-with(tab,(normalization.sum-min(normalization.sum))/(max(normalization.sum)-min(normalization.sum)))
+normalization.sums<-rowSums(total_scores)
+scores<-(normalization.sums-min(normalization.sums))/(max(normalization.sums)-min(normalization.sums))
 
 
 ################
@@ -199,23 +242,27 @@ tab$score<-with(tab,(normalization.sum-min(normalization.sum))/(max(normalizatio
 For now, the festival scheduler simply reproduces the spreadsheet table:
 
 ```{r print_table,result="asis"}
-# convert date/times to strings & remove columns that used to be hidden in the spreadsheet
-tab.print<-data.frame(tab[,c("band",rating.cols,live_count.cols)]
-                     ,score=paste0(round(tab$score,digits.table)*100,"%")
-                     ,stage=tab$stage
-                     ,start=strftime(tab$start,format.datetime.output)
-                     ,end=strftime(tab$end,format.datetime.output)
-                     )
+# assemble output table convertinf date/times to strings & scores to percent
+tab<-with(gigs
+         ,data.frame(band
+                    ,setNames(ratings[band,],paste0("rating.",members))
+                    ,setNames(live_counts[band,],paste0("live_count.",members))
+                    ,score=paste0(round(scores[band],digits.table)*100,"%")
+                    ,stage
+                    ,start=strftime(start,format.datetime.output)
+                    ,end=strftime(end,format.datetime.output)
+                    )
+         )
 
 # replace missing values with "tbc"
-tab.print[is.na(tab.print)]<-"tbc"
+tab[is.na(tab)]<-"tbc"
 
 # print table sorted by score
-kable(tab.print[order(tab$score
-                     ,decreasing=T
-                     )
-               ,
-               ]
+kable(tab[order(scores[gigs$band]
+               ,decreasing=T
+               )
+         ,
+         ]
      ,digits=digits.table
      ,row.names=F
      )
