@@ -4,16 +4,17 @@
 
 # file:         Makefile
 # created:      2015-07-23
-# last update:  2015-07-26
+# last update:  2015-07-27
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:      automize generation of festival runnig orders based on ratings
+# purpose:      automize generation of festival running orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
+# 2015-07-27: fixed typo in purpose comment
 # 2015-07-26: added strftime format parameter to print weekdays instead of dates
 #             adjusted strptime format parameter name for compatibility with upstream changes
 #             added date/time parameters (strptime format & time zone)
