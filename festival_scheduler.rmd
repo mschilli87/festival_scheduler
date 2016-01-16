@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-01-16: added personal running orders (most code written already in 2015-07)
+# 2016-01-16: fixed knitr chunk option lists ('result' --> 'results' / removed superfluous ';')
+#             added personal running orders (most code written already in 2015-07)
 # 2015-07-27: added group running order
 #             fixed typo in comment
 #             added splitting of table structure into non-redundant sets for processing
@@ -244,7 +245,7 @@ scores<-(normalization.sums-min(normalization.sums))/(max(normalization.sums)-mi
 
 For now, the festival scheduler simply reproduces the spreadsheet table:
 
-```{r print_table,result="asis"}
+```{r print_table,results="asis"}
 # assemble output table converting date/times to strings & scores to percent
 tab<-with(gigs
          ,data.frame(band
@@ -329,7 +330,7 @@ intervals<-llply(intervals
 
 For now, only the group running oder is generated:
 
-```{r print_running_order,result="asis",}
+```{r print_running_order,results="asis"}
 # select top scored band per interval
 running_order<-ldply(intervals
                     ,with
