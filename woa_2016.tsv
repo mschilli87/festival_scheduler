@@ -1,0 +1,134 @@
+#######################
+# general information #
+#######################
+
+# file:       woa_2016.tsv
+# created:    2016-01-16
+# author(s):  Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:    GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:    input file for WOA 2016 scheduling
+
+
+######################################
+# change log (reverse chronological) #
+######################################
+
+# 2016-01-16: initial version (band & user names only)
+
+
+#########
+# table #
+#########
+
+band	rating.Marcel	rating.Inbal	rating.Rick	rating.Marta	live_count.Marcel	live_count.Inbal	live_count.Rick	live_count.Marta	stage	start	end
+1349	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+9mm	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Alcest	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Arch Enemy	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Aura Noir	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Axel Rudi Pell	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bembers	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Benediction	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blechblosn	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bliksem	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blind Guardian	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blue Oyster Cult	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bodhaktan	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bon Scott	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Borknagar	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bullet For My Valentine	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bury Tomorrow	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Caliban	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Callejon	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Clutch	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cripper	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Dagoba	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Deez Nuts	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Der Weg einer Freiheit	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Devil Driver	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Dorfrocker	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Dragonforce	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Dritte Wahl	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Drone	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Eat The Turnbuckle	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Einherjer	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ektomorf	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Eluveitie	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Elvenking	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Entombed A.D.	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Equilibrium	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Eric Fish and Friends	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Eskimo Callboy	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Fateful Finality	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Feuerschwanz	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Foreigner	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Freiwächter	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Girlschool	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+GloryHammer	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Hämatom	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Henry Rollins	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ihsahn	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Immolation	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Insidious Disease	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Iron Maiden	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Jesus Chrüsler Supercar	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+John Coffey	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kampfar	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+King Dude	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Krayenzeit	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kylesa	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Lamb of God	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Legion Of The Damned	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Loudness	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Marduk	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Metal Church	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Michael Monroe	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ministry	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Monstagon	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Monuments	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mr. Hurley und die Pulveraffen	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Myrkur	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Nasty	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Negative Approach	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Orden Ogan	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Orphaned Land	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Pampatut	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Panzerballett	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Parkway Drive	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Pyogenesis	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Red Fang	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Red Hot Chili Pipers	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Reliquiae	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Saxon	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sebastien	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sector	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Serious Black	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Serum 114	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Snowy Shaw	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Steel Panther	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Stick To Your Guns	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sub Dub Micromachine	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Symphony X	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Tarja	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Testament	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Beards	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Black Dahlia Murder	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Goddamn Gallows	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Haunted	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Other	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+The Vintage Caravan	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Therapy?	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Therion	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Torfrock	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Triptykon	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Tsjuder	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+tuXedoo	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Twisted Sister	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Unisonic	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Vader	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Versengold	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Vogelfrey	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Watch Out Stampede	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+While She Sleeps	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Whitesnake	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Year of The Goat	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

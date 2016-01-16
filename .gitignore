@@ -2,29 +2,26 @@
 # general information #
 #######################
 
-# file:         .gitignore
-# created:      2015-07-23
-# last uodate:  2015-07-27
-# author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
-# license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:      untrack files generated during generation of festival running orders based on
-#               ratings
+# file:       .gitignore
+# created:    2016-01-16
+# author(s):  Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:    GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:    untrack files generated during generation of festival running orders based on ratings
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
-# 2015-07-27: fixed typo in purpose comment
-# 2015-07-23: initial version (WOA 2015 Markdown & HTML output files)
+# 2016-01-16: initial version (WOA 2016 Markdown & HTML output files)
 
 
 ################
 # output files #
 ################
 
-# WOA 2015 Markdown output file
-/woa.md
+# WOA 2016 Markdown output file
+/woa_2016.md
 
-# WOA 2015 HTML output file
-/woa.html
+# WOA 2016 HTML output file
+/woa_2016.html
