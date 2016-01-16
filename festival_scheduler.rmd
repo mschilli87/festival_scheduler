@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-01-16: fixed knitr chunk option lists ('result' --> 'results' / removed superfluous ';')
+# 2016-01-16: stopped running scheduler without full-information gigs
+#             fixed knitr chunk option lists ('result' --> 'results' / removed superfluous ';')
 #             added personal running orders (most code written already in 2015-07)
 # 2015-07-27: added group running order
 #             fixed typo in comment
@@ -272,10 +273,15 @@ kable(tab[order(scores[gigs$band]
      )
 ```
 
-```{r schedule}
+```{r check.run_scheduler}
 # discard gigs with missing information
 gigs<-gigs[!unlist(alply(gigs[,c("band","start","end")],1,anyNA)),]
 
+# only run scheduler if there is at least one gig with full information
+if(nrow(gigs)==0) knit_exit()
+```
+
+```{r schedule}
 # identify all time intervals with different gig combinations
 times<-sort(with(gigs,c(start,end)))
 intervals<-unique(ldply(1:sum(times<tail(times,1))
