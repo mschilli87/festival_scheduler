@@ -4,7 +4,7 @@
 
 # file:         woa_2016.tsv
 # created:      2016-01-16
-# last update:  2016-01-23
+# last update:  2016-01-24
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      input file for WOA 2016 scheduling
@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-01-22: added ratings/live counts for Marcel, Inbal & Rick
+# 2016-01-24: fixed date in changelog comment
+# 2016-01-23: added ratings/live counts for Marcel, Inbal & Rick
 # 2016-01-16: initial version (band & user names only)
 
 
