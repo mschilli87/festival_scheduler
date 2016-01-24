@@ -14,8 +14,9 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-01-24: fixed date in changelog comment
-# 2016-01-23: added ratings/live counts for Marcel, Inbal & Rick
+# 2016-01-24: fixed umlaut characters
+#             fixed date in changelog comment
+# 2016-01-22: added ratings/live counts for Marcel, Inbal & Rick
 # 2016-01-16: initial version (band & user names only)
 
 
@@ -35,7 +36,7 @@ Benediction	-	---	-	NA	0	0	0	NA	NA	NA	NA
 Blechblosn	?	+	++	NA	0	0	0	NA	NA	NA	NA
 Bliksem	+	?	?	NA	0	0	0	NA	NA	NA	NA
 Blind Guardian	+++	+++	+++	NA	2	1	0	NA	NA	NA	NA
-Blue Oyster Cult	++	+	+++	NA	0	0	0	NA	NA	NA	NA
+Blue Öyster Cult	++	+	+++	NA	0	0	0	NA	NA	NA	NA
 Bodhaktan	++	+	++	NA	0	0	0	NA	NA	NA	NA
 Bon Scott	+	?	+	NA	0	0	0	NA	NA	NA	NA
 Borknagar	+	+++	+	NA	0	1	0	NA	NA	NA	NA
@@ -65,16 +66,16 @@ Eskimo Callboy	-	+++	+	NA	0	2	0	NA	NA	NA	NA
 Fateful Finality	?	-	--	NA	0	0	0	NA	NA	NA	NA
 Feuerschwanz	+++	++	++	NA	5	2	0	NA	NA	NA	NA
 Foreigner	++	++	++	NA	0	0	0	NA	NA	NA	NA
-Freiw├ñchter	+	+	+	NA	0	0	0	NA	NA	NA	NA
+Freiwächter	+	+	+	NA	0	0	0	NA	NA	NA	NA
 Girlschool	+	+	+	NA	0	0	0	NA	NA	NA	NA
 GloryHammer	++	+	++	NA	0	0	0	NA	NA	NA	NA
-H├ñmatom	+	--	?	NA	0	0	0	NA	NA	NA	NA
+Hämatom	+	--	?	NA	0	0	0	NA	NA	NA	NA
 Henry Rollins	?	?	?	NA	0	0	0	NA	NA	NA	NA
 Ihsahn	+	++	?	NA	0	1	0	NA	NA	NA	NA
 Immolation	--	--	--	NA	0	0	0	NA	NA	NA	NA
 Insidious Disease	--	-	--	NA	0	0	0	NA	NA	NA	NA
 Iron Maiden	+++	++	+++	NA	1	1	0	NA	NA	NA	NA
-Jesus Chr├╝sler Supercar	+	+	+	NA	0	0	0	NA	NA	NA	NA
+Jesus Chrüsler Supercar	+	+	+	NA	0	0	0	NA	NA	NA	NA
 John Coffey	?	--	?	NA	0	0	0	NA	NA	NA	NA
 Kampfar	-	++	--	NA	0	0	0	NA	NA	NA	NA
 King Dude	+	?	+	NA	0	0	0	NA	NA	NA	NA
