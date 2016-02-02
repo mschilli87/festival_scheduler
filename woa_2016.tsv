@@ -4,7 +4,7 @@
 
 # file:         woa_2016.tsv
 # created:      2016-01-16
-# last update:  2016-01-24
+# last update:  2016-02-02
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      input file for WOA 2016 scheduling
@@ -14,6 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2016-02-02: adjusted lineup (2 cancellations & 2 replacement bands) incl.
+#             ratings/live counts for Inbal & Marcel
 # 2016-01-24: fixed umlaut characters
 #             fixed date in changelog comment
 # 2016-01-22: added ratings/live counts for Marcel, Inbal & Rick
@@ -50,6 +52,7 @@ Dagoba	?	--	?	NA	0	0	0	NA	NA	NA	NA
 Deez Nuts	-	---	++	NA	0	0	0	NA	NA	NA	NA
 Der Weg einer Freiheit	-	++	--	NA	0	0	0	NA	NA	NA	NA
 Devil Driver	+	?	?	NA	1	0	0	NA	NA	NA	NA
+Die Krupps	+	+	NA	NA	0	0	NA	NA	NA	NA	NA
 Dorfrocker	--	?	+++	NA	0	0	0	NA	NA	NA	NA
 Dragonforce	+	+	+	NA	0	0	0	NA	NA	NA	NA
 Dritte Wahl	+	---	++	NA	0	0	0	NA	NA	NA	NA
@@ -80,7 +83,6 @@ John Coffey	?	--	?	NA	0	0	0	NA	NA	NA	NA
 Kampfar	-	++	--	NA	0	0	0	NA	NA	NA	NA
 King Dude	+	?	+	NA	0	0	0	NA	NA	NA	NA
 Krayenzeit	+	+	+	NA	0	0	0	NA	NA	NA	NA
-Kylesa	?	?	--	NA	0	0	0	NA	NA	NA	NA
 Lamb of God	+	++	++	NA	0	0	0	NA	NA	NA	NA
 Legion Of The Damned	-	+	--	NA	0	0	0	NA	NA	NA	NA
 Loudness	+	?	+	NA	0	0	0	NA	NA	NA	NA
@@ -110,13 +112,13 @@ Serious Black	++	+	++	NA	0	0	0	NA	NA	NA	NA
 Serum 114	+	-	++	NA	0	0	0	NA	NA	NA	NA
 Snowy Shaw	+	+++	?	NA	0	0	0	NA	NA	NA	NA
 Steel Panther	++	?	+++	NA	2	0	1	NA	NA	NA	NA
-Stick To Your Guns	+	?	++	NA	0	0	0	NA	NA	NA	NA
 Sub Dub Micromachine	?	+	?	NA	0	0	0	NA	NA	NA	NA
 Symphony X	++	++	-	NA	0	0	0	NA	NA	NA	NA
 Tarja	++	++	+	NA	0	0	0	NA	NA	NA	NA
 Testament	++	?	+	NA	0	0	0	NA	NA	NA	NA
 The Beards	++	++	++	NA	0	0	0	NA	NA	NA	NA
 The Black Dahlia Murder	?	?	?	NA	0	0	0	NA	NA	NA	NA
+The Dead Daisies	++	+	NA	NA	0	0	NA	NA	NA	NA	NA
 The Goddamn Gallows	+	+	+	NA	0	0	0	NA	NA	NA	NA
 The Haunted	?	--	--	NA	0	0	0	NA	NA	NA	NA
 The Other	++	+	?	NA	0	0	0	NA	NA	NA	NA
