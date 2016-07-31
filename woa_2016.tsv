@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: added missing ratings/live counts for Marcel & Inbal
+# 2016-07-31: added stages/time slots
+#             added missing ratings/live counts for Marcel & Inbal
 #             fixed typos in band names
 #             updated Borknagar rating & live counts
 #             added missing bands
@@ -32,170 +33,219 @@
 #########
 
 band	rating.Marcel	rating.Inbal	rating.Rick	live_count.Marcel	live_count.Inbal	live_count.Rick	stage	start	end
-1349	-	?	-	0	0	0	NA	NA	NA
-9mm	+	--	++	0	0	0	NA	NA	NA
-Alcest	+	++	+	0	0	0	NA	NA	NA
-Arch Enemy	++	+++	+	3	2	0	NA	NA	NA
-Asrock	+	+	NA	0	0	NA	NA	NA	NA
-Auðn	+	+++	NA	0	0	NA	NA	NA	NA
-Aura Noir	-	-	--	0	0	0	NA	NA	NA
-Axel Rudi Pell	+	+	++	1	0	0	NA	NA	NA
-Barb Wire Dolls	+	-	NA	0	0	NA	NA	NA	NA
-Bembers	---	---	---	0	0	0	NA	NA	NA
+1349	-	?	-	0	0	0	W:E:T Stage	05-08-2016_22:10	05-08-2016_22:55
+9mm	+	--	++	0	0	0	Headbangers Stage	06-08-2016_15:25	06-08-2016_16:10
+Alcest	+	++	+	0	0	0	Headbangers Stage	05-08-2016_21:20	05-08-2016_22:05
+Arch Enemy	++	+++	+	3	2	0	Black Stage	07-08-2016_00:40	07-08-2016_01:55
+Asrock	+	+	NA	0	0	NA	Beer Garden	05-08-2016_16:30	05-08-2016_17:30
+Auðn	+	+++	NA	0	0	NA	W:E:T Stage	03-08-2016_17:40	03-08-2016_18:00
+Aura Noir	-	-	--	0	0	0	W:E:T Stage	06-08-2016_22:55	06-08-2016_23:40
+Axel Rudi Pell	+	+	++	1	0	0	True Metal Stage	05-08-2016_16:45	05-08-2016_17:45
+Barb Wire Dolls	+	-	NA	0	0	NA	W:E:T Stage	07-08-2016_00:35	07-08-2016_01:20
+Bembers	---	---	---	0	0	0	Beer Garden	03-08-2016_18:30	03-08-2016_19:00
+Bembers	---	---	---	0	0	0	Beer Garden	04-08-2016_17:30	04-08-2016_18:00
+Bembers	---	---	---	0	0	0	Beer Garden	05-08-2016_15:30	05-08-2016_16:00
+Bembers	---	---	---	0	0	0	Beer Garden	06-08-2016_16:45	06-08-2016_17:15
 Benediction	-	---	-	0	0	0	NA	NA	NA
-Berlin Allstarz Live Karaoke	+	?	NA	0	0	NA	NA	NA	NA
-Beyond The Black	++	+	NA	1	1	NA	NA	NA	NA
-Blaas of Glory	+	+	NA	1	0	NA	NA	NA	NA
-Blechblosn	?	+	++	0	0	0	NA	NA	NA
-Bliksem	+	?	?	0	0	0	NA	NA	NA
-Blind Guardian	+++	+++	+++	2	1	0	NA	NA	NA
-Blue Öyster Cult	++	+	+++	0	0	0	NA	NA	NA
-Bodhaktan	++	+	++	0	0	0	NA	NA	NA
-Bon Scott	+	?	+	0	0	0	NA	NA	NA
-Borknagar	++	+++	+	1	2	0	NA	NA	NA
-Budderside	+	--	NA	0	0	NA	NA	NA	NA
-Buffalo Summer	++	+	NA	0	0	NA	NA	NA	NA
-Bullet For My Valentine	++	++	?	1	0	0	NA	NA	NA
-Bury Tomorrow	+	?	?	0	0	0	NA	NA	NA
-Caliban	+	++	-	0	0	0	NA	NA	NA
-Callejon	?	-	+	0	0	0	NA	NA	NA
-Calm Hatchery	--	--	NA	0	0	NA	NA	NA	NA
-Carrion	-	+	NA	0	0	NA	NA	NA	NA
-Clutch	++	?	++	0	0	0	NA	NA	NA
-Cripper	?	?	?	0	0	0	NA	NA	NA
-Crows Crown	-	++	NA	0	0	NA	NA	NA	NA
-Dagoba	?	--	?	0	0	0	NA	NA	NA
-Deez Nuts	-	---	++	0	0	0	NA	NA	NA
-Der Weg einer Freiheit	-	++	--	0	0	0	NA	NA	NA
-Devil Driver	+	?	?	1	0	0	NA	NA	NA
-Devil's Fire Show	?	?	NA	0	0	NA	NA	NA	NA
-Die Krupps	+	+	NA	0	0	NA	NA	NA	NA
-Dio Disciples ft. a very special guest	++	++	NA	0	0	NA	NA	NA	NA
+Berlin Allstarz Live Karaoke	+	?	NA	0	0	NA	W:E:T Stage	04-08-2016_01:00	04-08-2016_03:00
+Berlin Allstarz Live Karaoke	+	?	NA	0	0	NA	Headbangers Stage	05-08-2016_01:05	05-08-2016_03:00
+Beyond The Black	++	+	NA	1	1	NA	Party Stage	05-08-2016_13:05	05-08-2016_14:05
+Blaas of Glory	+	+	NA	1	0	NA	Beer Garden	03-08-2016_13:00	03-08-2016_14:00
+Blechblosn	?	+	++	0	0	0	Beer Garden	03-08-2016_22:00	03-08-2016_23:00
+Blechblosn	?	+	++	0	0	0	Beer Garden	04-08-2016_22:00	04-08-2016_23:00
+Blechblosn	?	+	++	0	0	0	Beer Garden	05-08-2016_20:00	05-08-2016_21:00
+Blechblosn	?	+	++	0	0	0	Beer Garden	06-08-2016_22:15	06-08-2016_23:00
+Bliksem	+	?	?	0	0	0	Headbangers Stage	03-08-2016_20:20	03-08-2016_21:05
+Blind Guardian	+++	+++	+++	2	1	0	True Metal Stage	05-08-2016_22:30	06-08-2016_00:00
+Blue Öyster Cult	++	+	+++	0	0	0	W:E:T Stage	05-08-2016_00:10	05-08-2016_01:00
+Bodhaktan	++	+	++	0	0	0	Wackinger Stage	05-08-2016_19:30	05-08-2016_20:30
+Bodhaktan	++	+	++	0	0	0	Wackinger Stage	06-08-2016_16:30	06-08-2016_17:15
+Bon Scott	+	?	+	0	0	0	Beer Garden	04-08-2016_20:00	04-08-2016_21:00
+Borknagar	++	+++	+	1	2	0	Black Stage	06-08-2016_14:55	06-08-2016_16:10
+Budderside	+	--	NA	0	0	NA	Headbangers Stage	06-08-2016_23:45	07-08-2016_00:30
+Buffalo Summer	++	+	NA	0	0	NA	Headbangers Stage	06-08-2016_22:05	06-08-2016_22:50
+Bullet For My Valentine	++	++	?	1	0	0	True Metal Stage	05-08-2016_19:30	05-08-2016_20:45
+Bury Tomorrow	+	?	?	0	0	0	Headbangers Stage	05-08-2016_14:40	05-08-2016_15:25
+Caliban	+	++	-	0	0	0	Headbangers Stage	06-08-2016_00:40	06-08-2016_01:25
+Callejon	?	-	+	0	0	0	Party Stage	06-08-2016_17:55	06-08-2016_19:10
+Calm Hatchery	--	--	NA	0	0	NA	Headbangers Stage	03-08-2016_11:25	03-08-2016_11:45
+Carrion	-	+	NA	0	0	NA	Headbangers Stage	04-08-2016_11:00	04-08-2016_11:20
+Clutch	++	?	++	0	0	0	Party Stage	06-08-2016_20:55	06-08-2016_22:10
+Cripper	?	?	?	0	0	0	W:E:T Stage	07-08-2016_02:15	07-08-2016_03:00
+Crows Crown	-	++	NA	0	0	NA	W:E:T Stage	04-08-2016_11:25	04-08-2016_11:45
+Dagoba	?	--	?	0	0	0	W:E:T Stage	06-08-2016_21:15	06-08-2016_22:00
+Deez Nuts	-	---	++	0	0	0	W:E:T Stage	05-08-2016_18:50	05-08-2016_19:35
+Der Weg einer Freiheit	-	++	--	0	0	0	Headbangers Stage	05-08-2016_13:00	05-08-2016_13:45
+Devil Driver	+	?	?	1	0	0	Party Stage	06-08-2016_14:55	06-08-2016_16:10
+Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	04-08-2016_00:30	04-08-2016_01:00
+Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	05-08-2016_01:00	05-08-2016_01:30
+Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	06-08-2016_00:45	06-08-2016_01:15
+Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	07-08-2016_00:45	07-08-2016_01:15
+Die Krupps	+	+	NA	0	0	NA	Headbangers Stage	05-08-2016_16:20	05-08-2016_17:05
+Dio Disciples ft. a very special guest	++	++	NA	0	0	NA	True Metal Stage	07-08-2016_02:10	07-08-2016_02:55
 Dorfrocker	--	?	+++	0	0	0	NA	NA	NA
-Dragonforce	+	+	+	0	0	0	NA	NA	NA
-Dritte Wahl	+	---	++	0	0	0	NA	NA	NA
-Drone	+	--	++	0	0	0	NA	NA	NA
-Dystopia	++	+	NA	0	0	NA	NA	NA	NA
-Eat The Turnbuckle	--	--	---	0	0	0	NA	NA	NA
-Einherjer	+	?	-	0	0	0	NA	NA	NA
-Ektomorf	+	-	-	0	0	0	NA	NA	NA
-Elemental	-	---	NA	0	0	NA	NA	NA	NA
-Eluveitie	+++	+++	++	1	0	0	NA	NA	NA
-Elvenking	+	?	?	0	0	0	NA	NA	NA
-Entombed A.D.	-	-	--	0	0	0	NA	NA	NA
-Equilibrium	++	+++	++	1	1	0	NA	NA	NA
-Eric Fish and Friends	+++	+	+	10	0	0	NA	NA	NA
-Eskimo Callboy	-	+++	+	0	2	0	NA	NA	NA
-Fateful Finality	?	-	--	0	0	0	NA	NA	NA
-Feuerschwanz	+++	++	++	5	2	0	NA	NA	NA
-Foreigner	++	++	++	0	0	0	NA	NA	NA
-Forgotten North	+	+	NA	0	0	NA	NA	NA	NA
-Freiwächter	+	+	+	0	0	0	NA	NA	NA
-Girlschool	+	+	+	0	0	0	NA	NA	NA
-GloryHammer	++	+	++	0	0	0	NA	NA	NA
-Hämatom	+	--	?	0	0	0	NA	NA	NA
-Hansen & Friends	++	++	NA	0	0	NA	NA	NA	NA
-Henry Rollins	?	?	?	0	0	0	NA	NA	NA
-Honky	+	-	NA	0	0	NA	NA	NA	NA
-Horror Dance Squad	?	---	NA	0	0	NA	NA	NA	NA
-Hteththemeth	?	+	NA	0	0	NA	NA	NA	NA
-Ihsahn	+	++	?	0	1	0	NA	NA	NA
-Immolation	--	--	--	0	0	0	NA	NA	NA
-Insidious Disease	--	-	--	0	0	0	NA	NA	NA
-Iron Maiden	+++	++	+++	1	1	0	NA	NA	NA
-Jesus Chrüsler Supercar	+	+	+	0	0	0	NA	NA	NA
-John Coffey	?	--	?	0	0	0	NA	NA	NA
-Kampfar	-	++	--	0	0	0	NA	NA	NA
-King Dude	+	?	+	0	0	0	NA	NA	NA
-Knasterbart	?	?	NA	0	0	NA	NA	NA	NA
-Krayenzeit	+	+	+	0	0	0	NA	NA	NA
+Dragonforce	+	+	+	0	0	0	Black Stage	05-08-2016_12:00	05-08-2016_13:15
+Dritte Wahl	+	---	++	0	0	0	Headbangers Stage	06-08-2016_17:05	06-08-2016_17:50
+Drone	+	--	++	0	0	0	W:E:T Stage	06-08-2016_17:55	06-08-2016_18:40
+Dystopia	++	+	NA	0	0	NA	Headbangers Stage	03-08-2016_18:55	03-08-2016_19:15
+Eat The Turnbuckle	--	--	---	0	0	0	Beer Garden	06-08-2016_19:15	06-08-2016_20:15
+Einherjer	+	?	-	0	0	0	W:E:T Stage	06-08-2016_19:35	06-08-2016_20:20
+Ektomorf	+	-	-	0	0	0	Headbangers Stage	05-08-2016_18:00	05-08-2016_18:45
+Elemental	-	---	NA	0	0	NA	Headbangers Stage	03-08-2016_14:45	03-08-2016_15:05
+Eluveitie	+++	+++	++	1	0	0	Black Stage	05-08-2016_18:00	05-08-2016_19:15
+Elvenking	+	?	?	0	0	0	Wackinger Stage	06-08-2016_21:30	06-08-2016_22:15
+Entombed A.D.	-	-	--	0	0	0	Black Stage	05-08-2016_15:30	05-08-2016_16:30
+Equilibrium	++	+++	++	1	1	0	Party Stage	05-08-2016_15:30	05-08-2016_16:30
+Eric Fish and Friends	+++	+	+	10	0	0	Wackinger Stage	03-08-2016_22:15	03-08-2016_23:30
+Eskimo Callboy	-	+++	+	0	2	0	Party Stage	06-08-2016_12:00	06-08-2016_13:15
+Fateful Finality	?	-	--	0	0	0	W:E:T Stage	05-08-2016_11:00	05-08-2016_11:30
+Feuerschwanz	+++	++	++	5	2	0	Wackinger Stage	04-08-2016_22:15	04-08-2016_23:15
+Foreigner	++	++	++	0	0	0	Black Stage	04-08-2016_17:45	04-08-2016_19:00
+Forgotten North	+	+	NA	0	0	NA	Wackinger Stage	06-08-2016_15:00	06-08-2016_15:45
+Freiwächter	+	+	+	0	0	0	Wackinger Stage	05-08-2016_15:00	05-08-2016_15:45
+Girlschool	+	+	+	0	0	0	W:E:T Stage	05-08-2016_17:10	05-08-2016_17:55
+GloryHammer	++	+	++	0	0	0	Headbangers Stage	06-08-2016_18:45	06-08-2016_19:30
+Hämatom	+	--	?	0	0	0	Headbangers Stage	03-08-2016_22:15	03-08-2016_23:00
+Hansen & Friends	++	++	NA	0	0	NA	Party Stage	05-08-2016_21:00	05-08-2016_22:15
+Henry Rollins	?	?	?	0	0	0	W:E:T Stage	03-08-2016_19:30	03-08-2016_20:15
+Henry Rollins	?	?	?	0	0	0	W:E:T Stage	04-08-2016_16:05	04-08-2016_16:50
+Henry Rollins	?	?	?	0	0	0	W:E:T Stage	05-08-2016_12:10	05-08-2016_12:55
+Honky	+	-	NA	0	0	NA	Beer Garden	06-08-2016_20:45	06-08-2016_21:45
+Horror Dance Squad	?	---	NA	0	0	NA	W:E:T Stage	03-08-2016_12:40	03-08-2016_13:00
+Hteththemeth	?	+	NA	0	0	NA	W:E:T Stage	03-08-2016_11:00	03-08-2016_11:20
+Ihsahn	+	++	?	0	1	0	Headbangers Stage	05-08-2016_23:00	05-08-2016_23:45
+Immolation	--	--	--	0	0	0	Headbangers Stage	04-08-2016_20:00	04-08-2016_20:45
+Insidious Disease	--	-	--	0	0	0	W:E:T Stage	05-08-2016_20:30	05-08-2016_21:15
+Iron Maiden	+++	++	+++	1	1	0	True Metal Stage	04-08-2016_21:30	04-08-2016_23:30
+Jesus Chrüsler Supercar	+	+	+	0	0	0	W:E:T Stage	06-08-2016_12:00	06-08-2016_12:30
+John Coffey	?	--	?	0	0	0	Beer Garden	05-08-2016_22:00	05-08-2016_23:00
+Kampfar	-	++	--	0	0	0	Headbangers Stage	06-08-2016_02:20	06-08-2016_03:00
+King Dude	+	?	+	0	0	0	Wackinger Stage	06-08-2016_23:00	07-08-2016_00:00
+Knasterbart	?	?	NA	0	0	NA	Wackinger Stage	03-08-2016_12:30	03-08-2016_13:15
+Knasterbart	?	?	NA	0	0	NA	Beer Garden	04-08-2016_14:30	04-08-2016_15:30
+Knasterbart	?	?	NA	0	0	NA	Beer Garden	05-08-2016_18:00	05-08-2016_19:00
+Krayenzeit	+	+	+	0	0	0	Wackinger Stage	05-08-2016_18:00	05-08-2016_18:45
 Lamb of God	+	++	++	0	0	0	NA	NA	NA
-Legacy of Brutality	--	--	NA	0	0	NA	NA	NA	NA
-Legion Of The Damned	-	+	--	0	0	0	NA	NA	NA
-Lemmy - Born To Lose, Live To Win	+	+	NA	0	0	NA	NA	NA	NA
-Lepergod	-	?	NA	0	0	NA	NA	NA	NA
-Lieveil	+	+	NA	0	0	NA	NA	NA	NA
-Light & Freak Show	?	?	NA	0	0	NA	NA	NA	NA
-Loudness	+	?	+	0	0	0	NA	NA	NA
-Lynchpin	--	---	NA	0	0	NA	NA	NA	NA
-Mambo Kurt	+++	+++	NA	6	1	NA	NA	NA	NA
-Marduk	-	+++	--	0	0	0	NA	NA	NA
-Metal Church	?	?	+	0	0	0	NA	NA	NA
-Michael Monroe	+	?	+++	0	0	0	NA	NA	NA
-Miles To Perdition	?	+	NA	0	0	NA	NA	NA	NA
-Mindtaker	-	---	NA	0	0	NA	NA	NA	NA
-Ministry	-	---	?	1	1	0	NA	NA	NA
-Monstagon	?	+	+	0	0	0	NA	NA	NA
-Monuments	+	+	-	0	0	0	NA	NA	NA
-Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	NA	NA	NA
-Myrkur	?	+	?	0	0	0	NA	NA	NA
-Nasty	--	--	--	0	0	0	NA	NA	NA
-Negative Approach	+	--	?	0	0	0	NA	NA	NA
-Orden Ogan	+	++	?	0	0	0	NA	NA	NA
-Orphaned Land	++	+++	?	0	3	0	NA	NA	NA
-Overthrust	--	---	NA	0	0	NA	NA	NA	NA
-Pain Is	+	--	NA	0	0	NA	NA	NA	NA
-Pampatut	-	?	?	0	0	0	NA	NA	NA
-Panzerballett	++	+	+	0	0	0	NA	NA	NA
-Parkway Drive	?	-	--	0	0	0	NA	NA	NA
-Phil Campbell's All Starr Band	+	+	NA	0	0	NA	NA	NA	NA
-Preternatural	++	+	NA	0	0	NA	NA	NA	NA
-Profaner	+	+	NA	0	0	NA	NA	NA	NA
-Promoters Farewell & Thanks	?	?	NA	1	0	NA	NA	NA	NA
-Pyogenesis	?	--	-	0	0	0	NA	NA	NA
-Pyraweed		+	-	0	0	NA	NA	NA	NA
-Red Fang	+++	?	?	1	0	0	NA	NA	NA
-Red Hot Chili Pipers	+	++	++	0	0	0	NA	NA	NA
-Reliquiae	+	+	+	0	0	0	NA	NA	NA
-Ritual Day	-	+	NA	0	0	NA	NA	NA	NA
-Saxon	++	+	++	1	0	0	NA	NA	NA
-Sebastien	+	?	+	0	0	0	NA	NA	NA
-Sector	-	---	NA	0	0	0	NA	NA	NA
-Serious Black	++	+	++	0	0	0	NA	NA	NA
-Serum 114	+	-	++	0	0	0	NA	NA	NA
-Sinphobia	-	-	NA	0	0	NA	NA	NA	NA
-Sir Henry Hot + Band	?	?	NA	0	0	NA	NA	NA	NA
-Sir Henry Hot	?	?	NA	1	0	NA	NA	NA	NA
-Skyline	+	+	NA	0	5	NA	NA	NA	NA
-Snowy Shaw	+	+++	?	0	0	0	NA	NA	NA
-Steak Number Eight	?	-	NA	0	0	NA	NA	NA	NA
-Steel Panther	++	?	+++	2	0	1	NA	NA	NA
-Sub Dub Micromachine	?	+	?	0	0	0	NA	NA	NA
-Sunless Dawn	+	+	NA	0	0	NA	NA	NA	NA
-Svartmalm	--	++	NA	0	0	NA	NA	NA	NA
-Symphony X	++	++	-	0	0	0	NA	NA	NA
-Syndemic	+	+	NA	0	0	NA	NA	NA	NA
-Tarja	++	++	+	0	0	0	NA	NA	NA
-Testament	++	?	+	0	0	0	NA	NA	NA
+Legacy of Brutality	--	--	NA	0	0	NA	W:E:T Stage	03-08-2016_18:30	03-08-2016_18:50
+Legion Of The Damned	-	+	--	0	0	0	Black Stage	05-08-2016_13:05	05-08-2016_14:05
+Lemmy - Born To Lose, Live To Win	+	+	NA	0	0	NA	Black Stage	04-08-2016_23:45	05-08-2016_00:00
+Lepergod	-	?	NA	0	0	NA	Headbangers Stage	04-08-2016_13:30	04-08-2016_13:50
+Lieveil	+	+	NA	0	0	NA	W:E:T Stage	03-08-2016_16:00	03-08-2016_16:20
+Light & Freak Show	?	?	NA	0	0	NA	Wasteland Stage	04-08-2016_01:30	04-08-2016_02:00
+Loudness	+	?	+	0	0	0	True Metal Stage	05-08-2016_14:15	05-08-2016_15:15
+Lynchpin	--	---	NA	0	0	NA	Headbangers Stage	03-08-2016_15:35	03-08-2016_15:55
+Mambo Kurt	+++	+++	NA	6	1	NA	Beer Garden	03-08-2016_16:00	03-08-2016_16:30
+Mambo Kurt	+++	+++	NA	6	1	NA	Headbangers Stage	04-08-2016_00:00	04-08-2016_00:55
+Mambo Kurt	+++	+++	NA	6	1	NA	Beer Garden	06-08-2016_13:00	06-08-2016_13:45
+Marduk	-	+++	--	0	0	0	W:E:T Stage	04-08-2016_20:50	04-08-2016_21:35
+Metal Church	?	?	+	0	0	0	True Metal Stage	06-08-2016_16:25	06-08-2016_17:40
+Michael Monroe	+	?	+++	0	0	0	Headbangers Stage	04-08-2016_23:20	05-08-2016_00:05
+Miles To Perdition	?	+	NA	0	0	NA	Headbangers Stage	03-08-2016_16:25	03-08-2016_16:45
+Mindtaker	-	---	NA	0	0	NA	W:E:T Stage	03-08-2016_16:50	03-08-2016_17:10
+Ministry	-	---	?	1	1	0	Black Stage	06-08-2016_00:15	06-08-2016_01:30
+Monstagon	?	+	+	0	0	0	Wasteland Stage	03-08-2016_21:30	03-08-2016_22:15
+Monstagon	?	+	+	0	0	0	Wasteland Stage	04-08-2016_21:30	04-08-2016_22:15
+Monstagon	?	+	+	0	0	0	Wasteland Stage	05-08-2016_16:00	05-08-2016_16:30
+Monstagon	?	+	+	0	0	0	Wasteland Stage	06-08-2016_16:00	06-08-2016_16:30
+Monuments	+	+	-	0	0	0	W:E:T Stage	06-08-2016_13:10	06-08-2016_13:40
+Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	Wackinger Stage	03-08-2016_17:15	03-08-2016_18:00
+Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	Wackinger Stage	04-08-2016_11:00	04-08-2016_11:45
+Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	Wackinger Stage	05-08-2016_21:15	05-08-2016_22:00
+Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	Wackinger Stage	06-08-2016_12:00	06-08-2016_12:45
+Myrkur	?	+	?	0	0	0	Headbangers Stage	06-08-2016_13:35	06-08-2016_14:30
+Nasty	--	--	--	0	0	0	Headbangers Stage	04-08-2016_15:30	04-08-2016_16:00
+Negative Approach	+	--	?	0	0	0	W:E:T Stage	05-08-2016_15:30	05-08-2016_16:15
+Orden Ogan	+	++	?	0	0	0	Party Stage	05-08-2016_11:00	05-08-2016_11:45
+Orphaned Land	++	+++	?	0	3	0	Headbangers Stage	05-08-2016_19:40	05-08-2016_20:25
+Overthrust	--	---	NA	0	0	NA	Wasteland Stage	05-08-2016_17:15	05-08-2016_17:45
+Pain Is	+	--	NA	0	0	NA	W:E:T Stage	04-08-2016_12:15	04-08-2016_12:35
+Pampatut	-	?	?	0	0	0	Wackinger Stage	03-08-2016_14:00	03-08-2016_14:45
+Pampatut	-	?	?	0	0	0	Wackinger Stage	04-08-2016_15:30	04-08-2016_16:15
+Pampatut	-	?	?	0	0	0	Wackinger Stage	05-08-2016_13:30	05-08-2016_14:15
+Pampatut	-	?	?	0	0	0	Wackinger Stage	06-08-2016_20:00	06-08-2016_20:45
+Panzerballett	++	+	+	0	0	0	W:E:T Stage	03-08-2016_21:10	03-08-2016_22:10
+Parkway Drive	?	-	--	0	0	0	Party Stage	07-08-2016_00:40	07-08-2016_01:55
+Phil Campbell's All Starr Band	+	+	NA	0	0	NA	W:E:T Stage	03-08-2016_23:05	03-08-2016_23:55
+Preternatural	++	+	NA	0	0	NA	W:E:T Stage	03-08-2016_11:50	03-08-2016_12:10
+Profaner	+	+	NA	0	0	NA	Headbangers Stage	03-08-2016_12:15	03-08-2016_12:35
+Promoters Farewell & Thanks	?	?	NA	1	0	NA	True Metal Stage	07-08-2016_02:00	07-08-2016_02:05
+Pyogenesis	?	--	-	0	0	0	Black Stage	05-08-2016_11:00	05-08-2016_11:45
+Pyraweed		+	-	0	0	NA	W:E:T Stage	03-08-2016_14:20	03-08-2016_14:40
+Red Fang	+++	?	?	1	0	0	W:E:T Stage	05-08-2016_23:50	06-08-2016_00:35
+Red Hot Chili Pipers	+	++	++	0	0	0	Wackinger Stage	03-08-2016_20:15	03-08-2016_21:30
+Red Hot Chili Pipers	+	++	++	0	0	0	Wackinger Stage	04-08-2016_18:30	04-08-2016_19:45
+Red Hot Chili Pipers	+	++	++	0	0	0	Wackinger Stage	05-08-2016_22:45	06-08-2016_00:00
+Red Hot Chili Pipers	+	++	++	0	0	0	Wackinger Stage	06-08-2016_18:00	06-08-2016_19:15
+Reliquiae	+	+	+	0	0	0	Wackinger Stage	03-08-2016_11:00	03-08-2016_11:45
+Reliquiae	+	+	+	0	0	0	Wackinger Stage	04-08-2016_14:00	04-08-2016_14:45
+Reliquiae	+	+	+	0	0	0	Wackinger Stage	05-08-2016_12:00	05-08-2016_12:45
+Reliquiae	+	+	+	0	0	0	Wackinger Stage	06-08-2016_13:30	06-08-2016_14:15
+Ritual Day	-	+	NA	0	0	NA	Headbangers Stage	04-08-2016_11:50	04-08-2016_12:10
+Saxon	++	+	++	1	0	0	Black Stage	04-08-2016_16:00	04-08-2016_17:15
+Sebastien	+	?	+	0	0	0	Headbangers Stage	05-08-2016_11:35	05-08-2016_12:05
+Sector	-	---	NA	0	0	0	Wasteland Stage	03-08-2016_19:30	03-08-2016_20:00
+Sector	-	---	NA	0	0	0	Wasteland Stage	04-08-2016_15:00	04-08-2016_15:30
+Sector	-	---	NA	0	0	0	Wasteland Stage	05-08-2016_22:00	05-08-2016_22:45
+Sector	-	---	NA	0	0	0	Wasteland Stage	06-08-2016_20:45	06-08-2016_21:15
+Serious Black	++	+	++	0	0	0	Headbangers Stage	07-08-2016_01:25	07-08-2016_02:10
+Serum 114	+	-	++	0	0	0	W:E:T Stage	04-08-2016_17:45	04-08-2016_18:15
+Sinphobia	-	-	NA	0	0	NA	W:E:T Stage	03-08-2016_13:30	03-08-2016_13:50
+Sir Henry Hot + Band	?	?	NA	0	0	NA	Wasteland Stage	07-08-2016_01:45	07-08-2016_02:15
+Sir Henry Hot	?	?	NA	1	0	NA	Wasteland Stage	05-08-2016_00:00	05-08-2016_00:30
+Sir Henry Hot	?	?	NA	1	0	NA	Wasteland Stage	06-08-2016_01:30	06-08-2016_02:15
+Skyline	+	+	NA	0	5	NA	Black Stage	04-08-2016_14:45	04-08-2016_15:30
+Snowy Shaw	+	+++	?	0	0	0	W:E:T Stage	06-08-2016_16:15	06-08-2016_17:00
+Steak Number Eight	?	-	NA	0	0	NA	Headbangers Stage	06-08-2016_20:25	06-08-2016_21:10
+Steel Panther	++	?	+++	2	0	1	True Metal Stage	06-08-2016_19:25	06-08-2016_20:40
+Sub Dub Micromachine	?	+	?	0	0	0	Wasteland Stage	03-08-2016_15:00	03-08-2016_15:30
+Sub Dub Micromachine	?	+	?	0	0	0	Wasteland Stage	04-08-2016_19:45	04-08-2016_20:15
+Sub Dub Micromachine	?	+	?	0	0	0	Wasteland Stage	05-08-2016_20:30	05-08-2016_21:00
+Sub Dub Micromachine	?	+	?	0	0	0	Wasteland Stage	06-08-2016_22:15	06-08-2016_23:00
+Sunless Dawn	+	+	NA	0	0	NA	Headbangers Stage	03-08-2016_13:05	03-08-2016_13:25
+Svartmalm	--	++	NA	0	0	NA	Headbangers Stage	03-08-2016_13:55	03-08-2016_14:15
+Symphony X	++	++	-	0	0	0	True Metal Stage	06-08-2016_13:30	06-08-2016_14:45
+Syndemic	+	+	NA	0	0	NA	W:E:T Stage	03-08-2016_15:10	03-08-2016_15:30
+Tarja	++	++	+	0	0	0	Black Stage	05-08-2016_21:00	05-08-2016_22:15
+Testament	++	?	+	0	0	0	True Metal Stage	06-08-2016_01:45	06-08-2016_03:00
 The Beards	++	++	++	0	0	0	NA	NA	NA
-The Black Dahlia Murder	?	?	?	0	0	0	NA	NA	NA
-The Dead Daisies	++	+	NA	0	0	NA	NA	NA	NA
-The Goddamn Gallows	+	+	+	0	0	0	NA	NA	NA
-The Haunted	?	--	--	0	0	0	NA	NA	NA
-The O'Reillys and the Paddyhats	++	-	NA	0	0	NA	NA	NA	NA
-The Other	++	+	?	0	0	0	NA	NA	NA
-The Raven Age	++	+	NA	0	0	NA	NA	NA	NA
-The Vintage Caravan	++	+	+	0	0	0	NA	NA	NA
-Therapy?	?	?	+	0	0	0	NA	NA	NA
-Therion	++	++	+	0	1	0	NA	NA	NA
-Tidal Dreams	+	-	NA	0	0	NA	NA	NA	NA
-Torfrock	+	--	++	1	0	0	NA	NA	NA
-Triptykon	?	?	--	0	0	0	NA	NA	NA
-Tsjuder	--	+++	--	0	1	0	NA	NA	NA
-Tulkas	-	--	NA	0	0	NA	NA	NA	NA
-tuXedoo	+	+	?	0	0	0	NA	NA	NA
-Twisted Sister	+++	+	+++	0	0	0	NA	NA	NA
-Unisonic	+++	?	?	0	0	0	NA	NA	NA
-Vader	--	?	-	0	0	0	NA	NA	NA
-Versengold	++	+	++	0	0	0	NA	NA	NA
-Victims Of Madness	+	+	NA	0	1	NA	NA	NA	NA
-Vimoksha	-	-	NA	0	0	NA	NA	NA	NA
-Vogelfrey	+	++	++	1	0	0	NA	NA	NA
-Watch Out Stampede	+	?	+	0	0	0	NA	NA	NA
-While She Sleeps	+	+	?	0	0	0	NA	NA	NA
-Whitesnake	++	?	+++	0	0	0	NA	NA	NA
-Wirrwahr	+	+	NA	0	0	NA	NA	NA	NA
-W:O:A Firefighters	+	++	NA	4	0	NA	NA	NA	NA
-Year of The Goat	+	+	+	0	0	0	NA	NA	NA
-zhOra	?	-	NA	0	0	NA	NA	NA	NA
-Zombies Ate My Girlfriend	-	?	NA	0	0	NA	NA	NA	NA
+The Black Dahlia Murder	?	?	?	0	0	0	Headbangers Stage	04-08-2016_21:40	04-08-2016_22:25
+The Dead Daisies	++	+	NA	0	0	NA	Headbangers Stage	04-08-2016_16:55	04-08-2016_17:40
+The Goddamn Gallows	+	+	+	0	0	0	Beer Garden	06-08-2016_17:45	06-08-2016_18:45
+The Haunted	?	--	--	0	0	0	True Metal Stage	05-08-2016_11:55	05-08-2016_12:55
+The O'Reillys and the Paddyhats	++	-	NA	0	0	NA	Beer Garden	03-08-2016_17:00	03-08-2016_18:00
+The O'Reillys and the Paddyhats	++	-	NA	0	0	NA	Beer Garden	04-08-2016_13:00	04-08-2016_14:00
+The O'Reillys and the Paddyhats	++	-	NA	0	0	NA	Beer Garden	05-08-2016_14:15	05-08-2016_15:00
+The Other	++	+	?	0	0	0	W:E:T Stage	04-08-2016_14:55	04-08-2016_15:25
+The Raven Age	++	+	NA	0	0	NA	Headbangers Stage	04-08-2016_14:20	04-08-2016_14:50
+The Vintage Caravan	++	+	+	0	0	0	W:E:T Stage	05-08-2016_13:50	05-08-2016_14:35
+Therapy?	?	?	+	0	0	0	W:E:T Stage	04-08-2016_22:30	04-08-2016_23:15
+Therion	++	++	+	0	1	0	Black Stage	06-08-2016_17:55	06-08-2016_19:10
+Tidal Dreams	+	-	NA	0	0	NA	Headbangers Stage	04-08-2016_12:40	04-08-2016_13:00
+Torfrock	+	--	++	1	0	0	Party Stage	05-08-2016_18:00	05-08-2016_19:15
+Triptykon	?	?	--	0	0	0	Black Stage	06-08-2016_20:55	06-08-2016_22:10
+Tsjuder	--	+++	--	0	1	0	W:E:T Stage	04-08-2016_19:10	04-08-2016_19:55
+Tulkas	-	--	NA	0	0	NA	Headbangers Stage	03-08-2016_17:15	03-08-2016_17:35
+tuXedoo	+	+	?	0	0	0	Beer Garden	03-08-2016_14:30	03-08-2016_15:30
+tuXedoo	+	+	?	0	0	0	Beer Garden	04-08-2016_16:00	04-08-2016_17:00
+tuXedoo	+	+	?	0	0	0	Beer Garden	05-08-2016_13:00	05-08-2016_13:45
+tuXedoo	+	+	?	0	0	0	Beer Garden	06-08-2016_15:30	06-08-2016_16:15
+Twisted Sister	+++	+	+++	0	0	0	True Metal Stage	06-08-2016_22:25	07-08-2016_00:25
+Unisonic	+++	?	?	0	0	0	Party Stage	06-08-2016_00:15	06-08-2016_01:30
+Vader	--	?	-	0	0	0	Headbangers Stage	04-08-2016_18:20	04-08-2016_19:05
+Versengold	++	+	++	0	0	0	Wackinger Stage	03-08-2016_15:30	03-08-2016_16:35
+Versengold	++	+	++	0	0	0	Wackinger Stage	04-08-2016_20:30	04-08-2016_21:30
+Versengold	++	+	++	0	0	0	Wackinger Stage	05-08-2016_16:30	05-08-2016_17:15
+Victims Of Madness	+	+	NA	0	1	NA	Headbangers Stage	06-08-2016_11:30	06-08-2016_11:55
+Vimoksha	-	-	NA	0	0	NA	Headbangers Stage	03-08-2016_18:05	03-08-2016_18:25
+Vogelfrey	+	++	++	1	0	0	Wackinger Stage	03-08-2016_18:45	03-08-2016_19:30
+Vogelfrey	+	++	++	1	0	0	Wackinger Stage	04-08-2016_17:00	04-08-2016_17:45
+Watch Out Stampede	+	?	+	0	0	0	Headbangers Stage	06-08-2016_12:35	06-08-2016_13:05
+While She Sleeps	+	+	?	0	0	0	W:E:T Stage	06-08-2016_01:30	06-08-2016_02:35
+Whitesnake	++	?	+++	0	0	0	Black Stage	04-08-2016_19:45	04-08-2016_21:00
+Wirrwahr	+	+	NA	0	0	NA	Wackinger Stage	04-08-2016_12:30	04-08-2016_13:15
+W:O:A Firefighters	+	++	NA	4	0	NA	Beer Garden	03-08-2016_20:00	03-08-2016_21:00
+W:O:A Firefighters	+	++	NA	4	0	NA	Beer Garden	04-08-2016_18:30	04-08-2016_19:30
+W:O:A Firefighters	+	++	NA	4	0	NA	Beer Garden	06-08-2016_14:00	06-08-2016_15:00
+Year of The Goat	+	+	+	0	0	0	W:E:T Stage	06-08-2016_14:35	06-08-2016_15:20
+zhOra	?	-	NA	0	0	NA	W:E:T Stage	04-08-2016_13:05	04-08-2016_13:25
+Zombies Ate My Girlfriend	-	?	NA	0	0	NA	W:E:T Stage	04-08-2016_13:55	04-08-2016_14:15
