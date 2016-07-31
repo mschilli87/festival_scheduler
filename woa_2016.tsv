@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: removed columns for Marta
+# 2016-07-31: added missing bands
+#             removed columns for Marta
 # 2016-02-02: adjusted lineup (2 cancellations & 2 replacement bands) incl.
 #             ratings/live counts for Inbal & Marcel
 # 2016-01-24: fixed umlaut characters
@@ -32,10 +33,16 @@ band	rating.Marcel	rating.Inbal	rating.Rick	live_count.Marcel	live_count.Inbal	l
 9mm	+	--	++	0	0	0	NA	NA	NA
 Alcest	+	++	+	0	0	0	NA	NA	NA
 Arch Enemy	++	+++	+	3	2	0	NA	NA	NA
+Asrock	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Auðn	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Aura Noir	-	-	--	0	0	0	NA	NA	NA
 Axel Rudi Pell	+	+	++	1	0	0	NA	NA	NA
+Barb Wire Dolls	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Bembers	---	---	---	0	0	0	NA	NA	NA
 Benediction	-	---	-	0	0	0	NA	NA	NA
+Berlin Allstarz Live Karaoke	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Beyond The Black	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Blaas of Glory	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Blechblosn	?	+	++	0	0	0	NA	NA	NA
 Bliksem	+	?	?	0	0	0	NA	NA	NA
 Blind Guardian	+++	+++	+++	2	1	0	NA	NA	NA
@@ -43,24 +50,33 @@ Blue Öyster Cult	++	+	+++	0	0	0	NA	NA	NA
 Bodhaktan	++	+	++	0	0	0	NA	NA	NA
 Bon Scott	+	?	+	0	0	0	NA	NA	NA
 Borknagar	+	+++	+	0	1	0	NA	NA	NA
+Budderside	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Buffalo Summer	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Bullet For My Valentine	++	++	?	1	0	0	NA	NA	NA
 Bury Tomorrow	+	?	?	0	0	0	NA	NA	NA
 Caliban	+	++	-	0	0	0	NA	NA	NA
 Callejon	?	-	+	0	0	0	NA	NA	NA
+Calm Hatchery	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Carrion	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Clutch	++	?	++	0	0	0	NA	NA	NA
 Cripper	?	?	?	0	0	0	NA	NA	NA
+Crows Crown	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Dagoba	?	--	?	0	0	0	NA	NA	NA
 Deez Nuts	-	---	++	0	0	0	NA	NA	NA
 Der Weg einer Freiheit	-	++	--	0	0	0	NA	NA	NA
 Devil Driver	+	?	?	1	0	0	NA	NA	NA
+Devil's Fire Show	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Die Krupps	+	+	NA	0	0	NA	NA	NA	NA
+Dio Disciples ft. a very special guest	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Dorfrocker	--	?	+++	0	0	0	NA	NA	NA
 Dragonforce	+	+	+	0	0	0	NA	NA	NA
 Dritte Wahl	+	---	++	0	0	0	NA	NA	NA
 Drone	+	--	++	0	0	0	NA	NA	NA
+Dystopia	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Eat The Turnbuckle	--	--	---	0	0	0	NA	NA	NA
 Einherjer	+	?	-	0	0	0	NA	NA	NA
 Ektomorf	+	-	-	0	0	0	NA	NA	NA
+Elemental	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Eluveitie	+++	+++	++	1	0	0	NA	NA	NA
 Elvenking	+	?	?	0	0	0	NA	NA	NA
 Entombed A.D.	-	-	--	0	0	0	NA	NA	NA
@@ -70,11 +86,16 @@ Eskimo Callboy	-	+++	+	0	2	0	NA	NA	NA
 Fateful Finality	?	-	--	0	0	0	NA	NA	NA
 Feuerschwanz	+++	++	++	5	2	0	NA	NA	NA
 Foreigner	++	++	++	0	0	0	NA	NA	NA
+Forgotten North	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Freiwächter	+	+	+	0	0	0	NA	NA	NA
 Girlschool	+	+	+	0	0	0	NA	NA	NA
 GloryHammer	++	+	++	0	0	0	NA	NA	NA
 Hämatom	+	--	?	0	0	0	NA	NA	NA
+Hansen & Friends	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Henry Rollins	?	?	?	0	0	0	NA	NA	NA
+Honky	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Horror Dance Squad	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Hteththemeth	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Ihsahn	+	++	?	0	1	0	NA	NA	NA
 Immolation	--	--	--	0	0	0	NA	NA	NA
 Insidious Disease	--	-	--	0	0	0	NA	NA	NA
@@ -83,13 +104,23 @@ Jesus Chrüsler Supercar	+	+	+	0	0	0	NA	NA	NA
 John Coffey	?	--	?	0	0	0	NA	NA	NA
 Kampfar	-	++	--	0	0	0	NA	NA	NA
 King Dude	+	?	+	0	0	0	NA	NA	NA
+Knasterbart	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Krayenzeit	+	+	+	0	0	0	NA	NA	NA
 Lamb of God	+	++	++	0	0	0	NA	NA	NA
+Legacy of Brutality	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Legion Of The Damned	-	+	--	0	0	0	NA	NA	NA
+Lemmy - Born To Lose, Live To Win	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Lepergod	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Lieveil	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Light & Freak Show	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Loudness	+	?	+	0	0	0	NA	NA	NA
+Lynchpin	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mambo Kurt	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Marduk	-	+++	--	0	0	0	NA	NA	NA
 Metal Church	?	?	+	0	0	0	NA	NA	NA
 Michael Monroe	+	?	+++	0	0	0	NA	NA	NA
+Miles To Perdition	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mindtaker	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Ministry	-	---	?	1	1	0	NA	NA	NA
 Monstagon	?	+	+	0	0	0	NA	NA	NA
 Monuments	+	+	-	0	0	0	NA	NA	NA
@@ -99,22 +130,38 @@ Nasty	--	--	--	0	0	0	NA	NA	NA
 Negative Approach	+	--	?	0	0	0	NA	NA	NA
 Orden Ogan	+	++	?	0	0	0	NA	NA	NA
 Orphaned Land	++	+++	?	0	3	0	NA	NA	NA
+Overthust	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Pain Is	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Pampatut	-	?	?	0	0	0	NA	NA	NA
 Panzerballett	++	+	+	0	0	0	NA	NA	NA
 Parkway Drive	?	-	--	0	0	0	NA	NA	NA
+Phil Campbell's All Starr Band	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Preternatural	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Profaner	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Promoters Farewell & Thanks	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Pyogenesis	?	--	-	0	0	0	NA	NA	NA
+Pyraweed	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Red Fang	+++	?	?	1	0	0	NA	NA	NA
 Red Hot Chili Pipers	+	++	++	0	0	0	NA	NA	NA
 Reliquiae	+	+	+	0	0	0	NA	NA	NA
+Ritual Day	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Saxon	++	+	++	1	0	0	NA	NA	NA
 Sebastien	+	?	+	0	0	0	NA	NA	NA
 Sector	NA	NA	NA	0	0	0	NA	NA	NA
 Serious Black	++	+	++	0	0	0	NA	NA	NA
 Serum 114	+	-	++	0	0	0	NA	NA	NA
+Sinphobia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sir Henry Hot + Band	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sir Henry Hot	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Skyline	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Snowy Shaw	+	+++	?	0	0	0	NA	NA	NA
+Steak Number Eight	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Steel Panther	++	?	+++	2	0	1	NA	NA	NA
 Sub Dub Micromachine	?	+	?	0	0	0	NA	NA	NA
+Sunless Dawn	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Svartmalm	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Symphony X	++	++	-	0	0	0	NA	NA	NA
+Syndemic	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Tarja	++	++	+	0	0	0	NA	NA	NA
 Testament	++	?	+	0	0	0	NA	NA	NA
 The Beards	++	++	++	0	0	0	NA	NA	NA
@@ -122,20 +169,30 @@ The Black Dahlia Murder	?	?	?	0	0	0	NA	NA	NA
 The Dead Daisies	++	+	NA	0	0	NA	NA	NA	NA
 The Goddamn Gallows	+	+	+	0	0	0	NA	NA	NA
 The Haunted	?	--	--	0	0	0	NA	NA	NA
+The O'Reillys and the Paddyhats	NA	NA	NA	NA	NA	NA	NA	NA	NA
 The Other	++	+	?	0	0	0	NA	NA	NA
+The Raven Age	NA	NA	NA	NA	NA	NA	NA	NA	NA
 The Vintage Caravan	++	+	+	0	0	0	NA	NA	NA
 Therapy?	?	?	+	0	0	0	NA	NA	NA
 Therion	++	++	+	0	1	0	NA	NA	NA
+Tidal Dreams	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Torfrock	+	--	++	1	0	0	NA	NA	NA
 Triptykon	?	?	--	0	0	0	NA	NA	NA
 Tsjuder	--	+++	--	0	1	0	NA	NA	NA
+Tulkas	NA	NA	NA	NA	NA	NA	NA	NA	NA
 tuXedoo	+	+	?	0	0	0	NA	NA	NA
 Twisted Sister	+++	+	+++	0	0	0	NA	NA	NA
 Unisonic	+++	?	?	0	0	0	NA	NA	NA
 Vader	--	?	-	0	0	0	NA	NA	NA
 Versengold	++	+	++	0	0	0	NA	NA	NA
+Victims Of Madness	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Vimoksha	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Vogelfrey	+	++	++	1	0	0	NA	NA	NA
 Watch Out Stampede	+	?	+	0	0	0	NA	NA	NA
 While She Sleeps	+	+	?	0	0	0	NA	NA	NA
 Whitesnake	++	?	+++	0	0	0	NA	NA	NA
+Wirrwahr	NA	NA	NA	NA	NA	NA	NA	NA	NA
+W:O:A Firefighters	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Year of The Goat	+	+	+	0	0	0	NA	NA	NA
+Zhora	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Zombies Ate My Girlfriend	NA	NA	NA	NA	NA	NA	NA	NA	NA
