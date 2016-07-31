@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: updated Borknagar rating & live counts
+# 2016-07-31: fixed typos in band names
+#             updated Borknagar rating & live counts
 #             added missing bands
 #             removed columns for Marta
 # 2016-02-02: adjusted lineup (2 cancellations & 2 replacement bands) incl.
@@ -131,7 +132,7 @@ Nasty	--	--	--	0	0	0	NA	NA	NA
 Negative Approach	+	--	?	0	0	0	NA	NA	NA
 Orden Ogan	+	++	?	0	0	0	NA	NA	NA
 Orphaned Land	++	+++	?	0	3	0	NA	NA	NA
-Overthust	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Overthrust	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Pain Is	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Pampatut	-	?	?	0	0	0	NA	NA	NA
 Panzerballett	++	+	+	0	0	0	NA	NA	NA
@@ -195,5 +196,5 @@ Whitesnake	++	?	+++	0	0	0	NA	NA	NA
 Wirrwahr	NA	NA	NA	NA	NA	NA	NA	NA	NA
 W:O:A Firefighters	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Year of The Goat	+	+	+	0	0	0	NA	NA	NA
-Zhora	NA	NA	NA	NA	NA	NA	NA	NA	NA
+zhOra	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Zombies Ate My Girlfriend	NA	NA	NA	NA	NA	NA	NA	NA	NA
