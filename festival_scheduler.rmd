@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: fixed long gigs overlapping short better gigs
+# 2016-07-31: added sorting of gigs by start (needed for previous bug fix to work)
+#             fixed long gigs overlapping short better gigs
 # 2016-01-16: stopped running scheduler without full-information gigs
 #             fixed knitr chunk option lists ('result' --> 'results' / removed superfluous ';')
 #             added personal running orders (most code written already in 2015-07)
@@ -361,6 +362,9 @@ running_order<-ddply(running_order
                                )
                     )
 
+# sort gigs by start time
+running_order<-running_order[order(running_order$start),]
+
 # split long gigs overlapping better short gigs
 interval<-1
 while(interval<nrow(running_order)){
@@ -434,6 +438,12 @@ personal_running_orders<-setNames(llply(members
                                  )
                            ,members
                            )
+
+# sort gigs by start time
+personal_running_orders<-llply(personal_running_orders
+                              ,function(personal_running_order)
+                                 personal_running_order[order(personal_running_order$start),]
+                              )
 
 # split long gigs overlapping better short gigs
 l_ply(members
