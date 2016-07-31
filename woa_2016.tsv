@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: added stages/time slots
+# 2016-07-31: removed cancelled bands
+#             added stages/time slots
 #             added missing ratings/live counts for Marcel & Inbal
 #             fixed typos in band names
 #             updated Borknagar rating & live counts
@@ -46,7 +47,6 @@ Bembers	---	---	---	0	0	0	Beer Garden	03-08-2016_18:30	03-08-2016_19:00
 Bembers	---	---	---	0	0	0	Beer Garden	04-08-2016_17:30	04-08-2016_18:00
 Bembers	---	---	---	0	0	0	Beer Garden	05-08-2016_15:30	05-08-2016_16:00
 Bembers	---	---	---	0	0	0	Beer Garden	06-08-2016_16:45	06-08-2016_17:15
-Benediction	-	---	-	0	0	0	NA	NA	NA
 Berlin Allstarz Live Karaoke	+	?	NA	0	0	NA	W:E:T Stage	04-08-2016_01:00	04-08-2016_03:00
 Berlin Allstarz Live Karaoke	+	?	NA	0	0	NA	Headbangers Stage	05-08-2016_01:05	05-08-2016_03:00
 Beyond The Black	++	+	NA	1	1	NA	Party Stage	05-08-2016_13:05	05-08-2016_14:05
@@ -83,7 +83,6 @@ Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	06-08-2016_00:45	06-08-2016_01:1
 Devil's Fire Show	?	?	NA	0	0	NA	Wasteland Stage	07-08-2016_00:45	07-08-2016_01:15
 Die Krupps	+	+	NA	0	0	NA	Headbangers Stage	05-08-2016_16:20	05-08-2016_17:05
 Dio Disciples ft. a very special guest	++	++	NA	0	0	NA	True Metal Stage	07-08-2016_02:10	07-08-2016_02:55
-Dorfrocker	--	?	+++	0	0	0	NA	NA	NA
 Dragonforce	+	+	+	0	0	0	Black Stage	05-08-2016_12:00	05-08-2016_13:15
 Dritte Wahl	+	---	++	0	0	0	Headbangers Stage	06-08-2016_17:05	06-08-2016_17:50
 Drone	+	--	++	0	0	0	W:E:T Stage	06-08-2016_17:55	06-08-2016_18:40
@@ -125,7 +124,6 @@ Knasterbart	?	?	NA	0	0	NA	Wackinger Stage	03-08-2016_12:30	03-08-2016_13:15
 Knasterbart	?	?	NA	0	0	NA	Beer Garden	04-08-2016_14:30	04-08-2016_15:30
 Knasterbart	?	?	NA	0	0	NA	Beer Garden	05-08-2016_18:00	05-08-2016_19:00
 Krayenzeit	+	+	+	0	0	0	Wackinger Stage	05-08-2016_18:00	05-08-2016_18:45
-Lamb of God	+	++	++	0	0	0	NA	NA	NA
 Legacy of Brutality	--	--	NA	0	0	NA	W:E:T Stage	03-08-2016_18:30	03-08-2016_18:50
 Legion Of The Damned	-	+	--	0	0	0	Black Stage	05-08-2016_13:05	05-08-2016_14:05
 Lemmy - Born To Lose, Live To Win	+	+	NA	0	0	NA	Black Stage	04-08-2016_23:45	05-08-2016_00:00
@@ -207,7 +205,6 @@ Symphony X	++	++	-	0	0	0	True Metal Stage	06-08-2016_13:30	06-08-2016_14:45
 Syndemic	+	+	NA	0	0	NA	W:E:T Stage	03-08-2016_15:10	03-08-2016_15:30
 Tarja	++	++	+	0	0	0	Black Stage	05-08-2016_21:00	05-08-2016_22:15
 Testament	++	?	+	0	0	0	True Metal Stage	06-08-2016_01:45	06-08-2016_03:00
-The Beards	++	++	++	0	0	0	NA	NA	NA
 The Black Dahlia Murder	?	?	?	0	0	0	Headbangers Stage	04-08-2016_21:40	04-08-2016_22:25
 The Dead Daisies	++	+	NA	0	0	NA	Headbangers Stage	04-08-2016_16:55	04-08-2016_17:40
 The Goddamn Gallows	+	+	+	0	0	0	Beer Garden	06-08-2016_17:45	06-08-2016_18:45
