@@ -14,7 +14,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2016-07-31: added missing bands
+# 2016-07-31: updated Borknagar rating & live counts
+#             added missing bands
 #             removed columns for Marta
 # 2016-02-02: adjusted lineup (2 cancellations & 2 replacement bands) incl.
 #             ratings/live counts for Inbal & Marcel
@@ -49,7 +50,7 @@ Blind Guardian	+++	+++	+++	2	1	0	NA	NA	NA
 Blue Öyster Cult	++	+	+++	0	0	0	NA	NA	NA
 Bodhaktan	++	+	++	0	0	0	NA	NA	NA
 Bon Scott	+	?	+	0	0	0	NA	NA	NA
-Borknagar	+	+++	+	0	1	0	NA	NA	NA
+Borknagar	++	+++	+	1	2	0	NA	NA	NA
 Budderside	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Buffalo Summer	NA	NA	NA	NA	NA	NA	NA	NA	NA
 Bullet For My Valentine	++	++	?	1	0	0	NA	NA	NA
