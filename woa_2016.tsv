@@ -4,7 +4,7 @@
 
 # file:         woa_2016.tsv
 # created:      2016-01-16
-# last update:  2016-02-02
+# last update:  2016-07-31
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      input file for WOA 2016 scheduling
@@ -14,6 +14,7 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2016-07-31: removed columns for Marta
 # 2016-02-02: adjusted lineup (2 cancellations & 2 replacement bands) incl.
 #             ratings/live counts for Inbal & Marcel
 # 2016-01-24: fixed umlaut characters
@@ -26,115 +27,115 @@
 # table #
 #########
 
-band	rating.Marcel	rating.Inbal	rating.Rick	rating.Marta	live_count.Marcel	live_count.Inbal	live_count.Rick	live_count.Marta	stage	start	end
-1349	-	?	-	NA	0	0	0	NA	NA	NA	NA
-9mm	+	--	++	NA	0	0	0	NA	NA	NA	NA
-Alcest	+	++	+	NA	0	0	0	NA	NA	NA	NA
-Arch Enemy	++	+++	+	NA	3	2	0	NA	NA	NA	NA
-Aura Noir	-	-	--	NA	0	0	0	NA	NA	NA	NA
-Axel Rudi Pell	+	+	++	NA	1	0	0	NA	NA	NA	NA
-Bembers	---	---	---	NA	0	0	0	NA	NA	NA	NA
-Benediction	-	---	-	NA	0	0	0	NA	NA	NA	NA
-Blechblosn	?	+	++	NA	0	0	0	NA	NA	NA	NA
-Bliksem	+	?	?	NA	0	0	0	NA	NA	NA	NA
-Blind Guardian	+++	+++	+++	NA	2	1	0	NA	NA	NA	NA
-Blue Öyster Cult	++	+	+++	NA	0	0	0	NA	NA	NA	NA
-Bodhaktan	++	+	++	NA	0	0	0	NA	NA	NA	NA
-Bon Scott	+	?	+	NA	0	0	0	NA	NA	NA	NA
-Borknagar	+	+++	+	NA	0	1	0	NA	NA	NA	NA
-Bullet For My Valentine	++	++	?	NA	1	0	0	NA	NA	NA	NA
-Bury Tomorrow	+	?	?	NA	0	0	0	NA	NA	NA	NA
-Caliban	+	++	-	NA	0	0	0	NA	NA	NA	NA
-Callejon	?	-	+	NA	0	0	0	NA	NA	NA	NA
-Clutch	++	?	++	NA	0	0	0	NA	NA	NA	NA
-Cripper	?	?	?	NA	0	0	0	NA	NA	NA	NA
-Dagoba	?	--	?	NA	0	0	0	NA	NA	NA	NA
-Deez Nuts	-	---	++	NA	0	0	0	NA	NA	NA	NA
-Der Weg einer Freiheit	-	++	--	NA	0	0	0	NA	NA	NA	NA
-Devil Driver	+	?	?	NA	1	0	0	NA	NA	NA	NA
-Die Krupps	+	+	NA	NA	0	0	NA	NA	NA	NA	NA
-Dorfrocker	--	?	+++	NA	0	0	0	NA	NA	NA	NA
-Dragonforce	+	+	+	NA	0	0	0	NA	NA	NA	NA
-Dritte Wahl	+	---	++	NA	0	0	0	NA	NA	NA	NA
-Drone	+	--	++	NA	0	0	0	NA	NA	NA	NA
-Eat The Turnbuckle	--	--	---	NA	0	0	0	NA	NA	NA	NA
-Einherjer	+	?	-	NA	0	0	0	NA	NA	NA	NA
-Ektomorf	+	-	-	NA	0	0	0	NA	NA	NA	NA
-Eluveitie	+++	+++	++	NA	1	0	0	NA	NA	NA	NA
-Elvenking	+	?	?	NA	0	0	0	NA	NA	NA	NA
-Entombed A.D.	-	-	--	NA	0	0	0	NA	NA	NA	NA
-Equilibrium	++	+++	++	NA	1	1	0	NA	NA	NA	NA
-Eric Fish and Friends	+++	+	+	NA	10	0	0	NA	NA	NA	NA
-Eskimo Callboy	-	+++	+	NA	0	2	0	NA	NA	NA	NA
-Fateful Finality	?	-	--	NA	0	0	0	NA	NA	NA	NA
-Feuerschwanz	+++	++	++	NA	5	2	0	NA	NA	NA	NA
-Foreigner	++	++	++	NA	0	0	0	NA	NA	NA	NA
-Freiwächter	+	+	+	NA	0	0	0	NA	NA	NA	NA
-Girlschool	+	+	+	NA	0	0	0	NA	NA	NA	NA
-GloryHammer	++	+	++	NA	0	0	0	NA	NA	NA	NA
-Hämatom	+	--	?	NA	0	0	0	NA	NA	NA	NA
-Henry Rollins	?	?	?	NA	0	0	0	NA	NA	NA	NA
-Ihsahn	+	++	?	NA	0	1	0	NA	NA	NA	NA
-Immolation	--	--	--	NA	0	0	0	NA	NA	NA	NA
-Insidious Disease	--	-	--	NA	0	0	0	NA	NA	NA	NA
-Iron Maiden	+++	++	+++	NA	1	1	0	NA	NA	NA	NA
-Jesus Chrüsler Supercar	+	+	+	NA	0	0	0	NA	NA	NA	NA
-John Coffey	?	--	?	NA	0	0	0	NA	NA	NA	NA
-Kampfar	-	++	--	NA	0	0	0	NA	NA	NA	NA
-King Dude	+	?	+	NA	0	0	0	NA	NA	NA	NA
-Krayenzeit	+	+	+	NA	0	0	0	NA	NA	NA	NA
-Lamb of God	+	++	++	NA	0	0	0	NA	NA	NA	NA
-Legion Of The Damned	-	+	--	NA	0	0	0	NA	NA	NA	NA
-Loudness	+	?	+	NA	0	0	0	NA	NA	NA	NA
-Marduk	-	+++	--	NA	0	0	0	NA	NA	NA	NA
-Metal Church	?	?	+	NA	0	0	0	NA	NA	NA	NA
-Michael Monroe	+	?	+++	NA	0	0	0	NA	NA	NA	NA
-Ministry	-	---	?	NA	1	1	0	NA	NA	NA	NA
-Monstagon	?	+	+	NA	0	0	0	NA	NA	NA	NA
-Monuments	+	+	-	NA	0	0	0	NA	NA	NA	NA
-Mr. Hurley und die Pulveraffen	++	+	++	NA	1	0	0	NA	NA	NA	NA
-Myrkur	?	+	?	NA	0	0	0	NA	NA	NA	NA
-Nasty	--	--	--	NA	0	0	0	NA	NA	NA	NA
-Negative Approach	+	--	?	NA	0	0	0	NA	NA	NA	NA
-Orden Ogan	+	++	?	NA	0	0	0	NA	NA	NA	NA
-Orphaned Land	++	+++	?	NA	0	3	0	NA	NA	NA	NA
-Pampatut	-	?	?	NA	0	0	0	NA	NA	NA	NA
-Panzerballett	++	+	+	NA	0	0	0	NA	NA	NA	NA
-Parkway Drive	?	-	--	NA	0	0	0	NA	NA	NA	NA
-Pyogenesis	?	--	-	NA	0	0	0	NA	NA	NA	NA
-Red Fang	+++	?	?	NA	1	0	0	NA	NA	NA	NA
-Red Hot Chili Pipers	+	++	++	NA	0	0	0	NA	NA	NA	NA
-Reliquiae	+	+	+	NA	0	0	0	NA	NA	NA	NA
-Saxon	++	+	++	NA	1	0	0	NA	NA	NA	NA
-Sebastien	+	?	+	NA	0	0	0	NA	NA	NA	NA
-Sector	NA	NA	NA	NA	0	0	0	NA	NA	NA	NA
-Serious Black	++	+	++	NA	0	0	0	NA	NA	NA	NA
-Serum 114	+	-	++	NA	0	0	0	NA	NA	NA	NA
-Snowy Shaw	+	+++	?	NA	0	0	0	NA	NA	NA	NA
-Steel Panther	++	?	+++	NA	2	0	1	NA	NA	NA	NA
-Sub Dub Micromachine	?	+	?	NA	0	0	0	NA	NA	NA	NA
-Symphony X	++	++	-	NA	0	0	0	NA	NA	NA	NA
-Tarja	++	++	+	NA	0	0	0	NA	NA	NA	NA
-Testament	++	?	+	NA	0	0	0	NA	NA	NA	NA
-The Beards	++	++	++	NA	0	0	0	NA	NA	NA	NA
-The Black Dahlia Murder	?	?	?	NA	0	0	0	NA	NA	NA	NA
-The Dead Daisies	++	+	NA	NA	0	0	NA	NA	NA	NA	NA
-The Goddamn Gallows	+	+	+	NA	0	0	0	NA	NA	NA	NA
-The Haunted	?	--	--	NA	0	0	0	NA	NA	NA	NA
-The Other	++	+	?	NA	0	0	0	NA	NA	NA	NA
-The Vintage Caravan	++	+	+	NA	0	0	0	NA	NA	NA	NA
-Therapy?	?	?	+	NA	0	0	0	NA	NA	NA	NA
-Therion	++	++	+	NA	0	1	0	NA	NA	NA	NA
-Torfrock	+	--	++	NA	1	0	0	NA	NA	NA	NA
-Triptykon	?	?	--	NA	0	0	0	NA	NA	NA	NA
-Tsjuder	--	+++	--	NA	0	1	0	NA	NA	NA	NA
-tuXedoo	+	+	?	NA	0	0	0	NA	NA	NA	NA
-Twisted Sister	+++	+	+++	NA	0	0	0	NA	NA	NA	NA
-Unisonic	+++	?	?	NA	0	0	0	NA	NA	NA	NA
-Vader	--	?	-	NA	0	0	0	NA	NA	NA	NA
-Versengold	++	+	++	NA	0	0	0	NA	NA	NA	NA
-Vogelfrey	+	++	++	NA	1	0	0	NA	NA	NA	NA
-Watch Out Stampede	+	?	+	NA	0	0	0	NA	NA	NA	NA
-While She Sleeps	+	+	?	NA	0	0	0	NA	NA	NA	NA
-Whitesnake	++	?	+++	NA	0	0	0	NA	NA	NA	NA
-Year of The Goat	+	+	+	NA	0	0	0	NA	NA	NA	NA
+band	rating.Marcel	rating.Inbal	rating.Rick	live_count.Marcel	live_count.Inbal	live_count.Rick	stage	start	end
+1349	-	?	-	0	0	0	NA	NA	NA
+9mm	+	--	++	0	0	0	NA	NA	NA
+Alcest	+	++	+	0	0	0	NA	NA	NA
+Arch Enemy	++	+++	+	3	2	0	NA	NA	NA
+Aura Noir	-	-	--	0	0	0	NA	NA	NA
+Axel Rudi Pell	+	+	++	1	0	0	NA	NA	NA
+Bembers	---	---	---	0	0	0	NA	NA	NA
+Benediction	-	---	-	0	0	0	NA	NA	NA
+Blechblosn	?	+	++	0	0	0	NA	NA	NA
+Bliksem	+	?	?	0	0	0	NA	NA	NA
+Blind Guardian	+++	+++	+++	2	1	0	NA	NA	NA
+Blue Öyster Cult	++	+	+++	0	0	0	NA	NA	NA
+Bodhaktan	++	+	++	0	0	0	NA	NA	NA
+Bon Scott	+	?	+	0	0	0	NA	NA	NA
+Borknagar	+	+++	+	0	1	0	NA	NA	NA
+Bullet For My Valentine	++	++	?	1	0	0	NA	NA	NA
+Bury Tomorrow	+	?	?	0	0	0	NA	NA	NA
+Caliban	+	++	-	0	0	0	NA	NA	NA
+Callejon	?	-	+	0	0	0	NA	NA	NA
+Clutch	++	?	++	0	0	0	NA	NA	NA
+Cripper	?	?	?	0	0	0	NA	NA	NA
+Dagoba	?	--	?	0	0	0	NA	NA	NA
+Deez Nuts	-	---	++	0	0	0	NA	NA	NA
+Der Weg einer Freiheit	-	++	--	0	0	0	NA	NA	NA
+Devil Driver	+	?	?	1	0	0	NA	NA	NA
+Die Krupps	+	+	NA	0	0	NA	NA	NA	NA
+Dorfrocker	--	?	+++	0	0	0	NA	NA	NA
+Dragonforce	+	+	+	0	0	0	NA	NA	NA
+Dritte Wahl	+	---	++	0	0	0	NA	NA	NA
+Drone	+	--	++	0	0	0	NA	NA	NA
+Eat The Turnbuckle	--	--	---	0	0	0	NA	NA	NA
+Einherjer	+	?	-	0	0	0	NA	NA	NA
+Ektomorf	+	-	-	0	0	0	NA	NA	NA
+Eluveitie	+++	+++	++	1	0	0	NA	NA	NA
+Elvenking	+	?	?	0	0	0	NA	NA	NA
+Entombed A.D.	-	-	--	0	0	0	NA	NA	NA
+Equilibrium	++	+++	++	1	1	0	NA	NA	NA
+Eric Fish and Friends	+++	+	+	10	0	0	NA	NA	NA
+Eskimo Callboy	-	+++	+	0	2	0	NA	NA	NA
+Fateful Finality	?	-	--	0	0	0	NA	NA	NA
+Feuerschwanz	+++	++	++	5	2	0	NA	NA	NA
+Foreigner	++	++	++	0	0	0	NA	NA	NA
+Freiwächter	+	+	+	0	0	0	NA	NA	NA
+Girlschool	+	+	+	0	0	0	NA	NA	NA
+GloryHammer	++	+	++	0	0	0	NA	NA	NA
+Hämatom	+	--	?	0	0	0	NA	NA	NA
+Henry Rollins	?	?	?	0	0	0	NA	NA	NA
+Ihsahn	+	++	?	0	1	0	NA	NA	NA
+Immolation	--	--	--	0	0	0	NA	NA	NA
+Insidious Disease	--	-	--	0	0	0	NA	NA	NA
+Iron Maiden	+++	++	+++	1	1	0	NA	NA	NA
+Jesus Chrüsler Supercar	+	+	+	0	0	0	NA	NA	NA
+John Coffey	?	--	?	0	0	0	NA	NA	NA
+Kampfar	-	++	--	0	0	0	NA	NA	NA
+King Dude	+	?	+	0	0	0	NA	NA	NA
+Krayenzeit	+	+	+	0	0	0	NA	NA	NA
+Lamb of God	+	++	++	0	0	0	NA	NA	NA
+Legion Of The Damned	-	+	--	0	0	0	NA	NA	NA
+Loudness	+	?	+	0	0	0	NA	NA	NA
+Marduk	-	+++	--	0	0	0	NA	NA	NA
+Metal Church	?	?	+	0	0	0	NA	NA	NA
+Michael Monroe	+	?	+++	0	0	0	NA	NA	NA
+Ministry	-	---	?	1	1	0	NA	NA	NA
+Monstagon	?	+	+	0	0	0	NA	NA	NA
+Monuments	+	+	-	0	0	0	NA	NA	NA
+Mr. Hurley und die Pulveraffen	++	+	++	1	0	0	NA	NA	NA
+Myrkur	?	+	?	0	0	0	NA	NA	NA
+Nasty	--	--	--	0	0	0	NA	NA	NA
+Negative Approach	+	--	?	0	0	0	NA	NA	NA
+Orden Ogan	+	++	?	0	0	0	NA	NA	NA
+Orphaned Land	++	+++	?	0	3	0	NA	NA	NA
+Pampatut	-	?	?	0	0	0	NA	NA	NA
+Panzerballett	++	+	+	0	0	0	NA	NA	NA
+Parkway Drive	?	-	--	0	0	0	NA	NA	NA
+Pyogenesis	?	--	-	0	0	0	NA	NA	NA
+Red Fang	+++	?	?	1	0	0	NA	NA	NA
+Red Hot Chili Pipers	+	++	++	0	0	0	NA	NA	NA
+Reliquiae	+	+	+	0	0	0	NA	NA	NA
+Saxon	++	+	++	1	0	0	NA	NA	NA
+Sebastien	+	?	+	0	0	0	NA	NA	NA
+Sector	NA	NA	NA	0	0	0	NA	NA	NA
+Serious Black	++	+	++	0	0	0	NA	NA	NA
+Serum 114	+	-	++	0	0	0	NA	NA	NA
+Snowy Shaw	+	+++	?	0	0	0	NA	NA	NA
+Steel Panther	++	?	+++	2	0	1	NA	NA	NA
+Sub Dub Micromachine	?	+	?	0	0	0	NA	NA	NA
+Symphony X	++	++	-	0	0	0	NA	NA	NA
+Tarja	++	++	+	0	0	0	NA	NA	NA
+Testament	++	?	+	0	0	0	NA	NA	NA
+The Beards	++	++	++	0	0	0	NA	NA	NA
+The Black Dahlia Murder	?	?	?	0	0	0	NA	NA	NA
+The Dead Daisies	++	+	NA	0	0	NA	NA	NA	NA
+The Goddamn Gallows	+	+	+	0	0	0	NA	NA	NA
+The Haunted	?	--	--	0	0	0	NA	NA	NA
+The Other	++	+	?	0	0	0	NA	NA	NA
+The Vintage Caravan	++	+	+	0	0	0	NA	NA	NA
+Therapy?	?	?	+	0	0	0	NA	NA	NA
+Therion	++	++	+	0	1	0	NA	NA	NA
+Torfrock	+	--	++	1	0	0	NA	NA	NA
+Triptykon	?	?	--	0	0	0	NA	NA	NA
+Tsjuder	--	+++	--	0	1	0	NA	NA	NA
+tuXedoo	+	+	?	0	0	0	NA	NA	NA
+Twisted Sister	+++	+	+++	0	0	0	NA	NA	NA
+Unisonic	+++	?	?	0	0	0	NA	NA	NA
+Vader	--	?	-	0	0	0	NA	NA	NA
+Versengold	++	+	++	0	0	0	NA	NA	NA
+Vogelfrey	+	++	++	1	0	0	NA	NA	NA
+Watch Out Stampede	+	?	+	0	0	0	NA	NA	NA
+While She Sleeps	+	+	?	0	0	0	NA	NA	NA
+Whitesnake	++	?	+++	0	0	0	NA	NA	NA
+Year of The Goat	+	+	+	0	0	0	NA	NA	NA
