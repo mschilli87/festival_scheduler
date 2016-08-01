@@ -5,7 +5,7 @@
 
 # file:         festival_scheduler.rmd
 # created:      2015-07-23
-# last update:  2016-07-31
+# last update:  2016-08-01
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
 #               Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
@@ -16,6 +16,7 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2016-08-01: added rating column to personal running orders
 # 2016-07-31: added sorting of gigs by start (needed for previous bug fix to work)
 #             fixed long gigs overlapping short better gigs
 # 2016-01-16: stopped running scheduler without full-information gigs
@@ -494,6 +495,7 @@ l_ply(members
                                              )
                                 ,band
                                 ,stage
+                                ,rating=ratings[band,member]
                                 ,score=paste0(round(scores[band]
                                                    ,digits.table
                                                    )*100
