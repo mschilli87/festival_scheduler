@@ -1,0 +1,38 @@
+#######################
+# general information #
+#######################
+
+# file:      woa_2018.tsv
+# created:   2017-08-07
+# author(s): Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:   GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:   input file for WOA 2018 scheduling
+
+
+######################################
+# change log (reverse chronological) #
+######################################
+
+# 2017-08-07: initial version (first round of bands with ratings & live counts for Inbal & Marcel)
+
+
+#########
+# table #
+#########
+
+band	rating.Marcel	rating.Inbal	rating.John	rating.Rick	rating.Martin	live_count.Marcel	live_count.Inbal	live_count.John	live_count.Rick	live_count.Martin	stage	start	end
+Amorphis	+++	+++	?	?	?	3	4	0	0	0			
+Arch Enemy	+++	+++	?	?	?	4	3	0	0	0			
+Bannkreis	+	?	?	?	?	0	0	0	0	0			
+Belphegor	-	+	?	?	?	0	0	0	0	0			
+Deserted Fear	?	-	?	?	?	0	0	0	0	0			
+Dirkschneider	++	?	?	?	?	0	0	0	0	0			
+Doro	++	+	?	?	?	2	1	0	0	0			
+Epica	++	++	?	?	?	1	2	0	0	0			
+Firewind	+	+	?	?	?	0	0	0	0	0			
+In Extremo	+++	+	?	?	?	12	2	0	0	0			
+Knorkator	++	?	?	?	?	2	0	0	0	0			
+Nightwish	+++	+++	?	?	?	2	3	0	0	0			
+Running Wild	+	+	?	?	?	1	0	0	0	0			
+Sepultura	?	?	?	?	?	0	1	0	0	0			
+Watain	--	?	?	?	?	0	1	0	0	0			

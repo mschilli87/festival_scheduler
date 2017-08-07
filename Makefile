@@ -4,7 +4,7 @@
 
 # file:         Makefile
 # created:      2015-07-23
-# last update:  2015-07-27
+# last update:  2017-08-07
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:      automize generation of festival running orders based on ratings
@@ -14,10 +14,28 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2017-08-07: replaced placeholder TSV file name by WOA 2018 input file
 # 2015-07-27: fixed typo in purpose comment
-# 2015-07-23: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
+# 2015-07-26: added strftime format parameter to print weekdays instead of dates
+#             adjusted strptime format parameter name for compatibility with upstream changes
+#             added date/time parameters (strptime format & time zone)
+# 2015-07-24: added usage of CSS style sheet provided by Marta Rodriguez Orejuela to
 #             Markdown-to-HTML conversion
-#             initial version (running order generation)
+# 2015-07-23: initial version (running order generation)
+
+
+##############
+# parameters #
+##############
+
+# strptime format for data/time strings used in input TSV file
+DATE_TIME_FORMAT_INPUT:=%d-%m-%Y_%R
+
+# time zone
+TIMEZONE:=CET
+
+# strftime format for data/time strings used in output Markdown/HTML files
+DATE_TIME_FORMAT_OUTPUT:=%a %R
 
 
 ####################
@@ -31,7 +49,7 @@ MAKEFILE:=$(realpath $(lastword $(MAKEFILE_LIST)))
 MAKEFILE_DIRECTORY:=$(dir $(MAKEFILE))
 
 # (absolute) path of the TSV file with linup & rating information for the festival
-FESTIVAL_TSV:=$(MAKEFILE_DIRECTORY)festival.tsv
+FESTIVAL_TSV:=$(MAKEFILE_DIRECTORY)woa_2018.tsv
 
 # (absolute) path of R-Markdown file used to generate the running order
 SCHEDULER_RMD:=$(MAKEFILE_DIRECTORY)festival_scheduler.rmd
@@ -85,6 +103,9 @@ SPACE+=
 # define multi-line running order parameters (must not include single-quotes or TABs)
 define SCHEDULER_PARAMS
   table_tsv<-"$(FESTIVAL_TSV)"
+  format.datetime.input<-"$(DATE_TIME_FORMAT_INPUT)"
+  timezone<-"$(TIMEZONE)"
+  format.datetime.output<-"$(DATE_TIME_FORMAT_OUTPUT)"
 endef
 
 # define helper variable to use multi-line variable as multi-line string
