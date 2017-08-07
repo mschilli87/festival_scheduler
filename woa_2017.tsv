@@ -1,0 +1,225 @@
+#######################
+# general information #
+#######################
+
+# file:      woa_2017.tsv
+# created:   2017-08-07
+# author(s): Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:   GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:   input file for WOA 2017 scheduling
+
+
+######################################
+# change log (reverse chronological) #
+######################################
+
+# 2017-08-07: initial version (full table)
+
+
+#########
+# table #
+#########
+
+band	rating.Marcel	rating.Inbal	rating.John	live_count.Marcel	live_count.Inbal	live_count.John	stage	start	end
+Aborted	-	-	-	0	0	0	Headbangers stage	03-08-2017_16:50	03-08-2017_19:45
+Abinchova	+	+	-	0	0	0	WET stage	02-08-2017_12:40	02-08-2017_13:00
+Accept	++	+	?	0	0	0	Faster stage	03-08-2017_20:00	03-08-2017_22:00
+Aeverium	+	-	?	0	0	0	Metal church	02-08-2017_19:00	02-08-2017_20:00
+Against	+	++	?	0	0	0	WET stage	02-08-2017_16:50	02-08-2017_17:10
+Ahab	+	+	?	0	0	0	Headbangers stage	05-08-2017_12:40	05-08-2017_13:25
+Alice Cooper	++	+++	+	1	2	0	Harder stage	05-08-2017_19:00	05-08-2017_20:15
+Amon Amarth	++	+++	+++	4	0	0	Faster stage	05-08-2017_20:30	05-08-2017_21:45
+Analepsy	--	--	?	0	0	0	WET stage	02-08-2017_16:00	02-08-2017_16:20
+Animator	?	--	--	0	0	0	WET stage	02-08-2017_11:50	02-08-2017_12:10
+Annihilator	+	+	?	0	0	0	Headbangers stage	02-08-2017_21:15	02-08-2017_22:15
+Apocalyptica	+	++	+	2	2	0	Harder stage	04-08-2017_20:00	04-08-2017_21:15
+Architects	+	--	+++	0	0	0	Louder stage	04-08-2017_21:30	04-08-2017_22:45
+ASP	-	++	?	2	2	0	Harder stage	04-08-2017_02:00	04-08-2017_03:00
+asrock	+	?	?	0	0	0	Beergarden stage	04-08-2017_16:45	04-08-2017_17:30
+Asyllex	?	?	?	0	0	0	Headbangers stage	02-08-2017_11:25	02-08-2017_11:45
+Aura Noir	-	+	-	0	0	0	Headbangers stage	05-08-2017_14:30	05-08-2017_15:15
+Avantasia	+++	+++	++	2	2	0	Harder stage	05-08-2017_22:00	05-08-2017_00:00
+Bai Bang	+	+	--	0	0	0	Beergarden stage	03-08-2017_19:00	03-08-2017_19:45
+Batushka	--	+++	--	0	0	0	WET stage	03-08-2017_21:30	03-08-2017_22:20
+Beside	?	--	?	0	0	0	Headbangers stage	02-08-2017_16:25	02-08-2017_16:45
+Beyond the Black	+	+	+	2	1	0	Harder stage	05-08-2017_13:15	05-08-2017_14:15
+Blechblosn	--	---	---	0	0	0	Beergarden stage	02-08-2017_13:00	02-08-2017_13:45
+Blechblosn	--	---	---	0	0	0	Beergarden stage	03-08-2017_13:00	03-08-2017_13:45
+Blechblosn	--	---	---	0	0	0	Beergarden stage	04-08-2017_18:00	04-08-2017_18:45
+Blechblosn	--	---	---	0	0	0	Beergarden stage	05-08-2017_18:00	05-08-2017_18:45
+British Lion	++	+	?	0	0	0	Headbangers stage	05-08-2017_22:20	05-08-2017_23:20
+Brujeria	---	--	---	0	0	0	Headbangers stage	03-08-2017_20:40	03-08-2017_21:45
+Candlemass	+	+	---	0	0	0	WET stage	05-08-2017_00:20	05-08-2017_01:10
+Charlie Harper	--	--	+	0	0	0	Beergarden stage	02-08-2017_21:00	02-08-2017_21:45
+Clawfinger	?	---	+	0	0	0	Louder stage	04-08-2017_13:15	04-08-2017_14:15
+Corpse Hoarder	-	---	-	0	0	0	WET stage	03-08-2017_12:15	03-08-2017_12:35
+Corvus Corax	+++	+++	--	12	3	0	Wackinger stage	03-08-2017_23:00	04-08-2017_00:00
+Crowbar	+	--	?	0	0	0	Headbangers stage	02-08-2017_23:45	03-08-2017_00:20
+Cypecory	?	-	+	0	0	0	Wasteland stage	05-08-2017_00:30	05-08-2017_01:15
+Da Rocker und Da Waitler	-	---	--	0	0	0	Wackinger stage	02-08-2017_11:00	02-08-2017_11:45
+Da Rocker und Da Waitler	-	---	--	0	0	0	Beergarden stage	04-08-2017_21:45	04-08-2017_22:30
+Dawn of Disease	--	---	-	0	0	0	Headbangers stage	03-08-2017_17:00	03-08-2017_17:45
+Detraktor	-	?	---	0	0	0	WET stage	02-08-2017_11:00	02-08-2017_11:20
+Dog Eat Dog	+	---	+	0	0	0	WET stage	04-08-2017_15:45	04-08-2017_16:40
+Domination	-	--	--	0	0	0	Headbangers stage	02-08-2017_15:35	02-08-2017_15:55
+E-an-na	?	?	--	0	0	0	WET stage	02-08-2017_18:40	02-08-2017_19:00
+Emil Bulls	-	--	-	0	0	0	WET stage	05-08-2017_15:25	05-08-2017_16:10
+Emperor		+++	?	0	0	1	Faster stage	04-08-2017_21:30	04-08-2017_22:45
+Ereb Altor	?	+	---	0	0	0	Wackinger stage	04-08-2017_21:00	04-08-2017_22:00
+Eternal Struggle	-	+	--	0	0	0	Headbangers stage	03-08-2017_13:30	03-08-2017_13:50
+Europe	++	++	++	0	0	0	Faster stage	03-08-2017_17:00	03-08-2017_18:00
+Evil Scarecrow	+	++	+++	0	0	0	Headbangers stage	04-08-2017_13:10	04-08-2017_13:55
+Fates Warning	+	?	-	0	0	0	WET stage	04-08-2017_22:05	04-08-2017_22:50
+Fit for an Autopsy	+	-	+++	0	0	0	WET stage	06-08-2017_01:20	06-08-2017_02:05
+Flotsam and Jetsam	?	?	?	0	0	0	Headbangers stage	02-08-2017_19:10	02-08-2017_19:55
+From the Void	+	+	?	0	0	0	WET stage	02-08-2017_14:20	02-08-2017_14:40
+Fuchsteufelswild	+	?	---	0	0	0	Wackinger stage	03-08-2017_15:30	03-08-2017_16:15
+Ganaim	?	--	--	0	0	0	Wackinger stage	02-08-2017_14:00	02-08-2017_14:45
+Ganaim	?	--	--	0	0	0	Wackinger stage	03-08-2017_14:00	03-08-2017_14:45
+Ganaim	?	--	--	0	0	0	Wackinger stage	04-08-2017_12:00	04-08-2017_12:45
+Grand Magus	++	+	--	0	0	0	Headbangers stage	04-08-2017_16:50	04-08-2017_17:35
+Grave Digger	+++	+	+	1	0	0	Harder stage	04-08-2017_14:30	04-08-2017_15:30
+Haematom	+	++	+	0	0	0	Louder stage	05-08-2017_17:30	05-08-2017_18:45
+Harpyie	+	+	+	0	0	0	Wackinger stage	04-08-2017_18:00	04-08-2017_18:45
+Harpyie	+	+	+	0	0	0	Wackinger stage	05-08-2017_13:30	05-08-2017_14:15
+Heaven Shall Burn	+	+	+++	0	0	2	Harder stage	05-08-2017_16:00	05-08-2017_17:15
+Heimataerde	+	+	++	0	0	0	Wackinger stage	05-08-2017_15:00	05-08-2017_15:45
+Heldmaschine	?	+	++	0	0	0	Wasteland stage	06-08-2017_00:30	06-08-2017_01:15
+Hell-O-Matic	+	+	+++	0	0	0	Wasteland stage	02-08-2017_20:45	02-08-2017_21:30
+Henry Rollins (spoken words)	?	?	?	0	0	0			
+High Fighter	?	--	--	0	0	0	Headbangers stage	04-08-2017_11:40	04-08-2017_12:10
+Imperium Dekadenz	?	++	+	0	0	0	WET stage	03-08-2017_17:55	03-08-2017_18:40
+Inferum	--	---	-	0	0	0	Headbangers stage	03-08-2017_14:20	03-08-2017_14:40
+Insomnium	++	+++	++	1	3	0	Headbangers stage	05-08-2017_18:25	05-08-2017_19:10
+Irdorath	+	-	---	0	0	0	Wackinger stage	02-08-2017_21:30	02-08-2017_22:15
+J.B.O.	+	--	+	0	0	0	Louder stage	06-08-2017_00:15	06-08-2017_01:30
+Jet Jaguar	?	--	---	0	0	0	Headbangers stage	02-08-2017_14:45	02-08-2017_15:05
+Johnny Deadshadow	+	?	++	0	0	0	Wasteland stage	05-08-2017_22:15	05-08-2017_23:00
+Kadaver	++	+	---	0	0	0	Louder stage	04-08-2017_11:00	04-08-2017_11:45
+Kaiser Franz Josef	?	-	---	0	0	0	Wasteland stage	03-08-2017_20:45	03-08-2017_21:30
+Kaerbholz	+	--	-	0	0	0	Headbangers stage	05-08-2017_16:20	05-08-2017_17:20
+Katationa	++	+	+++	0	0	0	Louder stage	05-08-2017_20:30	05-08-2017_21:45
+Kissin Dynamite	+	?	---	0	0	0	Headbangers stage	04-08-2017_15:00	04-08-2017_15:45
+Kreator	?	---	++	1	0	0	Faster stage	06-08-2017_00:15	06-08-2017_01:30
+Kryptos	?	+	++	0	0	0	WET stage	05-08-2017_02:25	05-08-2017_03:00
+Lacuna Coil	+	-	-	0	0	1	Harder stage	04-08-2017_12:00	04-08-2017_13:00
+Lords of Black	+	?	+	0	0	0	Headbangers stage	06-08-2017_02:15	06-08-2017_03:00
+Mambo Kurt	++	++	++	8	2	2	WET stage	03-08-2017_00:30	03-08-2017_01:30
+Mambo Kurt	++	++	++	8	2	2	Beergarden stage	02-08-2017_14:15	02-08-2017_15:00
+Mambo Kurt	++	++	++	8	2	2	WET stage	03-08-2017_14:45	03-08-2017_15:05
+Mambo Kurt	++	++	++	8	2	2	Beergarden stage	05-08-2017_14:15	05-08-2017_15:00
+Marylin Manson	++	+++	+	0	0	0	Faster stage	05-08-2017_00:30	05-08-2017_01:45
+Max & Iggor Cavalera	?	+	+	0	2	0	Faster stage	05-08-2017_14:30	05-08-2017_15:45
+Mayhem	--	--	---	0	1	0	WET stage	03-08-2017_23:15	04-08-2017_00:15
+Megadeath	+	?	---	1	0	0	Harder stage	04-08-2017_23:00	05-08-2017_00:15
+Megalodon	--	-	+	0	0	0	Headbangers stage	02-08-2017_13:05	02-08-2017_13:25
+Memoriam	?	--	---	0	0	0	Faster stage	04-08-2017_11:00	04-08-2017_11:45
+Morna	+	-	+	0	0	0	WET stage	02-08-2017_17:40	02-08-2017_18:00
+Mr. Irish Bastard	+	--	+	0	0	0	Wackinger stage	05-08-2017_16:30	05-08-2017_17:15
+Nale	?	-	-	0	0	0	Headbangers stage	03-08-2017_11:50	03-08-2017_12:10
+Napalm Death	-	-	+	0	0	0	Headbangers stage	03-08-2017_22:25	03-08-2017_23:10
+Nile	--	--	++	0	0	0	Headbangers stage	04-08-2017_00:20	04-08-2017_01:05
+Nova Prospect	+	--	++	0	0	0	Headbangers stage	02-08-2017_12:15	02-08-2017_12:35
+Null Positiv	+	-	-	0	0	0	Wasteland stage	02-08-2017_14:45	02-08-2017_15:30
+NulldB	+	--	---	0	0	0	Wasteland stage	03-08-2017_19:15	03-08-2017_20:00
+Omnium Gatherum	++	?	+++	0	0	0	Wackinger stage	05-08-2017_23:00	06-08-2017_00:00
+Once Upon	?	--	+	0	0	0	WET stage	02-08-2017_13:30	02-08-2017_13:50
+Ophan	?	?	?	0	0	0	Headbangers stage	02-08-2017_13:55	02-08-2017_14:15
+Orange Goblin	+	-	--	0	0	0	WET stage	05-08-2017_17:30	05-08-2017_18:15
+Pampatut	-	--	---	0	0	0	Wackinger stage	02-08-2017_12:30	02-08-2017_13:15
+Pampatut	-	--	---	0	0	0	Wackinger stage	03-08-2017_11:00	03-08-2017_11:45
+Pampatut	-	--	---	0	0	0	Wackinger stage	04-08-2017_15:00	04-08-2017_15:45
+Pampatut	-	--	---	0	0	0	Wackinger stage	05-08-2017_12:00	05-08-2017_12:45
+Paradise Lost	+	+	+	0	0	0	Louder stage	04-08-2017_18:30	04-08-2017_19:45
+Phil Rind (spoken word)	?	?	?	0	0	0			
+Posessed	-	--	-	0	0	0	Faster stage	05-08-2017_12:00	05-08-2017_13:00
+Powerwolf	++	+++	++	2	1	1	Faster stage	05-08-2017_17:30	05-08-2017_18:45
+Primal Fear	+	-	--	0	0	0	WET stage	05-08-2017_21:25	05-08-2017_22:10
+Prong	-	--	+	0	0	0	Headbangers stage	04-08-2017_18:50	04-08-2017_19:35
+Psychotic Walz	+	--	---	0	0	0	Headbangers stage	05-08-2017_01:25	05-08-2017_02:10
+Rage	+	+	?	1	0	0	Louder stage	05-08-2017_12:00	05-08-2017_13:00
+Rampart	?	-	-	0	0	0	Wasteland stage	03-08-2017_16:30	03-08-2017_17:00
+Rising Dream	+	+	++	0	0	0	WET stage	03-08-2017_13:05	03-08-2017_13:25
+Ross the Boss	++	++	++	0	0	0	Harder stage	03-08-2017_16:00	03-08-2017_16:45
+Russkaja	++	+++	--	6	2	0	Louder stage	05-08-2017_14:30	05-08-2017_15:45
+Sacred Reich	+	-	--	0	0	0	Headbangers stage	04-08-2017_21:05	04-08-2017_21:50
+Saltatio Mortis	++	?	+	3	0	0	Harder stage	04-08-2017_17:00	04-08-2017_18:15
+Sanctuary	+	-	-	0	0	0	Faster stage	04-08-2017_13:15	04-08-2017_14:15
+Saor Patrol	+	--	+	0	0	0	Wackinger stage	02-08-2017_18:30	02-08-2017_19:15
+Saor Patrol	+	--	+	0	0	0	Wackinger stage	03-08-2017_17:00	03-08-2017_17:45
+Saor Patrol	+	--	+	0	0	0	Wackinger stage	04-08-2017_16:30	04-08-2017_17:15
+Serenity	+	+	++	0	0	0	Wackinger stage	05-08-2017_21:00	05-08-2017_22:00
+Shawn James & the Shapeshifters	?	?	-	0	0	0	Beergarden stage	03-08-2017_21:30	03-08-2017_22:30
+Skamoeld	+	+	++	0	0	0	Wackinger stage	04-08-2017_23:00	05-08-2017_00:00
+Scorbut	?	--	---	0	0	0	Wackinger stage	03-08-2017_12:30	03-08-2017_13:15
+Skull Fist	+	+	-	0	0	0	WET stage	04-08-2017_14:05	04-08-2017_14:50
+Skyline	+	++	+	7	0	0	Faster stage	03-08-2017_15:00	03-08-2017_15:45
+Skyline	+	++	+	7	0	0	Beergarden stage	05-08-2017_22:00	05-08-2017_22:45
+Snooze Button	+	--	---	0	0	0	Beergarden stage	04-08-2017_15:30	04-08-2017_16:15
+Soilwork	++	+	+++	2	1	0	Headbangers stage	06-08-2017_00:25	06-08-2017_01:10
+Sonata Arctica	++	++	++	1	1	0	Faster stage	04-08-2017_15:45	04-08-2017_16:45
+Soulless Faith	?	-	?	0	0	0	Headbangers stage	02-08-2017_17:15	02-08-2017_17:45
+Speed Queen	?	-	?	0	0	0	Headbangers stage	03-08-2017_11:00	03-08-2017_11:20
+Stahlmann	+	++	++	0	0	0	Wasteland stage	04-08-2017_22:15	04-08-2017_23:00
+Status Quo	++	-	--	0	0	0	Harder stage	03-08-2017_18:15	03-08-2017_19:30
+Steak Number Eight	?	++	?	0	0	0	WET stage	04-08-2017_17:50	04-08-2017_18:35
+Stengah	?	--	--	0	0	0	Headbangers stage	03-08-2017_12:40	03-08-2017_13:00
+Stinger	+	-	-	0	0	0	Beergarden stage	04-08-2017_13:00	04-08-2017_13:45
+SubDub Micromachine	?	+	+	0	0	0	Wasteland stage	02-08-2017_19:15	02-08-2017_20:00
+SubDub Micromachine	?	+	+	0	0	0	Wasteland stage	03-08-2017_15:00	03-08-2017_15:30
+SubDub Micromachine	?	+	+	0	0	0	Wasteland stage	04-08-2017_20:15	04-08-2017_20:45
+SubDub Micromachine	?	+	+	0	0	0	Wasteland stage	05-08-2017_16:00	05-08-2017_16:30
+Subway to Sally	++	+++	+	13	3	0	Harder stage	06-08-2017_01:45	06-08-2017_02:55
+Taina	?	++	+	0	0	0	Wasteland stage	04-08-2017_16:00	04-08-2017_16:30
+Taina	?	++	+	0	0	0	Wasteland stage	05-08-2017_20:15	05-08-2017_20:45
+Tankard	?	--	---	0	0	0	WET stage	05-08-2017_23:30	06-08-2017_00:15
+Tears for Beers	+	+	-	0	0	0	Beergarden stage	02-08-2017_18:00	02-08-2017_18:45
+Tears for Beers	+	+	-	0	0	0	Beergarden stage	03-08-2017_15:30	03-08-2017_16:00
+Tears for Beers	+	+	-	0	0	0	Beergarden stage	04-08-2017_14:15	04-08-2017_15:00
+Tears for Beers	+	+	-	0	0	0	Beergarden stage	05-08-2017_15:30	05-08-2017_16:15
+Tenggger Cavalry	-	--	---	0	0	0	Wackinger stage	05-08-2017_18:00	05-08-2017_18:45
+The Amity Affliction	+	--	+++	0	0	0	Louder stage	04-08-2017_15:45	04-08-2017_16:45
+The Boomtown Rats	++	+	---	0	0	0	WET stage	02-08-2017_22:25	02-08-2017_23:25
+The Dillinger Escape Plan	+	+	+++	0	0	0	WET stage	04-08-2017_19:50	04-08-2017_20:50
+The Dolmen	+	+	---	0	0	0	Wackinger stage	02-08-2017_17:00	02-08-2017_17:45
+The Dolmen	+	+	---	0	0	0	Wackinger stage	03-08-2017_20:00	03-08-2017_20:45
+The Dolmen	+	+	---	0	0	0	Wackinger stage	04-08-2017_13:30	04-08-2017_14:15
+The Headcat	+	-	---	0	0	0	Beergarden stage	04-08-2017_19:15	04-08-2017_20:00
+The Headcat	+	-	---	0	0	0	Headbangers stage	05-08-2017_20:30	05-08-2017_21:15
+The Hirsch Effect	+	--	+	0	0	0	WET stage	05-08-2017_10:00	05-08-2017_12:30
+The Kroach	+	-	-	0	0	0	WET stage	03-08-2017_11:25	03-08-2017_11:45
+The O’Reillys and the Paddyhats	+	-	-	1	0	0	Beergarden stage	02-08-2017_15:30	02-08-2017_16:15
+The O’Reillys and the Paddyhats	+	-	-	1	0	0	Beergarden stage	03-08-2017_14:15	03-08-2017_15:00
+The O’Reillys and the Paddyhats	+	-	-	1	0	0	Beergarden stage	04-08-2017_20:30	04-08-2017_21:15
+The O’Reillys and the Paddyhats	+	-	-	1	0	0	Beergarden stage	05-08-2017_19:15	05-08-2017_20:00
+The Wild Lies	++	++	++	0	0	0	Headbangers stage	03-08-2017_15:10	03-08-2017_15:55
+Thundermother	+	-	--	0	0	0	Beergarden stage	03-08-2017_16:30	03-08-2017_17:15
+Trivium	++	++	+++	1	1	0	Faster stage	04-08-2017_18:30	04-08-2017_19:45
+Turbobier	?	--	--	0	0	0	Beergarden stage	03-08-2017_20:15	03-08-2017_21:00
+Turbonegro	++	+	+++	0	0	1	Louder stage	05-08-2017_00:30	05-08-2017_01:45
+tuxedoo	-	++	+++	0	0	0	Wackinger stage	02-08-2017_20:00	02-08-2017_20:45
+TV Smith & Vom Ritchie	++	--	---	0	0	0	Beergarden stage	05-08-2017_20:30	05-08-2017_21:30
+Twighlight Force	++	+	++	0	0	0	WET stage	05-08-2017_13:35	05-08-2017_14:20
+Ugly Kid Joe	+	+	-	0	0	0	WET stage	02-08-2017_20:05	02-08-2017_21:05
+UK Subs	-	+	-	0	0	0	WET stage	03-08-2017_16:05	03-08-2017_16:50
+Uli John Roth	++	+	--	1	0	0	WET stage	05-08-2017_19:20	05-08-2017_20:20
+Une Misere	+	--	++	0	0	0	WET stage	02-08-2017_15:10	02-08-2017_15:30
+Verge of Umbra	+	--	+	0	0	0	WET stage	03-08-2017_13:55	03-08-2017_14:15
+Versengold	+	+	++	1	0	0	Wackinger stage	02-08-2017_23:00	03-08-2017_00:00
+Versengold	+	+	++	1	0	0	Wackinger stage	03-08-2017_21:30	03-08-2017_22:15
+Versengold	+	+	++	1	0	0	Wackinger stage	04-08-2017_19:30	04-08-2017_20:15
+Victims of Madness	+	?	?	1	0	0	Headbangers stage	05-08-2017_11:30	05-08-2017_11:50
+Volbeat	++	+++	---	0	0	0	Harder stage	03-08-2017_22:20	04-08-2017_00:00
+Vorbid	?	---	-	0	0	0	WET stage	02-08-2017_18:05	02-08-2017_18:25
+W:O:A Firefighters	+	+	--	5	0	0	Beergarden stage	02-08-2017_16:45	02-08-2017_17:30
+W:O:A Firefighters	+	+	--	5	0	0	Beergarden stage	03-08-2017_17:45	03-08-2017_18:30
+W:O:A Firefighters	+	+	--	5	0	0	Beergarden stage	05-08-2017_16:45	05-08-2017_17:30
+Waldkauz	++	-	-	0	0	0	Wackinger stage	02-08-2017_15:30	02-08-2017_16:15
+Warpath	?	--	-	0	0	0	WET stage	04-08-2017_12:20	04-08-2017_13:00
+Warrant	+	--	-	0	0	0	WET stage	04-08-2017_11:00	04-08-2017_11:30
+Whiskey Dick	-	--	--	0	0	0	Beergarden stage	02-08-2017_19:30	02-08-2017_20:30
+WirrWarr	?	?	--	0	0	0			
+Witchery	--	-	++	0	0	0	WET stage	03-08-2017_19:45	03-08-2017_20:30
+Wolfbrigade	?	?	-	0	0	0	Headbangers stage	04-08-2017_23:05	05-08-2017_00:05
+Wolfchant	?	+	++	0	0	0	Wackinger stage	03-08-2017_18:30	03-08-2017_19:15
+Wolfheart	+	++	+++	0	0	0	Wackinger stage	05-08-2017_19:30	05-08-2017_20:15
