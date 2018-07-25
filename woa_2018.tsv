@@ -2,17 +2,19 @@
 # general information #
 #######################
 
-# file:      woa_2018.tsv
-# created:   2017-08-07
-# author(s): Marcel Schilling <marcel.schilling@mdc-berlin.de>
-# license:   GNU Affero General Public License Version 3 (GNU AGPL v3)
-# purpose:   input file for WOA 2018 scheduling
+# file:        woa_2018.tsv
+# created:     2017-08-07
+# last-update: 2018-07-25
+# author(s):   Marcel Schilling <marcel.schilling@mdc-berlin.de>
+# license:     GNU Affero General Public License Version 3 (GNU AGPL v3)
+# purpose:     input file for WOA 2018 scheduling
 
 
 ######################################
 # change log (reverse chronological) #
 ######################################
 
+# 2018-07-25: added full line-up and running order
 # 2017-08-07: initial version (first round of bands with ratings & live counts for Inbal & Marcel)
 
 
@@ -20,19 +22,244 @@
 # table #
 #########
 
-band	rating.Marcel	rating.Inbal	rating.John	rating.Rick	rating.Martin	live_count.Marcel	live_count.Inbal	live_count.John	live_count.Rick	live_count.Martin	stage	start	end
-Amorphis	+++	+++	?	?	?	3	4	0	0	0			
-Arch Enemy	+++	+++	?	?	?	4	3	0	0	0			
-Bannkreis	+	?	?	?	?	0	0	0	0	0			
-Belphegor	-	+	?	?	?	0	0	0	0	0			
-Deserted Fear	?	-	?	?	?	0	0	0	0	0			
-Dirkschneider	++	?	?	?	?	0	0	0	0	0			
-Doro	++	+	?	?	?	2	1	0	0	0			
-Epica	++	++	?	?	?	1	2	0	0	0			
-Firewind	+	+	?	?	?	0	0	0	0	0			
-In Extremo	+++	+	?	?	?	12	2	0	0	0			
-Knorkator	++	?	?	?	?	2	0	0	0	0			
-Nightwish	+++	+++	?	?	?	2	3	0	0	0			
-Running Wild	+	+	?	?	?	1	0	0	0	0			
-Sepultura	?	?	?	?	?	0	1	0	0	0			
-Watain	--	?	?	?	?	0	1	0	0	0			
+band	rating.Marcel	rating.Inbal	live_count.Marcel	live_count.Inbal	stage	start	end
+2Cellos	?	?	0	0	Louder	2018-08-03 18:05	2018-08-03 19:05
+Acoustic Steel	?	?	0	0	Beer Garden	2018-08-01 13:15	2018-08-01 14:00
+Act Of Defiance	?	?	0	0	Wasteland Stage	2018-08-04 20:15	2018-08-04 21:00
+Aephanemer	?	?	0	0	W:E:T Stage	2018-08-01 14:20	2018-08-01 14:40
+Alen Weaponry	?	?	0	0	Wasteland Stage	2018-08-04 22:00	2018-08-04 22:45
+Alestorm	?	?	0	0	Faster	2018-08-04 14:30	2018-08-04 15:30
+Alfahanne	?	?	0	0	Wasteland Stage	2018-08-04 00:30	2018-08-04 01:15
+Amaranthe	?	?	0	0	Louder	2018-08-03 11:00	2018-08-03 12:05
+Amorphis	+++	+++	3	4	Faster	2018-08-03 13:25	2018-08-03 14:25
+An Theus	?	?	0	0	W:E:T Stage	2018-08-01 16:50	2018-08-01 17:10
+Arch Enemy	+++	+++	5	3	Faster	2018-08-04 20:00	2018-08-04 21:15
+Arkona	?	?	0	0	Wackiner Stage	2018-08-03 23:00	2018-08-04 00:00
+Asrock	?	?	0	0	Beer Garden	2018-08-03 19:30	2018-08-03 20:15
+Asylum	?	?	0	0	W:E:T Stage	2018-08-01 16:00	2018-08-01 16:20
+Atomic Rocket Seeder	?	?	0	0	W:E:T Stage	2018-08-02 14:45	2018-08-02 15:05
+Attic	?	?	0	0	Headbangers Stage	2018-08-03 13:10	2018-08-03 13:55
+Awake Again	?	?	0	0	Headbangers Stage	2018-08-02 12:40	2018-08-02 13:00
+Aws	?	?	0	0	W:E:T Stage	2018-08-04 01:20	2018-08-04 02:05
+Backyard Babies	?	?	0	0	Headbangers Stage	2018-08-01 22:00	2018-08-01 22:45
+Bannkreis	+	?	0	0	Wackinger Stage	2018-08-01 18:30	2018-08-01 19:15
+Behemoth	?	?	0	0	Harder	2018-08-02 19:15	2018-08-02 19:15
+Behind Bars	?	?	0	0	Headbangers Stage	2018-08-02 11:00	2018-08-02 11:20
+Belphegor	-	+	0	0	W:E:T Stage	2018-08-02 20:20	2018-08-02 21:05
+Betontod	?	?	0	0	Faster	2018-08-04 12:00	2018-08-04 13:00
+Black Inhale             	?	?	0	0	Headbangers Stage	2018-08-04 12:00	2018-08-04 12:30
+Blechblosn	?	?	0	0	Beer Garden	2018-08-01 17:00	2018-08-01 17:45
+Blechblosn	?	?	0	0	Beer Garden	2018-08-02 17:15	2018-08-02 18:15
+Blechblosn	?	?	0	0	Beer Garden	2018-08-03 17:45	2018-08-03 18:45
+Blechblosn	?	?	0	0	Beer Garden	2018-08-04 16:45	2018-08-04 17:45
+Blessed Hellride	?	?	0	0	Wasteland Stage	2018-08-02 20:45	2018-08-02 21:30
+Bloodsucking Zombies F. Outer Space	?	?	0	0	Wasteland Stage	2018-08-05 00:30	2018-08-05 01:15
+Blues Pills	?	?	0	0	W:E:T Stage	2018-08-03 21:40	2018-08-03 22:25
+Bömbers	?	?	0	0	Beer Garden	2018-08-03 21:00	2018-08-03 21:45
+Bömbers	?	?	0	0	Beer Garden	2018-08-04 18:15	2018-08-04 19:00
+Bonfire	?	?	0	0	Headbangers Stage	2018-08-05 02:25	2018-08-05 01:10
+Budderside	?	?	0	0	Wasteland Stage	2018-08-02 22:15	2018-08-02 23:00
+Cannibal Corpse	?	?	0	0	Harder	2018-08-03 12:15	2018-08-03 13:15
+Canterra	?	?	0	0	Wackiner Stage	2018-08-03 15:00	2018-08-03 15:45
+Cemican	?	?	0	0	Wackinger Stage	2018-08-04 16:30	2018-08-04 17:15
+Centuries of Decay	?	?	0	0	Headbangers Stage	2018-08-01 13:55	2018-08-01 14:15
+Children Of Bodom	?	?	0	0	Faster	2018-08-03 18:05	2018-08-03 19:05
+Chuan-Tzu	?	?	0	0	Wasteland Stage	2018-08-03 15:45	2018-08-03 16:30
+Chugger	?	?	0	0	Headbangers Stage	2018-08-01 13:05	2018-08-01 13:25
+Clawfinger	?	?	0	0	Louder	2018-08-03 21:00	2018-08-03 22:15
+Clowns	?	?	0	0	Beer Garden	2018-08-02 20:00	2018-08-02 21:00
+Converge	?	?	0	0	Headbangers Stage	2018-08-02 19:10	2018-08-02 20:10
+Cordura	?	?	0	0	Headbangers Stage	2018-08-01 15:35	2018-08-01 15:35
+Dalriada	?	?	0	0	Wackinger Stage	2018-08-04 21:00	2018-08-04 22:00
+Danzig	?	?	0	0	Faster	2018-08-02 20:45	2018-08-02 22:00
+Dark Tranquillity	?	?	0	0	Louder	2018-08-03 13:25	2018-08-03 14:25
+Da Rocka & da Waitler	?	?	0	0	Beer Garden	2018-08-02 15:00	2018-08-02 15:30
+Da Rocka & da Waitler	?	?	0	0	Wackinger Stage	2018-08-01 12:30	2018-08-01 13:15
+Da Rocka & da Waitler	?	?	0	0	Wackinger Stage	2018-08-04 13:30	2018-08-04 12:15
+Da Rocker & da Waitler	?	?	0	0	Wackiner Stage	2018-08-03 12:00	2018-08-03 12:45
+Dartagnan	?	?	0	0	Wackinger Stage	2018-08-01 21:30	2018-08-01 22:15
+Das Pack	?	?	0	0	Beer Garden	2018-08-03 13:30	2018-08-03 15:30
+Der Wahnsinn	?	?	0	0	Wasteland Stage	2018-08-03 15:45	2018-08-03 16:30
+Deserted Fear	+	?	0	0	W:E:T Stage	2018-08-02 16:25	2018-08-02 17:10
+Destruction	?	?	0	0	W:E:T Stage	2018-08-03 19:15	2018-08-03 20:00
+Dezperadoz	?	?	0	0	W:E:T Stage	2018-08-03 11:00	2018-08-03 11:30
+Diablo Blvd	?	?	0	0	W:E:T Stage	2018-08-04 17:30	2018-08-04 18:15
+Die Apokalyptischen Reiter	?	?	0	0	Louder	2018-08-04 17:00	2018-08-04 18:15
+Die From Sorrow	?	?	0	0	W:E:T Stage	2018-08-02 11:25	2018-08-02 11:45
+Dimmu Borgir	?	?	0	0	Faster	2018-08-05 00:15	2018-08-05 01:30
+Dirkschneider	++	?	0	0	Faster	2018-08-02 17:15	2018-08-02 18:50
+Dirt-A-Gogo	?	?	0	0	Wasteland Stage	2018-08-03 15:45	2018-08-03 16:30
+Dokken	?	?	0	0	Faster	2018-08-02 14:30	2018-08-02 15:30
+Dool	?	?	0	0	Headbangers Stage	2018-08-03 18:20	2018-08-03 19:05
+Doro	++	++	2	1	Harder	2018-08-03 19:15	2018-08-03 20:45
+Doro	++	++	2	1	Metal Church	2018-08-01 19:15	2018-08-01 20:30
+Down For Life	?	?	0	0	W:E:T Stage	2018-08-01 11:50	2018-08-01 12:10
+Dust Bolt	?	?	0	0	Wasteland Stage	2018-08-01 19:15	2018-08-01 20:00
+Dying Fetus	?	?	0	0	W:E:T Stage	2018-08-02 22:25	2018-08-02 23:10
+End All	?	?	0	0	Headbangers Stage	2018-08-02 16:00	2018-08-02 16:20
+Ensiferum	?	?	0	0	Louder	2018-08-04 20:00	2018-08-04 21:15
+Enslaved	?	?	0	0	W:E:T Stage	2018-08-04 21:10	2018-08-04 21:55
+Epica	++	++	1	2	Faster	2018-08-03 15:45	2018-08-03 16:45
+Erik Cohen	?	?	0	0	W:E:T Stage	2018-08-04 14:05	2018-08-04 14:50
+Eskomo Callboy	?	?	0	0	Louder	2018-08-05 00:15	2018-08-05 01:30
+Eufobia	?	?	0	0	Headbangers Stage	2018-08-01 16:25	2018-08-01 16:45
+Every Dog Has Its Day	?	?	0	0	Headbangers Stage	2018-08-02 13:30	2018-08-02 13:50
+Evil Invaders	?	?	0	0	Wasteland Stage	2018-08-01 20:45	2018-08-01 21:30
+Exit Eden	?	?	0	0	Wackinger Stage	2018-08-02 21:30	2018-08-02 22:15
+Extrabreit	?	?	0	0	Beer Garden	2018-08-01 21:15	2018-08-01 22:15
+Feuerschwanz	?	?	0	0	Wackinger Stage	2018-08-02 23:00	2018-08-03 00:00
+Firewind	+	+	0	0	W:E:T Stage	2018-08-03 17:25	2018-08-03 18:10
+Fischer-Z	?	?	0	0	W:E:T Stage	2018-08-01 18:30	2018-08-01 19:30
+Fish	?	?	0	0	Headbangers Stage	2018-08-01 19:40	2018-08-01 20:40
+Fozzy	?	?	0	0	Headbangers Stage	2018-08-03 16:30	2018-08-03 17:15
+Fro-Tee Slips	?	?	0	0	Beer Garden	2018-08-04 15:30	2018-08-04 16:15
+Gaahl's Wyrd	?	?	0	0	W:E:T Stage	2018-08-03 00:15	2018-08-03 01:00
+Ganaim	?	?	0	0	Wackinger Stage	2018-08-01 17:00	2018-08-01 17:45
+Ganaim	?	?	0	0	Wackinger Stage	2018-08-02 12:30	2018-08-02 13:15
+Ghost	?	?	0	0	Harder	2018-08-04 01:45	2018-08-04 03:00
+Godless	?	?	0	0	Headbangers Stage	2018-08-01 11:25	2018-08-01 11:45
+Gojira	?	?	0	0	Faster	2018-08-04 17:00	2018-08-04 18:15
+Gruesome	?	?	0	0	Headbangers Stage	2018-08-02 17:20	2018-08-02 18:05
+Haggefugg	?	?	0	0	Wackinger Stage	2018-08-01 15:30	2018-08-01 16:15
+Halloween - Pumkins United	?	?	0	0	Harder	2018-08-04 21:30	2018-08-05 00:00
+Hardbone	?	?	0	0	Headbangers Stage	2018-08-04 00:25	2018-08-04 01:10
+Hatebreed	?	?	0	0	Louder	2018-08-02 20:45	2018-08-02 22:00
+Hate Squad	?	?	0	0	W:E:T Stage	2018-08-04 12:35	2018-08-04 13:10
+Heathen Apostles	?	?	0	0	Beer Garden	2018-08-04 14:15	2018-08-04 15:00
+Heidevolk	?	?	0	0	Wackinger Stage	2018-08-04 23:00	2018-08-05 00:00
+Heilung	?	?	0	0	Wackinger Stage	2018-08-01 23:00	2018-08-02 00:00
+Hellzapoppin Circus Sideshow Revue	?	?	0	0	Wasteland Stage	2018-08-02 00:00	2018-08-02 00:30
+Hellzapoppin Circus Sideshow Revue	?	?	0	0	Wasteland Stage	2018-08-03 00:00	2018-08-03 00:30
+Helmet	?	?	0	0	Headbangers Stage	2018-08-04 20:15	2018-08-04 21:00
+Herrschaft	?	?	0	0	Wasteland Stage	2018-08-03 15:45	2018-08-03 16:30
+Ignis Fatuu	?	?	0	0	Wackinger Stage	2018-08-01 14:00	2018-08-01 14:45
+In Extremo	+++	+	13	2	Harder	2018-08-05 01:40	2018-08-05 02:55
+In Flames	?	?	0	0	Faster	2018-08-04 00:15	2018-08-04 01:30
+Ingrimm	?	?	0	0	Wackinger Stage	2018-08-02 15:30	2018-08-02 16:15
+Ivan Ivanovich & The Kreml Krauts	?	?	0	0	Beer Garden	2018-08-01 14:30	2018-08-01 15:15
+Ivan Ivanovich & The Kreml Krauts	?	?	0	0	Wackinger Stage	2018-08-02 11:00	2018-08-02 11:45
+Jack Broadbent	?	?	0	0	Beer Garden	2018-08-03 16:00	2018-08-03 17:00
+Jasad	?	?	0	0	Wasteland Stage	2018-08-03 15:45	2018-08-03 16:30
+Jesper Binzer	?	?	0	0	Beer Garden	2018-08-01 20:00	2018-08-01 20:45
+John Diva And The Rockets Of Love	?	?	0	0	Beer Garden	2018-08-02 22:30	2018-08-02 22:30
+Judas Priest	?	?	0	0	Harder	2018-08-02 22:30	2018-08-03 00:00
+Karaoke Till Death	?	?	0	0	Beer Garden	2018-08-01 22:45	2018-08-02 00:00
+Karaoke Till Death	?	?	0	0	Beer Garden	2018-08-02 23:00	2018-08-03 00:00
+Karaoke Till Death	?	?	0	0	Beer Garden	2018-08-03 22:30	2018-08-04 00:00
+Karaoke Till Death	?	?	0	0	Beer Garden	2018-08-04 22:45	2018-08-05 00:00
+Kellermensch	?	?	0	0	Headbangers Stage	2018-08-03 11:35	2018-08-03 12:15
+Knorkator	++	?	2	0	Louder	2018-08-04 14:30	2018-08-04 15:30
+Koorpiklaani	?	?	0	0	Harder	2018-08-03 14:35	2018-08-03 15:35
+Leaves' Eyes	?	?	0	0	Wackiner Stage	2018-08-03 18:00	2018-08-03 18:45
+Lee Aaron	?	?	0	0	Headbangers Stage	2018-08-03 22:35	2018-08-03 23:20
+Lemmy - The Movie	?	?	0	0	Movie Field	2018-08-02 01:45	2018-08-02 04:15
+Long Distance Calling	?	?	0	0	Headbangers Stage	2018-08-04 16:35	2018-08-04 17:20
+Lotrify	?	?	0	0	W:E:T Stage	2018-08-01 11:00	2018-08-01 11:20
+Lovebites	?	?	0	0	W:E:T Stage	2018-08-04 11:25	2018-08-04 11:55
+Madball	?	?	0	0	Headbangers Stage	2018-08-04 18:25	2018-08-04 19:10
+Malicious Culebra	?	?	0	0	W:E:T Stage	2018-08-02 15:35	2018-08-02 15:55
+Mambo Kurt	?	?	0	0	Beer Garden	2018-08-02 12:30	2018-08-02 13:15
+Mambo Kurt	?	?	0	0	Headbangers Stage	2018-08-02 00:00	2018-08-02 01:00
+Manilla Road	?	?	0	0	W:E:T Stage	2018-08-05 01:20	2018-08-05 02:05
+Manntra	?	?	0	0	Wackinger Stage	2018-08-04 15:00	2018-08-04 15:45
+Mantar	?	?	0	0	W:E:T Stage	2018-08-03 23:30	2018-08-04 00:15
+Markus Krebs	?	?	0	0	Beer Garden	2018-08-01 18:15	2018-08-01 19:15
+Maschine's Late Night Show	?	?	0	0	Welcome To The Jungle	2018-08-01 23:00	2018-08-02 00:00
+Maschine's Late Night Show	?	?	0	0	Welcome To The Jungle	2018-08-02 23:00	2018-08-03 00:00
+Maschine's Late Night Show	?	?	0	0	Welcome To The Jungle	2018-08-03 23:00	2018-08-04 00:00
+Maschine's Late Night Show	?	?	0	0	Welcome To The Jungle	2018-08-04 23:00	2018-08-05 00:00
+Metal Disco	?	?	0	0	Headbangers Stage	2018-08-03 01:00	2018-08-03 03:00
+Metal Disco	?	?	0	0	W:E:T Stage	2018-08-02 01:00	2018-08-02 03:00
+Metal Yoga	?	?	0	0	Welcome To The Jungle	2018-08-01 11:00	2018-08-01 12:00
+Metal Yoga	?	?	0	0	Welcome To The Jungle	2018-08-02 11:00	2018-08-02 12:00
+Metal Yoga	?	?	0	0	Welcome To The Jungle	2018-08-03 11:00	2018-08-03 12:00
+Metal Yoga	?	?	0	0	Welcome To The Jungle	2018-08-04 11:00	2018-08-04 12:00
+Metusa	?	?	0	0	Wackinger Stage	2018-08-04 19:30	2018-08-04 20:15
+Monstagon	?	?	0	0	Wasteland Stage	2018-08-02 19:15	2018-08-02 20:00
+Motanka	?	?	0	0	W:E:T Stage	2018-08-02 12:15	2018-08-02 12:35
+Mr. Big	?	?	0	0	Louder	2018-08-03 15:45	2018-08-03 16:45
+Nazareth	?	?	0	0	W:E:T Stage	2018-08-01 20:50	2018-08-01 21:50
+Nemoreus	?	?	0	0	W:E:T Stage	2018-08-01 15:10	2018-08-01 15:30
+Night Demon	?	?	0	0	Headbangers Stage	2018-08-04 14:55	2018-08-04 15:40
+Nightwish	+++	+++	2	3	Faster	2018-08-03 21:00	2018-08-03 22:15
+Nocturnal Rites	?	?	0	0	W:E:T Stage	2018-08-04 19:20	2018-08-04 20:15
+Ondt Blod	?	?	0	0	Wasteland Stage	2018-08-04 18:45	2018-08-04 19:30
+Onkel Tom	?	?	0	0	Beer Garden	2018-08-04 21:00	2018-08-04 22:00
+Oomph!	?	?	0	0	Louder	2018-08-02 17:15	2018-08-02 18:50
+Otto & Die Friesenjungs	?	?	0	0	Louder	2018-08-04 00:15	2018-08-04 01:30
+Outro	?	?	0	0	Harder	2018-08-05 02:55	2018-08-05 03:00
+Painride	?	?	0	0	Wasteland Stage	2018-08-04 15:45	2018-08-04 16:30
+Pampatut	?	?	0	0	Wackiner Stage	2018-08-03 13:30	2018-08-03 11:15
+Pampatut	?	?	0	0	Wackinger Stage	2018-08-01 11:00	2018-08-01 11:45
+Pampatut	?	?	0	0	Wackinger Stage	2018-08-02 14:00	2018-08-02 14:45
+Pampatut	?	?	0	0	Wackinger Stage	2018-08-04 12:00	2018-08-04 12:45
+Persefone	?	?	0	0	W:E:T Stage	2018-08-03 12:20	2018-08-03 13:05
+Phenomy	?	?	0	0	Headbangers Stage	2018-08-02 11:50	2018-08-02 12:10
+Phrenetix	?	?	0	0	W:E:T Stage	2018-08-01 12:40	2018-08-01 13:00
+Pikes Edge	?	?	0	0	Wasteland Stage	2018-08-02 14:45	2018-08-02 15:30
+Promoters Farwell & Thanks	?	?	0	0	Harder	2018-08-05 01:35	2018-08-05 01:40
+Red Hot Chilli Pipers	?	?	0	0	Wackiner Stage	2018-08-03 21:00	2018-08-03 22:00
+Rezet	?	?	0	0	Wasteland Stage	2018-08-01 17:45	2018-08-01 18:30
+Riot V	?	?	0	0	Louder	2018-08-04 12:00	2018-08-04 13:00
+Rogers	?	?	0	0	W:E:T Stage	2018-08-03 15:40	2018-08-03 16:25
+Rose Bogey's	?	?	0	0	Beer Garden	2018-08-01 12:00	2018-08-01 12:45
+Running Wild	++	+	1	0	Harder	2018-08-03 22:30	2018-08-04 00:00
+Salamanda	?	?	0	0	Beer Garden	2018-08-03 13:00	2018-08-03 14:00
+Samael	?	?	0	0	W:E:T Stage	2018-08-04 23:15	2018-08-05 00:15
+Sarke	?	?	0	0	Headbangers Stage	2018-08-02 23:20	2018-08-03 00:05
+Schandmaul	?	?	0	0	Harder	2018-08-03 16:55	2018-08-03 17:55
+Schidl 'n' Schedl	?	?	0	0	Beer Garden	2018-08-02 16:00	2018-08-02 16:45
+Sepultura	?	?	0	1	W:E:T Stage	2018-08-01 22:55	2018-08-01 23:55
+Shiran	?	?	0	0	Headbangers Stage	2018-08-01 14:45	2018-08-01 15:05
+Skiltron	?	?	0	0	Wackinger Stage	2018-08-04 18:00	2018-08-04 18:45
+Skindred	?	?	0	0	Harder	2018-08-04 15:45	2018-08-04 16:45
+Skyline	?	?	0	0	Harder	2018-08-02 13:30	2018-08-02 14:15
+Slumdog Metal	?	?	0	0	Movie Field	2018-08-01 23:30	2018-08-01 23:55
+Soen	?	?	0	0	Headbangers Stage	2018-08-04 02:15	2018-08-04 03:00
+Solstafir	?	?	0	0	Headbangers Stage	2018-08-04 22:05	2018-08-04 23:05
+Spoil Engine	?	?	0	0	W:E:T Stage	2018-08-04 15:45	2018-08-04 16:30
+Steel Night	?	?	0	0	Headbangers Stage	2018-08-02 14:20	2018-08-02 14:40
+Steel Panther	?	?	0	0	Harder	2018-08-04 18:30	2018-08-04 19:45
+Stiff Little Fingers	?	?	0	0	Headbangers Stage	2018-08-01 17:20	2018-08-01 18:20
+Tarchon Fist	?	?	0	0	W:E:T Stage	2018-08-01 13:30	2018-08-01 13:50
+The Bloodstrings	?	?	0	0	Wasteland Stage	2018-08-04 17:15	2018-08-04 18:00
+The Charm The Fury	?	?	0	0	Headbangers Stage	2018-08-04 13:15	2018-08-04 14:00
+The Flying Scarecrow	?	?	0	0	W:E:T Stage	2018-08-02 13:55	2018-08-02 14:15
+The Frigth	?	?	0	0	Wasteland Stage	2018-08-02 17:45	2018-08-02 18:30
+The Privateer	?	?	0	0	Wackinger Stage	2018-08-02 18:30	2018-08-02 19:15
+The Waltons	?	?	0	0	Beer Garden	2018-08-02 13:45	2018-08-02 14:30
+Thundermother	?	?	0	0	Faster	2018-08-03 11:00	2018-08-03 12:05
+Todesking	?	?	0	0	Headbangers Stage	2018-08-02 15:10	2018-08-02 15:30
+Toxic Holocaust	?	?	0	0	Wasteland Stage	2018-08-01 22:15	2018-08-01 23:00
+Traitor	?	?	0	0	Wasteland Stage	2018-08-01 14:45	2018-08-01 15:30
+Tremonti	?	?	0	0	Louder	2018-08-02 14:30	2018-08-02 15:30
+Trollfest	?	?	0	0	Wackiner Stage	2018-08-03 19:30	2018-08-03 20:15
+Unzucht	?	?	0	0	Wackiner Stage	2018-08-03 16:30	2018-08-03 17:15
+Vallenfrye	?	?	0	0	W:E:T Stage	2018-08-02 18:15	2018-08-02 19:00
+Verlierer	?	?	0	0	Movie Field	2018-08-03 00:00	2018-08-03 01:30
+Victims Of Madness	?	?	0	0	Headbangers Stage	2018-08-04 11:00	2018-08-04 11:20
+Vince Neil	?	?	0	0	Harder	2018-08-02 15:45	2018-08-02 16:45
+Visions Of Atlantis	?	?	0	0	Wackinger Stage	2018-08-02 20:00	2018-08-02 20:45
+Vogelfrey	?	?	0	0	Wackinger Stage	2018-08-01 20:00	2018-08-01 20:45
+Vogelfrey	?	?	0	0	Wackinger Stage	2018-08-02 17:00	2018-08-02 17:45
+Voices Of Ruin	?	?	0	0	W:E:T Stage	2018-08-02 13:05	2018-08-02 13:25
+Wacken Slam Battle	?	?	0	0	Welcome To The Jungle	2018-08-01 14:00	2018-08-01 15:30
+Wacken Slam Battle	?	?	0	0	Welcome To The Jungle	2018-08-02 14:00	2018-08-02 15:30
+Wacken Slam Battle	?	?	0	0	Welcome To The Jungle	2018-08-03 14:00	2018-08-03 15:30
+Wacken Slam Battle	?	?	0	0	Welcome To The Jungle	2018-08-04 14:00	2018-08-04 16:00
+Walking Dead On Broadway	?	?	0	0	Headbangers Stage	2018-08-03 14:50	2018-08-03 15:35
+W.A.R.	?	?	0	0	Headbangers Stage	2018-08-03 20:10	2018-08-03 21:30
+Watain	--	?	0	1	Headbangers Stage	2018-08-02 21:15	2018-08-02 22:15
+We Are Twisted Fucking Sister	?	?	0	0	Movie Field	2018-08-03 01:30	2018-08-03 02:45
+Werner - Beinhart	?	?	0	0	Movie Field	2018-08-02 00:30	2018-08-02 01:45
+Wintersun	?	?	0	0	Harder	2018-08-04 13:15	2018-08-04 14:15
+Wirtz	?	?	0	0	W:E:T Stage	2018-08-03 14:00	2018-08-03 14:45
+Witch Taint	?	?	0	0	Welcome To The Jungle	2018-08-01 17:00	2018-08-01 18:00
+Witch Taint	?	?	0	0	Welcome To The Jungle	2018-08-02 17:00	2018-08-02 18:00
+Witch Taint	?	?	0	0	Welcome To The Jungle	2018-08-03 17:00	2018-08-03 18:00
+Witch Taint	?	?	0	0	Welcome To The Jungle	2018-08-04 17:00	2018-08-04 18:00
+W:O:A Firefighters	?	?	0	0	Beer Garden	2018-08-01 15:45	2018-08-01 16:30
+W:O:A Firefighters	?	?	0	0	Beer Garden	2018-08-02 18:45	2018-08-02 19:30
+W:O:A Firefighters	?	?	0	0	Beer Garden	2018-08-04 13:00	2018-08-04 13:45
+Xenoblight	?	?	0	0	Headbangers Stage	2018-08-01 12:15	2018-08-01 12:35
+Zeal & Ardor	?	?	0	0	Headbangers Stage	2018-08-05 02:15	2018-08-05 03:00
