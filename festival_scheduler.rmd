@@ -16,7 +16,8 @@
 # change log (reverse chronological) #
 ######################################
 
-# 2018-07-29: re-factored to tidy data & code (replaced plyr by dplyr) / improved style
+# 2018-07-29: added skipping of short intervals
+#             re-factored to tidy data & code (replaced plyr by dplyr) / improved style
 # 2016-08-01: added rating column to personal running orders
 # 2016-07-31: added sorting of gigs by start (needed for previous bug fix to work)
 #             fixed long gigs overlapping short better gigs
@@ -117,6 +118,9 @@ if(!exists("format.datetime.output")) format.datetime.output <- "%F %R"
 
 # define default time zone (if not defined in the knit'ing R session)
 if(!exists("timezone")) timezone <- "GMT"
+
+# define default minimal interval duration (if not defined in the knit'ing R session)
+if(!exists("min.interval.duration")) min.interval.duration <- 16
 ```
 
 
@@ -333,8 +337,18 @@ running_order <-
   summarize(interval.begin = interval.begin[1],
             interval.end = interval.end[n()]) %>%
   ungroup %>%
-  mutate(start = interval.begin,
-         end = interval.end) %>%
+  arrange(interval.begin) %>%
+  filter(interval.end - interval.begin >= min.interval.duration) %>%
+  mutate(continuation = (band == lag(band) &
+                         stage == lag(stage) &
+                         start == lag(start) &
+                         end == lag(end)),
+         continuation = ifelse(is.na(continuation), FALSE, continuation)) %>%
+  mutate(interval = cumsum(!continuation)) %>%
+  group_by(interval, band, stage, score) %>%
+  summarize(start = interval.begin[1],
+            end = interval.end[n()]) %>%
+  ungroup %>%
   select(start, end, band, stage, score) %>%
   arrange(start)
 ```
@@ -366,9 +380,19 @@ personal_running_orders <-
   group_by(member, interval, band, stage, score, start, end) %>%
   summarize(interval.begin = interval.begin[1],
             interval.end = interval.end[n()]) %>%
+  group_by(member) %>%
+  arrange(interval.begin) %>%
+  filter(interval.end - interval.begin >= min.interval.duration) %>%
+  mutate(continuation = (band == lag(band) &
+                         stage == lag(stage) &
+                         start == lag(start) &
+                         end == lag(end)),
+         continuation = ifelse(is.na(continuation), FALSE, continuation)) %>%
+  mutate(interval = cumsum(!continuation)) %>%
+  group_by(member, interval, band, stage, score) %>%
+  summarize(start = interval.begin[1],
+            end = interval.end[n()]) %>%
   ungroup %>%
-  mutate(start = interval.begin,
-         end = interval.end) %>%
   select(member, start, end, band, stage, score) %>%
   arrange(start)
 ```
