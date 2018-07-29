@@ -1,11 +1,11 @@
-```{r knitr_options,include=F,eval=T,cache=F}
+```{r knitr_options, include = FALSE, eval = TRUE, cache = FALSE}
 #######################
 # general information #
 #######################
 
 # file:         festival_scheduler.rmd
 # created:      2015-07-23
-# last update:  2016-08-01
+# last update:  2018-07-29
 # author(s):    Marcel Schilling <marcel.schilling@mdc-berlin.de> (MS),
 #               Filippos Klironomos <filippos.klironomos@mdc-berlin.de> (FK)
 # license:      GNU Affero General Public License Version 3 (GNU AGPL v3)
@@ -16,6 +16,7 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2018-07-29: re-factored to tidy data & code (replaced plyr by dplyr) / improved style
 # 2016-08-01: added rating column to personal running orders
 # 2016-07-31: added sorting of gigs by start (needed for previous bug fix to work)
 #             fixed long gigs overlapping short better gigs
@@ -40,12 +41,12 @@
 
 # define default working directory to use absolute paths in resulting Markdown (if not defined in
 # knit'ing R session)
-if(!exists("working_directory")){
+if(!exists("working_directory")) {
   working_directory <- getwd()
 } else {
 
   # remove final slash from working directory defined in the knit'ing R session
-  working_directory <- sub("/$","",working_directory)
+  working_directory <- sub("/$", "", working_directory)
 
   # set working directory to the one defined in the knit'ing R session
   setwd(working_directory)
@@ -53,25 +54,23 @@ if(!exists("working_directory")){
 
 # set knitr options as suggested by FK
 opts_knit$set(width          = 150,
-              self.contained = T
-             )
+              self.contained = TRUE)
 
 # set code chunks options as suggested by FK
 opts_chunk$set(comment    = NA,
-               tidy       = F,
-               highlight  = T,
-               prompt     = T,
-               fig.path   = paste(working_directory,"knitr/figures/",sep="/"),
+               tidy       = FALSE,
+               highlight  = TRUE,
+               prompt     = TRUE,
+               fig.path   = paste(working_directory, "knitr/figures/", sep = "/"),
                fig.keep   = "high",
                fig.show   = "asis",
                background = "#F5F5DC",
-               echo       = F,
-               cache      = F,
-               cache.path = paste(working_directory,"knitr/cache/",sep="/"),
-               message    = F,
-               warning    = F,
-               error      = F
-              )
+               echo       = FALSE,
+               cache      = FALSE,
+               cache.path = paste(working_directory, "knitr/cache/", sep = "/"),
+               message    = FALSE,
+               warning    = FALSE,
+               error      = FALSE)
 
 # adjust output format for inline code chunks to use a thousands separator
 knit_hooks$set(inline = function(output) ifelse(is.numeric(output),prettyNum(output,big.mark=','),output))
@@ -79,34 +78,29 @@ knit_hooks$set(inline = function(output) ifelse(is.numeric(output),prettyNum(out
 # set non-knitr options in another code chunk as suggested by FK
 ```
 
-```{r r_options,include=F,eval=T,cache=F}
+```{r r_options, include = FALSE, eval = TRUE, cache = FALSE}
 #############
 # R options #
 #############
 
 # set options as suggested by FK
-options(width=150, digits=10)
-options(stringsAsFactors=F)
+options(width = 150, digits = 10)
+options(stringsAsFactors = FALSE)
 ```
 
-```{r parameters,include=F,eval=T,cache=F}
+```{r parameters, include = FALSE, eval = TRUE, cache = FALSE}
 ##############
 # parameters #
 ##############
 
 # define default (absolute) path of TSV file with rating table (if not defined in the knit'ing R
 # session)
-if(!exists("table_tsv")) table_tsv<-paste0(working_directory,"/table.tsv")
+if(!exists("table_tsv")) table_tsv <- paste0(working_directory, "/table.tsv")
 
 # define default rating-to-score mapping (if not defined in the knit'ing R session)
-if(!exists("rating2score")) rating2score<-c('---'=-3
-                                           , '--'=-2
-                                           ,  '-'=-1
-                                           ,  '?'= 1
-                                           ,  '+'= 2
-                                           , '++'= 3
-                                           ,'+++'= 5
-                                           )
+if(!exists("rating2score"))
+  rating2score <- c('---' = -3L, '--' = -2L, '-' = -1L, '?'= 1L, '+'= 2L,
+                    '++' = 3L, '+++' = 5L)
 
 
 # define default rounding precision for numbers in output table (if not defined in the knit'ing R
@@ -115,24 +109,33 @@ if(!exists("digits.table")) digits.table<-2
 
 # define default strptime format for date/time strings in input table (if not defined in the
 # knit'ing R session)
-if(!exists("format.datetime.input")) format.datetime.input<-"%F %R"
+if(!exists("format.datetime.input")) format.datetime.input <- "%F %R"
 
 # define default strftime format for date/time strings in output table (if not defined in the
 # knit'ing R session)
-if(!exists("format.datetime.output")) format.datetime.output<-"%F %R"
+if(!exists("format.datetime.output")) format.datetime.output <- "%F %R"
 
 # define default time zone (if not defined in the knit'ing R session)
-if(!exists("timezone")) timezone<-"GMT"
+if(!exists("timezone")) timezone <- "GMT"
 ```
 
 
-```{r libraries,include=F,eval=T,cache=F}
+```{r libraries, include = FALSE, eval = TRUE, cache = FALSE}
 #############
 # libraries #
 #############
 
-# use efficient apply functions
-require(plyr)
+# tidy input, tidy code
+library(readr)
+
+# sill need one l_ply (TODO: replace by do()?), must be loaded *before* dplyr
+library(plyr)
+
+# make R readable again
+library(dplyr)
+
+# tidy data, tidy code
+library(tidyr)
 
 
 #############
@@ -143,100 +146,97 @@ require(plyr)
 # re-evaluation of chached code chunks using the function in case the function gets modified.
 ```
 
-```{r function.live_count2score,include=F,eval=T}
+```{r function-live-count2score, include = FALSE, eval = TRUE}
 # calculate live score based on live count & rating score
-live_count2score<-function(live_count,rating_score)
-                    ifelse(rating_score>1
-                          ,ifelse(live_count<6
-                                 ,rating_score-live_count
-                                 ,rating_score-sqrt(live_count-5)-5
-                                 )
-                          ,ifelse(rating_score<0
-                                 ,(live_count-.5)*rating_score
-                                 ,0
-                                 )
-                          )
+live_count2score <-
+  function(live_count, rating_score)
+    ifelse(rating_score > 1,
+           ifelse(live_count < 6,
+                  rating_score - live_count,
+                  rating_score - sqrt(live_count - 5) - 5),
+           ifelse(rating_score < 0,
+                  (live_count - .5) * rating_score,
+                  0))
 ```
 
-```{r read_table}
+```{r read-table}
 ##################
 # get input data #
 ##################
 
 # read table TSV
-tab<-read.table(table_tsv,sep="\t",header=T,quote="\"",na.strings=c("","NA"))
+tab <- read_tsv(table_tsv, comment = "#")[-1, ]
 ```
 
-```{r parse_datetime}
-tab$start<-strptime(tab$start,format.datetime.input,timezone)
-tab$end<-strptime(tab$end,format.datetime.input,timezone)
+```{r format-columns}
+tab <-
+  tab %>%
+  mutate(band  = as.factor(band),
+         stage = as.factor(stage),
+         start = as.POSIXct(start, format.datetime.input, tz = timezone),
+         end   = as.POSIXct(end,   format.datetime.input, tz = timezone))
+
 ```
 
-```{r remove_nas}
+```{r get-ratings}
+rating.cols <- grep("rating.", colnames(tab), fixed = TRUE, value = TRUE)
+
+ratings <-
+  tab %>%
+  gather("member", "rating", rating.cols) %>%
+  mutate(member = sub("rating.", "", member, fixed = TRUE) %>%
+                  as.factor,
+         rating = factor(rating, levels = names(rating2score))) %>%
+  distinct(band, member, rating)
+```
+
+```{r get-live_counts}
+live_count.cols <-
+  grep("live_count.", colnames(tab), fixed = TRUE, value = TRUE)
+
+live_counts <-
+  tab %>%
+  gather("member", "live_count", live_count.cols) %>%
+  mutate(member = sub("live_count.", "", member, fixed = TRUE) %>%
+                  as.factor,
+         live_count = as.integer(live_count)) %>%
+  distinct(band, member, live_count)
+```
+
+```{r get-gigs}
+# get gigs
+gigs <-
+  tab %>%
+  select(c("band", "stage", "start", "end")) %>%
+  arrange(start, end)
+```
+
+```{r remove-nas}
 # replace missing ratings with '?'
-rating.cols<-grep("rating.",colnames(tab),fixed=T,value=T)
-tab[,rating.cols][is.na(tab[,rating.cols])]<-"?"
-
-# get group members
-members<-sub("rating.","",rating.cols)
+ratings$rating[is.na(ratings$rating)] <- "?"
 
 # replace missing live counts with 0
-live_count.cols<-paste0("live_count.",members)
-tab[,live_count.cols][is.na(tab[,live_count.cols])]<-0
+live_counts$live_count[is.na(live_counts$live_count)] <- 0L
 ```
 
-```{r untable}
-# get bands
-bands<-sort(unique(tab$band))
-
-# identify first entry per band
-bands.rows<-laply(bands,function(band) which(tab$band==band)[1])
-
-# get ratings
-ratings<-setNames(data.frame(tab[bands.rows,rating.cols],row.names=bands),members)
-
-# get live counts
-live_counts<-setNames(data.frame(tab[bands.rows,live_count.cols],row.names=bands),members)
-
-# get gigs
-gigs<-tab[order(tab$start),c("band","stage","start","end")]
+```{r get-raw-scores}
+scores <-
+  ratings %>%
+  full_join(live_counts) %>%
+  mutate(rating_score = rating2score[as.character(rating)],
+         live_score = live_count2score(live_count, rating_score),
+         raw_score = rating_score + live_score)
 ```
 
-```{r get_scores}
-###############
-# score bands #
-###############
-
-# get ratings scores
-rating_scores<-data.frame(do.call(cbind
-                                 ,llply(ratings
-                                       ,'['
-                                       ,x=rating2score
-                                       )
-                                 )
-                         ,row.names=bands
-                         )
-
-# get live scores
-live_scores<-setNames(data.frame(do.call(cbind
-                                        ,llply(members
-                                              ,function(member)
-                                                  live_count2score(live_counts[,member]
-                                                                  ,rating_scores[,member]
-                                                                  )
-                                              )
-                                        )
-                                ,row.names=bands
-                                )
-                     ,members
-                     )
-
-# get total scores
-total_scores<-rating_scores+live_scores
-
-# normalize scores
-normalization.sums<-rowSums(total_scores)
-scores<-(normalization.sums-min(normalization.sums))/(max(normalization.sums)-min(normalization.sums))
+```{r normalize-scores}
+scores <-
+  scores %>%
+  group_by(band) %>%
+  mutate(score_sum = sum(raw_score)) %>%
+  ungroup %>%
+  mutate(score_sum_min = min(score_sum),
+         score = (score_sum - score_sum_min) / (max(score_sum) - score_sum_min)) %>%
+  select(-score_sum, -score_sum_min)
 
 
 ################
@@ -249,88 +249,64 @@ scores<-(normalization.sums-min(normalization.sums))/(max(normalization.sums)-mi
 
 For now, the festival scheduler simply reproduces the spreadsheet table:
 
-```{r print_table,results="asis"}
-# assemble output table converting date/times to strings & scores to percent
-tab<-with(gigs
-         ,data.frame(band
-                    ,setNames(ratings[band,],paste0("rating.",members))
-                    ,setNames(live_counts[band,],paste0("live_count.",members))
-                    ,score=paste0(round(scores[band],digits.table)*100,"%")
-                    ,stage
-                    ,start=strftime(start,format.datetime.output)
-                    ,end=strftime(end,format.datetime.output)
-                    )
-         )
+```{r reassemble-table}
+# assemble output table converting date/times to strings
+tab <-
+  scores %>%
+  select(band, member, rating) %>%
+  mutate(member = paste0("rating.", member)) %>%
+  spread(member, rating) %>%
+  full_join(scores %>%
+            select(band, member, live_count) %>%
+            mutate(member = paste0("live_count.", member)) %>%
+            spread(member, live_count)) %>%
+  left_join(scores %>%
+            distinct(band, score)) %>%
+  left_join(gigs %>%
+            mutate(start = strftime(start, format.datetime.output),
+                   end = strftime(end, format.datetime.output)))
 
-# replace missing values with "tbc"
-tab[is.na(tab)]<-"tbc"
+# replace missing values with "t.b.a"
+tab[is.na(tab)] <- "t.b.a."
 
-# print table sorted by score
-kable(tab[order(scores[gigs$band]
-               ,decreasing=T
-               )
-         ,
-         ]
-     ,digits=digits.table
-     ,row.names=F
-     )
+# sort table by score & covert scores to percent
+tab <-
+  tab %>%
+  arrange(-score) %>%
+  mutate(score = paste0(round(score, digits.table) * 100, "%"))
+```
+
+```{r print-table, results="asis"}
+# print table
+tab %>%
+  knitr::kable(digits = digits.table, row.names = FALSE)
 ```
 
 ```{r check.run_scheduler}
 # discard gigs with missing information
-gigs<-gigs[!unlist(alply(gigs[,c("band","start","end")],1,anyNA)),]
+gigs <-
+  gigs %>%
+  filter(!is.na(band), !is.na(start), !is.na(end))
 
 # only run scheduler if there is at least one gig with full information
-if(nrow(gigs)==0) knit_exit()
+if(!nrow(gigs)) knit_exit()
 ```
 
-```{r schedule}
-# identify all time intervals with different gig combinations
-times<-sort(with(gigs,c(start,end)))
-intervals<-unique(ldply(1:sum(times<tail(times,1))
-                       ,function(begin)
-                          data.frame(interval.begin=times[begin]
-                                    ,interval.end=times[times>times[begin]][1]
-                                    )
-                       )
-                 )
-# identify corresponding gigs
-intervals<-alply(intervals
-                ,1
-                ,with
-                ,list(interval.begin=interval.begin
-                     ,interval.end=interval.end
-                     ,interval.gigs=which(gigs$start<=interval.begin&gigs$end>=interval.end)
-                     )
-                )
-
-# discard intervals without gigs
-intervals<-intervals[llply(intervals,with,length(interval.gigs))!=0]
-
-# order interval gigs by scores & add personal rankings
-intervals<-llply(intervals
-                ,with
-                ,list(interval.begin=interval.begin
-                     ,interval.end=interval.end
-                     ,interval.gigs=interval.gigs[order(scores[gigs$band[interval.gigs]]
-                                                       ,decreasing=T
-                                                       )
-                                                 ]
-                     ,personal.gigs=setNames(do.call(data.frame
-                                                    ,llply(members
-                                                          ,function(member)
-                                                              interval.gigs[order(total_scores[gigs$band[interval.gigs]
-                                                                                              ,member
-                                                                                              ]
-                                                                                  ,decreasing=T
-                                                                                  )
-                                                                           ]
-                                                          )
-                                                    )
-                                            ,members
-                                            )
-                     )
-                )
+```{r get-intervals}
+# identify all time intervals with different gig combinations & identify
+# corresponding gigs
+intervals <-
+  gigs %>%
+  select(start, end) %>%
+  gather(type, interval.begin) %>%
+  distinct(interval.begin) %>%
+  arrange(interval.begin) %>%
+  mutate(interval.end = lead(interval.begin)) %>%
+  slice(-n()) %>%
+  group_by(interval.begin, interval.end) %>%
+  do(filter(gigs, start <= .$interval.begin, end >= .$interval.end)) %>%
+  full_join(scores %>%
+            distinct(band, member, raw_score, score))
 ```
 
 ## Running order
@@ -339,172 +315,82 @@ intervals<-llply(intervals
 
 For now, only the group running oder is generated:
 
-```{r print_running_order,results="asis"}
-# select top scored band per interval
-running_order<-ldply(intervals
-                    ,with
-                    ,data.frame(start=interval.begin
-                               ,end=interval.end
-                               ,interval.gig=interval.gigs[1]
-                               ,band=gigs$band[interval.gigs][1]
-                               ,stage=gigs$stage[interval.gigs][1]
-                               )
-                    ,.id=NULL
-                    )
-
-# merge intervals with same gig
-running_order<-ddply(running_order
-                    ,.(interval.gig)
-                    ,with
-                    ,data.frame(start=min(start)
-                               ,end=max(end)
-                               ,band=band[1]
-                               ,stage=stage[1]
-                               )
-                    )
-
+```{r get-running-order}
+# select top scored band per interval, merge adjacent intervals with same gig &
 # sort gigs by start time
-running_order<-running_order[order(running_order$start),]
+running_order <-
+  intervals %>%
+  distinct(band, stage, start, end, score) %>%
+  arrange(-score) %>%
+  slice(1) %>%
+  ungroup %>%
+  group_by(band, stage, start, end) %>%
+  mutate(continuation = interval.begin == lag(interval.end),
+         continuation = ifelse(is.na(continuation), FALSE, continuation)) %>%
+  filter(!is.na(interval.begin)) %>%
+  mutate(interval = cumsum(!continuation)) %>%
+  group_by(interval, band, stage, score, start, end) %>%
+  summarize(interval.begin = interval.begin[1],
+            interval.end = interval.end[n()]) %>%
+  ungroup %>%
+  mutate(start = interval.begin,
+         end = interval.end) %>%
+  select(start, end, band, stage, score) %>%
+  arrange(start)
+```
 
-# split long gigs overlapping better short gigs
-interval<-1
-while(interval<nrow(running_order)){
-  if(with(running_order
-         ,end[interval]>start[interval+1]
-         )
-    ){
-    running_order<<-rbind(running_order[1:(interval-1),]
-                         ,with(running_order[interval+(0:1),]
-                              ,data.frame(interval.gig=c(interval.gig,interval.gig[1])
-                                         ,start=c(start,end[2])
-                                         ,end=c(start[2],rev(end))
-                                         ,band=c(band,band[1])
-                                         ,stage=c(stage,stage[1])
-                                         )
-                              )
-                         ,running_order[(interval+2):nrow(running_order),]
-                         )
-    interval<-interval+2
-   }else{
-    interval<-interval+1
-   }
-}
-rm(interval)
-
+```{r print-running-order, results = "asis"}
 # print running order converting date/times to string & adding scores
-kable(with(running_order
-          ,data.frame(start=strftime(start,format.datetime.output)
-                     ,end=strftime(end,format.datetime.output)
-                     ,band
-                     ,stage
-                     ,score=paste0(round(scores[band],digits.table)*100,"%")
-                     )
-           )
-     )
+running_order %>%
+  mutate(start = strftime(start, format.datetime.output),
+         end = strftime(end, format.datetime.output),
+         score = paste0(round(score, digits.table) * 100, "%")) %>%
+  kable
 ```
 
 ```{r get.personal_running_orders}
-# selet top scored band per group member & interval
-personal_running_orders<-setNames(llply(members
-                                       ,function(member){
-                                          ldply(intervals
-                                               ,function(interval)
-                                                  with(interval
-                                                      ,data.frame(start=interval.begin
-                                                                 ,end=interval.end
-                                                                 ,interval.gig=personal.gigs[1,member]
-                                                                 ,band=gigs$band[personal.gigs[1,member]]
-                                                                 ,stage=gigs$stage[personal.gigs[1,member]]
-                                                                 )
-                                                      )
-                                               ,.id=NULL
-                                               )
-                                        }
-                                       )
-                                 ,members
-                                 )
-
-# merge intervals with same gig
-personal_running_orders<-setNames(llply(members
-                                 ,function(member)
-                                    ddply(personal_running_orders[[member]]
-                                         ,.(interval.gig)
-                                         ,with
-                                         ,data.frame(start=min(start)
-                                                    ,end=max(end)
-                                                    ,band=band[1]
-                                                    ,stage=stage[1]
-                                                    )
-                                         )
-                                 )
-                           ,members
-                           )
-
-# sort gigs by start time
-personal_running_orders<-llply(personal_running_orders
-                              ,function(personal_running_order)
-                                 personal_running_order[order(personal_running_order$start),]
-                              )
-
-# split long gigs overlapping better short gigs
-l_ply(members
-     ,function(member){
-        interval<-1
-        while(interval<nrow(personal_running_orders[[member]])){
-          if(with(personal_running_orders[[member]]
-                 ,end[interval]>start[interval+1]
-                 )
-            ){
-            personal_running_orders[[member]]<<-rbind(personal_running_orders[[member]][1:(interval-1),]
-                                                     ,with(personal_running_orders[[member]][interval+(0:1),]
-                                                          ,data.frame(interval.gig=c(interval.gig,interval.gig[1])
-                                                                     ,start=c(start,end[2])
-                                                                     ,end=c(start[2],rev(end))
-                                                                     ,band=c(band,band[1])
-                                                                     ,stage=c(stage,stage[1])
-                                                                     )
-                                                          )
-                                                     ,personal_running_orders[[member]][(interval+2):nrow(personal_running_orders[[member]]),]
-                                                     )
-            interval<-interval+2
-           }else{
-            interval<-interval+1
-           }
-        }
-      }
-     )
+# selet top scored band per group member & interval, merge adjacent intervals
+# with same gig & sort gigs by start time
+personal_running_orders <-
+  intervals %>%
+  distinct(band, stage, start, end, member, raw_score, score) %>%
+  group_by(interval.begin, interval.end, member) %>%
+  arrange(-raw_score) %>%
+  slice(1) %>%
+  ungroup %>%
+  group_by(member, band, stage, start, end) %>%
+  mutate(continuation = interval.begin == lag(interval.end),
+         continuation = ifelse(is.na(continuation), FALSE, continuation)) %>%
+  filter(!is.na(interval.begin)) %>%
+  mutate(interval = cumsum(!continuation)) %>%
+  group_by(member, interval, band, stage, score, start, end) %>%
+  summarize(interval.begin = interval.begin[1],
+            interval.end = interval.end[n()]) %>%
+  ungroup %>%
+  mutate(start = interval.begin,
+         end = interval.end) %>%
+  select(member, start, end, band, stage, score) %>%
+  arrange(start)
 ```
 
 ### Personal Running orders
 
 ```{r print.personal_running_orders,results="asis"}
 # print running order for each member
-l_ply(members
-     ,function(member){
+personal_running_orders %>%
+  distinct(member) %>%
+  unlist %>%
+  l_ply(function(the.member) {
+          # prepend running order with member name
+          cat(paste0("\n#### ", the.member, "\n\n"))
 
-       # prepend running order with member name
-       cat(paste0("\n#### ",member,"\n\n"))
-
-       # print running order converting date/times to string & adding scores
-       print(kable(with(personal_running_orders[[member]]
-                     ,data.frame(start=strftime(start
-                                               ,format.datetime.output
-                                               )
-                                ,end=strftime(end
-                                             ,format.datetime.output
-                                             )
-                                ,band
-                                ,stage
-                                ,rating=ratings[band,member]
-                                ,score=paste0(round(scores[band]
-                                                   ,digits.table
-                                                   )*100
-                                             ,"%"
-                                             )
-                                )
-                     )
-                )
-          )
-      }
-     )
+          personal_running_orders %>%
+            filter(member == the.member) %>%
+            select(-member) %>%
+            mutate(start = strftime(start, format.datetime.output),
+                   end = strftime(end, format.datetime.output),
+                   score = paste0(round(score, digits.table) * 100, "%")) %>%
+            (knitr::kable) %>%
+            print
+         })
 ```
