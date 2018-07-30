@@ -4,7 +4,7 @@
 
 # file:        woa_2018.tsv
 # created:     2017-08-07
-# last-update: 2018-07-27
+# last-update: 2018-07-30
 # author(s):   Marcel Schilling <marcel.schilling@mdc-berlin.de>
 # license:     GNU Affero General Public License Version 3 (GNU AGPL v3)
 # purpose:     input file for WOA 2018 scheduling
@@ -14,6 +14,7 @@
 # change log (reverse chronological) #
 ######################################
 
+# 2018-07-30: corrected start time of John Diva & The Rockets Of Love
 # 2018-07-27: added ratings & live counts / fixed typos / fixed time & date format
 # 2018-07-25: added ratings & live counts from previous years
 #             added full line-up and running order
@@ -143,7 +144,7 @@ Ivan Ivanovich & The Kreml Krauts	+	+	0	0	Wackinger Stage	02-08-2018_11:00	02-08
 Jack Broadbent	+	?	0	0	Beer Garden	03-08-2018_16:00	03-08-2018_17:00
 Jasad	--	--	0	0	Wasteland Stage	03-08-2018_15:45	03-08-2018_16:30
 Jesper Binzer	+	+	0	0	Beer Garden	01-08-2018_20:00	01-08-2018_20:45
-John Diva And The Rockets Of Love	++	++	2	2	Beer Garden	02-08-2018_22:30	02-08-2018_22:30
+John Diva And The Rockets Of Love	++	++	2	2	Beer Garden	02-08-2018_21:30	02-08-2018_22:30
 Judas Priest	++	+	2	1	Harder	02-08-2018_22:30	03-08-2018_00:00
 Karaoke Till Death	+	-	0	0	Beer Garden	01-08-2018_22:45	02-08-2018_00:00
 Karaoke Till Death	+	-	0	0	Beer Garden	02-08-2018_23:00	03-08-2018_00:00
